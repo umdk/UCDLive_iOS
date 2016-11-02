@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageGaussianSelectiveBlurFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageGaussianSelectiveBlurFilter</TokenIdentifier>
+			<Abstract type="html">A Gaussian blur that preserves focus within a circular region</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageGaussianSelectiveBlurFilter/setExcludeCircleRadius:</TokenIdentifier>
+			<Abstract type="html">The radius of the circular area being excluded from the blur</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat excludeCircleRadius</Declaration>
+			
+			
+			<Anchor>//api/name/excludeCircleRadius</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageGaussianSelectiveBlurFilter/excludeCircleRadius</TokenIdentifier>
+			<Abstract type="html">The radius of the circular area being excluded from the blur</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat excludeCircleRadius</Declaration>
+			
+			
+			<Anchor>//api/name/excludeCircleRadius</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageGaussianSelectiveBlurFilter/excludeCircleRadius</TokenIdentifier>
+			<Abstract type="html">The radius of the circular area being excluded from the blur</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat excludeCircleRadius</Declaration>
+			
+			
+			<Anchor>//api/name/excludeCircleRadius</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageGaussianSelectiveBlurFilter/setExcludeCirclePoint:</TokenIdentifier>
+			<Abstract type="html">The center of the circular area being excluded from the blur</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint excludeCirclePoint</Declaration>
+			
+			
+			<Anchor>//api/name/excludeCirclePoint</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageGaussianSelectiveBlurFilter/excludeCirclePoint</TokenIdentifier>
+			<Abstract type="html">The center of the circular area being excluded from the blur</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint excludeCirclePoint</Declaration>
+			
+			
+			<Anchor>//api/name/excludeCirclePoint</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageGaussianSelectiveBlurFilter/excludeCirclePoint</TokenIdentifier>
+			<Abstract type="html">The center of the circular area being excluded from the blur</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint excludeCirclePoint</Declaration>
+			
+			
+			<Anchor>//api/name/excludeCirclePoint</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageGaussianSelectiveBlurFilter/setExcludeBlurSize:</TokenIdentifier>
+			<Abstract type="html">The size of the area between the blurred portion and the clear circle</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat excludeBlurSize</Declaration>
+			
+			
+			<Anchor>//api/name/excludeBlurSize</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageGaussianSelectiveBlurFilter/excludeBlurSize</TokenIdentifier>
+			<Abstract type="html">The size of the area between the blurred portion and the clear circle</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat excludeBlurSize</Declaration>
+			
+			
+			<Anchor>//api/name/excludeBlurSize</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageGaussianSelectiveBlurFilter/excludeBlurSize</TokenIdentifier>
+			<Abstract type="html">The size of the area between the blurred portion and the clear circle</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat excludeBlurSize</Declaration>
+			
+			
+			<Anchor>//api/name/excludeBlurSize</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageGaussianSelectiveBlurFilter/setBlurRadiusInPixels:</TokenIdentifier>
+			<Abstract type="html">A radius in pixels to use for the blur, with a default of 5.0. This adjusts the sigma variable in the Gaussian distribution function.</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageGaussianSelectiveBlurFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">A radius in pixels to use for the blur, with a default of 5.0. This adjusts the sigma variable in the Gaussian distribution function.</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageGaussianSelectiveBlurFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">A radius in pixels to use for the blur, with a default of 5.0. This adjusts the sigma variable in the Gaussian distribution function.</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageGaussianSelectiveBlurFilter/setAspectRatio:</TokenIdentifier>
+			<Abstract type="html">The aspect ratio of the image, used to adjust the circularity of the in-focus region. By default, this matches the image aspect ratio, but you can override this value.</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat aspectRatio</Declaration>
+			
+			
+			<Anchor>//api/name/aspectRatio</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageGaussianSelectiveBlurFilter/aspectRatio</TokenIdentifier>
+			<Abstract type="html">The aspect ratio of the image, used to adjust the circularity of the in-focus region. By default, this matches the image aspect ratio, but you can override this value.</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat aspectRatio</Declaration>
+			
+			
+			<Anchor>//api/name/aspectRatio</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageGaussianSelectiveBlurFilter/aspectRatio</TokenIdentifier>
+			<Abstract type="html">The aspect ratio of the image, used to adjust the circularity of the in-focus region. By default, this matches the image aspect ratio, but you can override this value.</Abstract>
+			<DeclaredIn>UCloudGPUImageGaussianSelectiveBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat aspectRatio</Declaration>
+			
+			
+			<Anchor>//api/name/aspectRatio</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

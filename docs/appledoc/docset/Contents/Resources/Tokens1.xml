@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CameraServer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CameraServer</TokenIdentifier>
+			<Abstract type="html">CameraServer</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setWidth:</TokenIdentifier>
+			<Abstract type="html">视频宽，默认360</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int width</Declaration>
+			
+			
+			<Anchor>//api/name/width</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/width</TokenIdentifier>
+			<Abstract type="html">视频宽，默认360</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int width</Declaration>
+			
+			
+			<Anchor>//api/name/width</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/width</TokenIdentifier>
+			<Abstract type="html">视频宽，默认360</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int width</Declaration>
+			
+			
+			<Anchor>//api/name/width</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setHeight:</TokenIdentifier>
+			<Abstract type="html">视频高，默认640</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int height</Declaration>
+			
+			
+			<Anchor>//api/name/height</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/height</TokenIdentifier>
+			<Abstract type="html">视频高，默认640</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int height</Declaration>
+			
+			
+			<Anchor>//api/name/height</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/height</TokenIdentifier>
+			<Abstract type="html">视频高，默认640</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int height</Declaration>
+			
+			
+			<Anchor>//api/name/height</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setFps:</TokenIdentifier>
+			<Abstract type="html">帧率(15\20\25\30)，默认15</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int fps</Declaration>
+			
+			
+			<Anchor>//api/name/fps</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/fps</TokenIdentifier>
+			<Abstract type="html">帧率(15\20\25\30)，默认15</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int fps</Declaration>
+			
+			
+			<Anchor>//api/name/fps</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/fps</TokenIdentifier>
+			<Abstract type="html">帧率(15\20\25\30)，默认15</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int fps</Declaration>
+			
+			
+			<Anchor>//api/name/fps</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setBitrate:</TokenIdentifier>
+			<Abstract type="html">音频和视频总比特率UCloudVideoBitrate</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int bitrate</Declaration>
+			
+			
+			<Anchor>//api/name/bitrate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/bitrate</TokenIdentifier>
+			<Abstract type="html">音频和视频总比特率UCloudVideoBitrate</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int bitrate</Declaration>
+			
+			
+			<Anchor>//api/name/bitrate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/bitrate</TokenIdentifier>
+			<Abstract type="html">音频和视频总比特率UCloudVideoBitrate</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) int bitrate</Declaration>
+			
+			
+			<Anchor>//api/name/bitrate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setSecretKey:</TokenIdentifier>
+			<Abstract type="html">SDK 鉴权密钥</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *secretKey</Declaration>
+			
+			
+			<Anchor>//api/name/secretKey</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/secretKey</TokenIdentifier>
+			<Abstract type="html">SDK 鉴权密钥</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *secretKey</Declaration>
+			
+			
+			<Anchor>//api/name/secretKey</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/secretKey</TokenIdentifier>
+			<Abstract type="html">SDK 鉴权密钥</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *secretKey</Declaration>
+			
+			
+			<Anchor>//api/name/secretKey</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setSupportFilter:</TokenIdentifier>
+			<Abstract type="html">是否支持滤镜</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) BOOL supportFilter</Declaration>
+			
+			
+			<Anchor>//api/name/supportFilter</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/supportFilter</TokenIdentifier>
+			<Abstract type="html">是否支持滤镜</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) BOOL supportFilter</Declaration>
+			
+			
+			<Anchor>//api/name/supportFilter</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/supportFilter</TokenIdentifier>
+			<Abstract type="html">是否支持滤镜</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) BOOL supportFilter</Declaration>
+			
+			
+			<Anchor>//api/name/supportFilter</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setCaptureDevicePos:</TokenIdentifier>
+			<Abstract type="html">摄像头位置，默认打开前置摄像头</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) AVCaptureDevicePosition captureDevicePos</Declaration>
+			
+			
+			<Anchor>//api/name/captureDevicePos</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/captureDevicePos</TokenIdentifier>
+			<Abstract type="html">摄像头位置，默认打开前置摄像头</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) AVCaptureDevicePosition captureDevicePos</Declaration>
+			
+			
+			<Anchor>//api/name/captureDevicePos</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/captureDevicePos</TokenIdentifier>
+			<Abstract type="html">摄像头位置，默认打开前置摄像头</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) AVCaptureDevicePosition captureDevicePos</Declaration>
+			
+			
+			<Anchor>//api/name/captureDevicePos</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setMuted:</TokenIdentifier>
+			<Abstract type="html">是否静音，默认NO</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL muted</Declaration>
+			
+			
+			<Anchor>//api/name/muted</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/muted</TokenIdentifier>
+			<Abstract type="html">是否静音，默认NO</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL muted</Declaration>
+			
+			
+			<Anchor>//api/name/muted</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/muted</TokenIdentifier>
+			<Abstract type="html">是否静音，默认NO</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL muted</Declaration>
+			
+			
+			<Anchor>//api/name/muted</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setVideoOrientation:</TokenIdentifier>
+			<Abstract type="html">视频推流方向</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) UCloudVideoOrientation videoOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/videoOrientation</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/videoOrientation</TokenIdentifier>
+			<Abstract type="html">视频推流方向</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) UCloudVideoOrientation videoOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/videoOrientation</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/videoOrientation</TokenIdentifier>
+			<Abstract type="html">视频推流方向</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) UCloudVideoOrientation videoOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/videoOrientation</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setReconnectInterval:</TokenIdentifier>
+			<Abstract type="html">重推流间隔,默认3秒</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval reconnectInterval</Declaration>
+			
+			
+			<Anchor>//api/name/reconnectInterval</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/reconnectInterval</TokenIdentifier>
+			<Abstract type="html">重推流间隔,默认3秒</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval reconnectInterval</Declaration>
+			
+			
+			<Anchor>//api/name/reconnectInterval</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/reconnectInterval</TokenIdentifier>
+			<Abstract type="html">重推流间隔,默认3秒</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval reconnectInterval</Declaration>
+			
+			
+			<Anchor>//api/name/reconnectInterval</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setReconnectCount:</TokenIdentifier>
+			<Abstract type="html">重推流次数，默认5次</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger reconnectCount</Declaration>
+			
+			
+			<Anchor>//api/name/reconnectCount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/reconnectCount</TokenIdentifier>
+			<Abstract type="html">重推流次数，默认5次</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger reconnectCount</Declaration>
+			
+			
+			<Anchor>//api/name/reconnectCount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/reconnectCount</TokenIdentifier>
+			<Abstract type="html">重推流次数，默认5次</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger reconnectCount</Declaration>
+			
+			
+			<Anchor>//api/name/reconnectCount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setIsCaptureYUV:</TokenIdentifier>
+			<Abstract type="html">摄像头采集数据为YUV还是RGB</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) BOOL isCaptureYUV</Declaration>
+			
+			
+			<Anchor>//api/name/isCaptureYUV</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/isCaptureYUV</TokenIdentifier>
+			<Abstract type="html">摄像头采集数据为YUV还是RGB</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) BOOL isCaptureYUV</Declaration>
+			
+			
+			<Anchor>//api/name/isCaptureYUV</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/isCaptureYUV</TokenIdentifier>
+			<Abstract type="html">摄像头采集数据为YUV还是RGB</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) BOOL isCaptureYUV</Declaration>
+			
+			
+			<Anchor>//api/name/isCaptureYUV</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CameraServer/server</TokenIdentifier>
+			<Abstract type="html">CameraServer单例模式</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>+ (CameraServer *)server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:</TokenIdentifier>
+			<Abstract type="html">server初始化(不会自动开始要在底层配置完成之后调用cameraStart</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (void)configureCameraWithOutputUrl:(NSString *)outPutUrl filter:(NSArray *)filters messageCallBack:(CameraMessage)block deviceBlock:(CameraDevice)deviceBlock cameraData:(CameraData)cameraData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>outPutUrl</Name>
+					<Abstract type="html">推流地址</Abstract>
+				</Parameter><Parameter>
+					<Name>filters</Name>
+					<Abstract type="html">滤镜组</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">推流状态回调</Abstract>
+				</Parameter><Parameter>
+					<Name>deviceBlock</Name>
+					<Abstract type="html">相机回调(定制相机参数)</Abstract>
+				</Parameter><Parameter>
+					<Name>cameraData</Name>
+					<Abstract type="html">视频数据</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/cameraPrepare</TokenIdentifier>
+			<Abstract type="html">打开摄像头预览，不进行推流上传</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (void)cameraPrepare</Declaration>
+			
+			
+			<Anchor>//api/name/cameraPrepare</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/cameraStart</TokenIdentifier>
+			<Abstract type="html">开始录像采集推流上传</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)cameraStart</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回操作结果</Abstract></ReturnValue>
+			<Anchor>//api/name/cameraStart</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/cameraRestart</TokenIdentifier>
+			<Abstract type="html">推流失败之后重新推流</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (void)cameraRestart</Declaration>
+			
+			
+			<Anchor>//api/name/cameraRestart</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/shutdown:</TokenIdentifier>
+			<Abstract type="html">关闭录像停止推流</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (void)shutdown:(void ( ^ ) ( void ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">关闭成功回调函数</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shutdown:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/getCameraView</TokenIdentifier>
+			<Abstract type="html">获取采集图像</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (UIView *)getCameraView</Declaration>
+			
+			<ReturnValue><Abstract type="html">采集图像视图</Abstract></ReturnValue>
+			<Anchor>//api/name/getCameraView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/initializeCameraViewFrame:</TokenIdentifier>
+			<Abstract type="html">设置采集图像显示的frame</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (void)initializeCameraViewFrame:(CGRect)frame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">显示图像的大小</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initializeCameraViewFrame:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/changeCamera</TokenIdentifier>
+			<Abstract type="html">切换摄像头</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (void)changeCamera</Declaration>
+			
+			
+			<Anchor>//api/name/changeCamera</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/outBitrate</TokenIdentifier>
+			<Abstract type="html">编码后的实际码率</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)outBitrate</Declaration>
+			
+			<ReturnValue><Abstract type="html">码率值，包括视频码率和音频码率</Abstract></ReturnValue>
+			<Anchor>//api/name/outBitrate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setTorchState:</TokenIdentifier>
+			<Abstract type="html">设置手电筒状态</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)setTorchState:(UCloudCameraState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">状态</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">设置是否成功</Abstract></ReturnValue>
+			<Anchor>//api/name/setTorchState:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/currentCapturePosition</TokenIdentifier>
+			<Abstract type="html">获取当前摄像头的位置</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (AVCaptureDevicePosition)currentCapturePosition</Declaration>
+			
+			<ReturnValue><Abstract type="html">摄像头位置</Abstract></ReturnValue>
+			<Anchor>//api/name/currentCapturePosition</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/lowThan5</TokenIdentifier>
+			<Abstract type="html">是否是iPhone5以下的机型</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)lowThan5</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回值</Abstract></ReturnValue>
+			<Anchor>//api/name/lowThan5</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/changeISO:</TokenIdentifier>
+			<Abstract type="html">调整摄像头ISO</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)changeISO:(float)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">value</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">操作结果(value越界和8一下系统返回no)</Abstract></ReturnValue>
+			<Anchor>//api/name/changeISO:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/addFilters:</TokenIdentifier>
+			<Abstract type="html">添加滤镜组</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (void)addFilters:(NSArray *)filters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filters</Name>
+					<Abstract type="html">滤镜数组</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addFilters:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/openFilter</TokenIdentifier>
+			<Abstract type="html">打开美颜功能</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (void)openFilter</Declaration>
+			
+			
+			<Anchor>//api/name/openFilter</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/closeFilter</TokenIdentifier>
+			<Abstract type="html">关闭美颜功能</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (void)closeFilter</Declaration>
+			
+			
+			<Anchor>//api/name/closeFilter</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/getSDKVersion</TokenIdentifier>
+			<Abstract type="html">获取SDK version</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getSDKVersion</Declaration>
+			
+			
+			<Anchor>//api/name/getSDKVersion</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

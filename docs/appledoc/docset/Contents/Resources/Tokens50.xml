@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageTiltShiftFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageTiltShiftFilter</TokenIdentifier>
+			<Abstract type="html">A simulated tilt shift lens effect</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="50"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageTiltShiftFilter/setBlurRadiusInPixels:</TokenIdentifier>
+			<Abstract type="html">The radius of the underlying blur, in pixels. This is 7.0 by default.</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageTiltShiftFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">The radius of the underlying blur, in pixels. This is 7.0 by default.</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageTiltShiftFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">The radius of the underlying blur, in pixels. This is 7.0 by default.</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageTiltShiftFilter/setTopFocusLevel:</TokenIdentifier>
+			<Abstract type="html">The normalized location of the top of the in-focus area in the image, this value should be lower than bottomFocusLevel, default 0.4</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat topFocusLevel</Declaration>
+			
+			
+			<Anchor>//api/name/topFocusLevel</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageTiltShiftFilter/topFocusLevel</TokenIdentifier>
+			<Abstract type="html">The normalized location of the top of the in-focus area in the image, this value should be lower than bottomFocusLevel, default 0.4</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat topFocusLevel</Declaration>
+			
+			
+			<Anchor>//api/name/topFocusLevel</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageTiltShiftFilter/topFocusLevel</TokenIdentifier>
+			<Abstract type="html">The normalized location of the top of the in-focus area in the image, this value should be lower than bottomFocusLevel, default 0.4</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat topFocusLevel</Declaration>
+			
+			
+			<Anchor>//api/name/topFocusLevel</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageTiltShiftFilter/setBottomFocusLevel:</TokenIdentifier>
+			<Abstract type="html">The normalized location of the bottom of the in-focus area in the image, this value should be higher than topFocusLevel, default 0.6</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat bottomFocusLevel</Declaration>
+			
+			
+			<Anchor>//api/name/bottomFocusLevel</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageTiltShiftFilter/bottomFocusLevel</TokenIdentifier>
+			<Abstract type="html">The normalized location of the bottom of the in-focus area in the image, this value should be higher than topFocusLevel, default 0.6</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat bottomFocusLevel</Declaration>
+			
+			
+			<Anchor>//api/name/bottomFocusLevel</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageTiltShiftFilter/bottomFocusLevel</TokenIdentifier>
+			<Abstract type="html">The normalized location of the bottom of the in-focus area in the image, this value should be higher than topFocusLevel, default 0.6</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat bottomFocusLevel</Declaration>
+			
+			
+			<Anchor>//api/name/bottomFocusLevel</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageTiltShiftFilter/setFocusFallOffRate:</TokenIdentifier>
+			<Abstract type="html">The rate at which the image gets blurry away from the in-focus region, default 0.2</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat focusFallOffRate</Declaration>
+			
+			
+			<Anchor>//api/name/focusFallOffRate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageTiltShiftFilter/focusFallOffRate</TokenIdentifier>
+			<Abstract type="html">The rate at which the image gets blurry away from the in-focus region, default 0.2</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat focusFallOffRate</Declaration>
+			
+			
+			<Anchor>//api/name/focusFallOffRate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageTiltShiftFilter/focusFallOffRate</TokenIdentifier>
+			<Abstract type="html">The rate at which the image gets blurry away from the in-focus region, default 0.2</Abstract>
+			<DeclaredIn>UCloudGPUImageTiltShiftFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat focusFallOffRate</Declaration>
+			
+			
+			<Anchor>//api/name/focusFallOffRate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

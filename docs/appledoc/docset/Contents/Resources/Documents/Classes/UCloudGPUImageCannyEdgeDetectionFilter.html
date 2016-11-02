@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>UCloudGPUImageCannyEdgeDetectionFilter Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">UCloudMediaRecorder </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">UCloud</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/blurRadiusInPixels">blurRadiusInPixels</option>
+		
+		<option value="//api/name/blurTexelSpacingMultiplier">blurTexelSpacingMultiplier</option>
+		
+		<option value="//api/name/lowerThreshold">lowerThreshold</option>
+		
+		<option value="//api/name/texelHeight">texelHeight</option>
+		
+		<option value="//api/name/texelWidth">texelWidth</option>
+		
+		<option value="//api/name/upperThreshold">upperThreshold</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">UCloudGPUImageCannyEdgeDetectionFilter Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UCloudGPUImageFilterGroup : <a href="../Classes/UCloudGPUImageOutput.html">UCloudGPUImageOutput</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>UCloudGPUImageCannyEdgeDetectionFilter.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This applies the edge detection process described by John Canny in</p>
+
+<p>Canny, J., A Computational Approach To Edge Detection, IEEE Trans. Pattern Analysis and Machine Intelligence, 8(6):679–698, 1986.</p>
+
+<p>and implemented in OpenGL ES by</p>
+
+<ol type="a">
+<li>Ensor, S. Hall. GPU-based Image Analysis on Mobile Devices. Proceedings of Image and Vision Computing New Zealand 2011.</li>
+</ol>
+
+
+<p>It starts with a conversion to luminance, followed by an accelerated 9-hit Gaussian blur. A Sobel operator is applied to obtain the overall
+gradient strength in the blurred image, as well as the direction (in texture sampling steps) of the gradient. A non-maximum suppression filter
+acts along the direction of the gradient, highlighting strong edges that pass the threshold and completely removing those that fail the lower
+threshold. Finally, pixels from in-between these thresholds are either included in edges or rejected based on neighboring pixels.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/texelWidth" title="texelWidth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/texelWidth">&nbsp;&nbsp;texelWidth</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The image width and height factors tweak the appearance of the edges.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) CGFloat texelWidth</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>These parameters affect the visibility of the detected edges</p>
+
+<p>By default, they match the inverse of the filter size in pixels</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageCannyEdgeDetectionFilter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/texelHeight" title="texelHeight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/texelHeight">&nbsp;&nbsp;texelHeight</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The image width and height factors tweak the appearance of the edges.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) CGFloat texelHeight</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>These parameters affect the visibility of the detected edges</p>
+
+<p>By default, they match the inverse of the filter size in pixels</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageCannyEdgeDetectionFilter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/blurRadiusInPixels" title="blurRadiusInPixels"></a>
+	<h3 class="method-title"><code><a href="#//api/name/blurRadiusInPixels">&nbsp;&nbsp;blurRadiusInPixels</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The underlying blur radius for the Gaussian blur. Default is 2.0.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageCannyEdgeDetectionFilter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/blurTexelSpacingMultiplier" title="blurTexelSpacingMultiplier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/blurTexelSpacingMultiplier">&nbsp;&nbsp;blurTexelSpacingMultiplier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The underlying blur texel spacing multiplier. Default is 1.0.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) CGFloat blurTexelSpacingMultiplier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageCannyEdgeDetectionFilter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/upperThreshold" title="upperThreshold"></a>
+	<h3 class="method-title"><code><a href="#//api/name/upperThreshold">&nbsp;&nbsp;upperThreshold</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Any edge with a gradient magnitude above this threshold will pass and show up in the final result.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) CGFloat upperThreshold</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageCannyEdgeDetectionFilter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lowerThreshold" title="lowerThreshold"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lowerThreshold">&nbsp;&nbsp;lowerThreshold</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Any edge with a gradient magnitude below this threshold will fail and be removed from the final result.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) CGFloat lowerThreshold</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageCannyEdgeDetectionFilter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 UCloud. All rights reserved. Updated: 2016-10-25</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

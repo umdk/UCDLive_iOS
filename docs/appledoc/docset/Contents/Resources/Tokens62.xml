@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/UCloudVideoBitrate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/UCloudVideoBitrate</TokenIdentifier>
+			<Abstract type="html">采集的视频流码率，包括视频流码率和音频流码率，音频流码率默认128kbps</Abstract>
+			<DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
+            
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoBitrateLow</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UCloudVideoBitrateLow</Declaration>
+            
+            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
+            
+            <NodeRef refid="62"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoBitrateNormal</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UCloudVideoBitrateNormal</Declaration>
+            
+            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
+            
+            <NodeRef refid="62"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoBitrateMedium</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UCloudVideoBitrateMedium</Declaration>
+            
+            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
+            
+            <NodeRef refid="62"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoBitrateHigh</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UCloudVideoBitrateHigh</Declaration>
+            
+            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
+            
+            <NodeRef refid="62"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

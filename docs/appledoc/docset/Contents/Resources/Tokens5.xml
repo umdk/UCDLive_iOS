@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageBeautyFilter2.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageBeautyFilter2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImageBeautyFilter2.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBeautyFilter2/setSmooth:</TokenIdentifier>
+			<Abstract type="html">设置磨皮强度
+0-100,默认62.50</Abstract>
+			<DeclaredIn>UCloudGPUImageBeautyFilter2.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat smooth</Declaration>
+			
+			
+			<Anchor>//api/name/smooth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBeautyFilter2/smooth</TokenIdentifier>
+			<Abstract type="html">设置磨皮强度
+0-100,默认62.50</Abstract>
+			<DeclaredIn>UCloudGPUImageBeautyFilter2.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat smooth</Declaration>
+			
+			
+			<Anchor>//api/name/smooth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageBeautyFilter2/smooth</TokenIdentifier>
+			<Abstract type="html">设置磨皮强度
+0-100,默认62.50</Abstract>
+			<DeclaredIn>UCloudGPUImageBeautyFilter2.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat smooth</Declaration>
+			
+			
+			<Anchor>//api/name/smooth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBeautyFilter2/setBrightness:</TokenIdentifier>
+			<Abstract type="html">设置亮度
+0-100,未修改状态下值为25，25以下可适当减弱户外强光</Abstract>
+			<DeclaredIn>UCloudGPUImageBeautyFilter2.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat brightness</Declaration>
+			
+			
+			<Anchor>//api/name/brightness</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBeautyFilter2/brightness</TokenIdentifier>
+			<Abstract type="html">设置亮度
+0-100,未修改状态下值为25，25以下可适当减弱户外强光</Abstract>
+			<DeclaredIn>UCloudGPUImageBeautyFilter2.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat brightness</Declaration>
+			
+			
+			<Anchor>//api/name/brightness</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageBeautyFilter2/brightness</TokenIdentifier>
+			<Abstract type="html">设置亮度
+0-100,未修改状态下值为25，25以下可适当减弱户外强光</Abstract>
+			<DeclaredIn>UCloudGPUImageBeautyFilter2.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat brightness</Declaration>
+			
+			
+			<Anchor>//api/name/brightness</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBeautyFilter2/setSaturation:</TokenIdentifier>
+			<Abstract type="html">设置饱和度
+0-100，未修改状态下值为25</Abstract>
+			<DeclaredIn>UCloudGPUImageBeautyFilter2.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBeautyFilter2/saturation</TokenIdentifier>
+			<Abstract type="html">设置饱和度
+0-100，未修改状态下值为25</Abstract>
+			<DeclaredIn>UCloudGPUImageBeautyFilter2.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageBeautyFilter2/saturation</TokenIdentifier>
+			<Abstract type="html">设置饱和度
+0-100，未修改状态下值为25</Abstract>
+			<DeclaredIn>UCloudGPUImageBeautyFilter2.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

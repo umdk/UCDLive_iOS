@@ -1,0 +1,1483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>UCloudMediaRecorder</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
+						<NodeRef refid="48"/>
+						<NodeRef refid="49"/>
+						<NodeRef refid="50"/>
+						<NodeRef refid="51"/>
+						<NodeRef refid="52"/>
+						<NodeRef refid="53"/>
+						<NodeRef refid="54"/>
+						<NodeRef refid="55"/>
+						<NodeRef refid="56"/>
+						<NodeRef refid="57"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node>
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="58"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="59"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Constants</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="60"/>
+						<NodeRef refid="61"/>
+						<NodeRef refid="62"/>
+						<NodeRef refid="63"/>
+						<NodeRef refid="64"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+                <Node>
+                    <Name>Blocks</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <NodeRef refid="65"/>
+                        <NodeRef refid="66"/>
+                        <NodeRef refid="67"/>
+                        <NodeRef refid="68"/>
+                        <NodeRef refid="69"/>
+                        
+                    </Subnodes>
+                </Node>
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>CameraServer</Name>
+            <Path>Classes/CameraServer.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CameraServer.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CameraServer.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CameraServer.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CameraServer.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CameraServer.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>UCloudGPUImage3x3ConvolutionFilter</Name>
+            <Path>Classes/UCloudGPUImage3x3ConvolutionFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImage3x3ConvolutionFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImage3x3ConvolutionFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImage3x3ConvolutionFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>UCloudGPUImageAdaptiveThresholdFilter</Name>
+            <Path>Classes/UCloudGPUImageAdaptiveThresholdFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageAdaptiveThresholdFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageAdaptiveThresholdFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageAdaptiveThresholdFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>UCloudGPUImageAmatorkaFilter</Name>
+            <Path>Classes/UCloudGPUImageAmatorkaFilter.html</Path>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>UCloudGPUImageBeautyFilter2</Name>
+            <Path>Classes/UCloudGPUImageBeautyFilter2.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageBeautyFilter2.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageBeautyFilter2.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageBeautyFilter2.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>UCloudGPUImageBoxBlurFilter</Name>
+            <Path>Classes/UCloudGPUImageBoxBlurFilter.html</Path>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>UCloudGPUImageBulgeDistortionFilter</Name>
+            <Path>Classes/UCloudGPUImageBulgeDistortionFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageBulgeDistortionFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageBulgeDistortionFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageBulgeDistortionFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>UCloudGPUImageCannyEdgeDetectionFilter</Name>
+            <Path>Classes/UCloudGPUImageCannyEdgeDetectionFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageCannyEdgeDetectionFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageCannyEdgeDetectionFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageCannyEdgeDetectionFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>UCloudGPUImageChromaKeyBlendFilter</Name>
+            <Path>Classes/UCloudGPUImageChromaKeyBlendFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageChromaKeyBlendFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageChromaKeyBlendFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageChromaKeyBlendFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageChromaKeyBlendFilter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>UCloudGPUImageChromaKeyFilter</Name>
+            <Path>Classes/UCloudGPUImageChromaKeyFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageChromaKeyFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageChromaKeyFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageChromaKeyFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageChromaKeyFilter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>UCloudGPUImageColorBurnBlendFilter</Name>
+            <Path>Classes/UCloudGPUImageColorBurnBlendFilter.html</Path>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>UCloudGPUImageColorDodgeBlendFilter</Name>
+            <Path>Classes/UCloudGPUImageColorDodgeBlendFilter.html</Path>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>UCloudGPUImageColorMatrixFilter</Name>
+            <Path>Classes/UCloudGPUImageColorMatrixFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageColorMatrixFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageColorMatrixFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageColorMatrixFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>UCloudGPUImageContrastFilter</Name>
+            <Path>Classes/UCloudGPUImageContrastFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageContrastFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageContrastFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageContrastFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
+            <Name>UCloudGPUImageFilter</Name>
+            <Path>Classes/UCloudGPUImageFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageFilter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>UCloudGPUImageGaussianBlurFilter</Name>
+            <Path>Classes/UCloudGPUImageGaussianBlurFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageGaussianBlurFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageGaussianBlurFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageGaussianBlurFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
+            <Name>UCloudGPUImageGaussianBlurPositionFilter</Name>
+            <Path>Classes/UCloudGPUImageGaussianBlurPositionFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageGaussianBlurPositionFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageGaussianBlurPositionFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageGaussianBlurPositionFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>UCloudGPUImageGaussianSelectiveBlurFilter</Name>
+            <Path>Classes/UCloudGPUImageGaussianSelectiveBlurFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageGaussianSelectiveBlurFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageGaussianSelectiveBlurFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageGaussianSelectiveBlurFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>UCloudGPUImageGrayscaleFilter</Name>
+            <Path>Classes/UCloudGPUImageGrayscaleFilter.html</Path>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>UCloudGPUImageHSBFilter</Name>
+            <Path>Classes/UCloudGPUImageHSBFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHSBFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHSBFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHSBFilter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>UCloudGPUImageHarrisCornerDetectionFilter</Name>
+            <Path>Classes/UCloudGPUImageHarrisCornerDetectionFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHarrisCornerDetectionFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHarrisCornerDetectionFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHarrisCornerDetectionFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="22" type="file" documentType="reference">
+            <Name>UCloudGPUImageHazeFilter</Name>
+            <Path>Classes/UCloudGPUImageHazeFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHazeFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHazeFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHazeFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
+            <Name>UCloudGPUImageHighlightShadowFilter</Name>
+            <Path>Classes/UCloudGPUImageHighlightShadowFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHighlightShadowFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHighlightShadowFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageHighlightShadowFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="24" type="file" documentType="reference">
+            <Name>UCloudGPUImageKuwaharaFilter</Name>
+            <Path>Classes/UCloudGPUImageKuwaharaFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageKuwaharaFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageKuwaharaFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageKuwaharaFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="25" type="file" documentType="reference">
+            <Name>UCloudGPUImageLevelsFilter</Name>
+            <Path>Classes/UCloudGPUImageLevelsFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageLevelsFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageLevelsFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageLevelsFilter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="26" type="file" documentType="reference">
+            <Name>UCloudGPUImageLightenBlendFilter</Name>
+            <Path>Classes/UCloudGPUImageLightenBlendFilter.html</Path>
+            
+        </Node>
+		<Node id="27" type="file" documentType="reference">
+            <Name>UCloudGPUImageLuminanceRangeFilter</Name>
+            <Path>Classes/UCloudGPUImageLuminanceRangeFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageLuminanceRangeFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageLuminanceRangeFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageLuminanceRangeFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="28" type="file" documentType="reference">
+            <Name>UCloudGPUImageLuminanceThresholdFilter</Name>
+            <Path>Classes/UCloudGPUImageLuminanceThresholdFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageLuminanceThresholdFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageLuminanceThresholdFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageLuminanceThresholdFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="29" type="file" documentType="reference">
+            <Name>UCloudGPUImageMissEtikateFilter</Name>
+            <Path>Classes/UCloudGPUImageMissEtikateFilter.html</Path>
+            
+        </Node>
+		<Node id="30" type="file" documentType="reference">
+            <Name>UCloudGPUImageMotionBlurFilter</Name>
+            <Path>Classes/UCloudGPUImageMotionBlurFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageMotionBlurFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageMotionBlurFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageMotionBlurFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="31" type="file" documentType="reference">
+            <Name>UCloudGPUImageMovie</Name>
+            <Path>Classes/UCloudGPUImageMovie.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageMovie.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageMovie.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageMovie.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="32" type="file" documentType="reference">
+            <Name>UCloudGPUImageNobleCornerDetectionFilter</Name>
+            <Path>Classes/UCloudGPUImageNobleCornerDetectionFilter.html</Path>
+            
+        </Node>
+		<Node id="33" type="file" documentType="reference">
+            <Name>UCloudGPUImageOutput</Name>
+            <Path>Classes/UCloudGPUImageOutput.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageOutput.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageOutput.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageOutput.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="34" type="file" documentType="reference">
+            <Name>UCloudGPUImagePicture</Name>
+            <Path>Classes/UCloudGPUImagePicture.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImagePicture.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImagePicture.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImagePicture.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="35" type="file" documentType="reference">
+            <Name>UCloudGPUImagePinchDistortionFilter</Name>
+            <Path>Classes/UCloudGPUImagePinchDistortionFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImagePinchDistortionFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImagePinchDistortionFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImagePinchDistortionFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="36" type="file" documentType="reference">
+            <Name>UCloudGPUImagePosterizeFilter</Name>
+            <Path>Classes/UCloudGPUImagePosterizeFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImagePosterizeFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImagePosterizeFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImagePosterizeFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="37" type="file" documentType="reference">
+            <Name>UCloudGPUImageRawDataInput</Name>
+            <Path>Classes/UCloudGPUImageRawDataInput.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageRawDataInput.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageRawDataInput.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageRawDataInput.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="38" type="file" documentType="reference">
+            <Name>UCloudGPUImageSaturationFilter</Name>
+            <Path>Classes/UCloudGPUImageSaturationFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSaturationFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSaturationFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSaturationFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="39" type="file" documentType="reference">
+            <Name>UCloudGPUImageSepiaFilter</Name>
+            <Path>Classes/UCloudGPUImageSepiaFilter.html</Path>
+            
+        </Node>
+		<Node id="40" type="file" documentType="reference">
+            <Name>UCloudGPUImageShiTomasiFeatureDetectionFilter</Name>
+            <Path>Classes/UCloudGPUImageShiTomasiFeatureDetectionFilter.html</Path>
+            
+        </Node>
+		<Node id="41" type="file" documentType="reference">
+            <Name>UCloudGPUImageSketchFilter</Name>
+            <Path>Classes/UCloudGPUImageSketchFilter.html</Path>
+            
+        </Node>
+		<Node id="42" type="file" documentType="reference">
+            <Name>UCloudGPUImageSmoothToonFilter</Name>
+            <Path>Classes/UCloudGPUImageSmoothToonFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSmoothToonFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSmoothToonFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSmoothToonFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="43" type="file" documentType="reference">
+            <Name>UCloudGPUImageSoftEleganceFilter</Name>
+            <Path>Classes/UCloudGPUImageSoftEleganceFilter.html</Path>
+            
+        </Node>
+		<Node id="44" type="file" documentType="reference">
+            <Name>UCloudGPUImageSphereRefractionFilter</Name>
+            <Path>Classes/UCloudGPUImageSphereRefractionFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSphereRefractionFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSphereRefractionFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSphereRefractionFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="45" type="file" documentType="reference">
+            <Name>UCloudGPUImageStillCamera</Name>
+            <Path>Classes/UCloudGPUImageStillCamera.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageStillCamera.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageStillCamera.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageStillCamera.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="46" type="file" documentType="reference">
+            <Name>UCloudGPUImageStretchDistortionFilter</Name>
+            <Path>Classes/UCloudGPUImageStretchDistortionFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageStretchDistortionFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageStretchDistortionFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageStretchDistortionFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="47" type="file" documentType="reference">
+            <Name>UCloudGPUImageSwirlFilter</Name>
+            <Path>Classes/UCloudGPUImageSwirlFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSwirlFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSwirlFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageSwirlFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="48" type="file" documentType="reference">
+            <Name>UCloudGPUImageThresholdEdgeDetectionFilter</Name>
+            <Path>Classes/UCloudGPUImageThresholdEdgeDetectionFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageThresholdEdgeDetectionFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageThresholdEdgeDetectionFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageThresholdEdgeDetectionFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="49" type="file" documentType="reference">
+            <Name>UCloudGPUImageThresholdedNonMaximumSuppressionFilter</Name>
+            <Path>Classes/UCloudGPUImageThresholdedNonMaximumSuppressionFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageThresholdedNonMaximumSuppressionFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageThresholdedNonMaximumSuppressionFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageThresholdedNonMaximumSuppressionFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="50" type="file" documentType="reference">
+            <Name>UCloudGPUImageTiltShiftFilter</Name>
+            <Path>Classes/UCloudGPUImageTiltShiftFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageTiltShiftFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageTiltShiftFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageTiltShiftFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="51" type="file" documentType="reference">
+            <Name>UCloudGPUImageToonFilter</Name>
+            <Path>Classes/UCloudGPUImageToonFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageToonFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageToonFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageToonFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="52" type="file" documentType="reference">
+            <Name>UCloudGPUImageVideoCamera</Name>
+            <Path>Classes/UCloudGPUImageVideoCamera.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageVideoCamera.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageVideoCamera.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageVideoCamera.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageVideoCamera.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="53" type="file" documentType="reference">
+            <Name>UCloudGPUImageView</Name>
+            <Path>Classes/UCloudGPUImageView.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageView.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageView.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageView.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageView.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="54" type="file" documentType="reference">
+            <Name>UCloudGPUImageVignetteFilter</Name>
+            <Path>Classes/UCloudGPUImageVignetteFilter.html</Path>
+            
+        </Node>
+		<Node id="55" type="file" documentType="reference">
+            <Name>UCloudGPUImageWhiteBalanceFilter</Name>
+            <Path>Classes/UCloudGPUImageWhiteBalanceFilter.html</Path>
+            
+        </Node>
+		<Node id="56" type="file" documentType="reference">
+            <Name>UCloudGPUImageZoomBlurFilter</Name>
+            <Path>Classes/UCloudGPUImageZoomBlurFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageZoomBlurFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageZoomBlurFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageZoomBlurFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="57" type="file" documentType="reference">
+            <Name>UCloudGPUImageiOSBlurFilter</Name>
+            <Path>Classes/UCloudGPUImageiOSBlurFilter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageiOSBlurFilter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageiOSBlurFilter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UCloudGPUImageiOSBlurFilter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		
+		<Node id="58" type="file" documentType="reference">
+            <Name>NSMutableArray(UCDPop)</Name>
+            <Path>Categories/NSMutableArray+UCDPop.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSMutableArray+UCDPop.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSMutableArray+UCDPop.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSMutableArray+UCDPop.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="59" type="file" documentType="reference">
+            <Name>UCloudGPUImageMovieDelegate</Name>
+            <Path>Protocols/UCloudGPUImageMovieDelegate.html</Path>
+            
+        </Node>
+		
+        <Node id="60" type="file" documentType="reference">
+            <Name>UCloudCameraCode</Name>
+            <Path>Constants/UCloudCameraCode.html</Path>
+            
+        </Node>
+		<Node id="61" type="file" documentType="reference">
+            <Name>UCloudCameraState</Name>
+            <Path>Constants/UCloudCameraState.html</Path>
+            
+        </Node>
+		<Node id="62" type="file" documentType="reference">
+            <Name>UCloudVideoBitrate</Name>
+            <Path>Constants/UCloudVideoBitrate.html</Path>
+            
+        </Node>
+		<Node id="63" type="file" documentType="reference">
+            <Name>UCloudVideoOrientation</Name>
+            <Path>Constants/UCloudVideoOrientation.html</Path>
+            
+        </Node>
+		<Node id="64" type="file" documentType="reference">
+            <Name>UIImageOrientation</Name>
+            <Path>Constants/UIImageOrientation.html</Path>
+            
+        </Node>
+		
+        <Node id="65" type="file" documentType="reference">
+            <Name>CameraData</Name>
+            <Path>Blocks/CameraData.html</Path>
+            
+        </Node>
+        <Node id="66" type="file" documentType="reference">
+            <Name>CameraDevice</Name>
+            <Path>Blocks/CameraDevice.html</Path>
+            
+        </Node>
+        <Node id="67" type="file" documentType="reference">
+            <Name>CameraMessage</Name>
+            <Path>Blocks/CameraMessage.html</Path>
+            
+        </Node>
+        <Node id="68" type="file" documentType="reference">
+            <Name>encoder_handler_t</Name>
+            <Path>Blocks/encoder_handler_t.html</Path>
+            
+        </Node>
+        <Node id="69" type="file" documentType="reference">
+            <Name>param_handler_t</Name>
+            <Path>Blocks/param_handler_t.html</Path>
+            
+        </Node>
+        
+	</Library>
+</DocSetNodes>

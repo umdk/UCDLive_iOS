@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageLevelsFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageLevelsFilter</TokenIdentifier>
+			<Abstract type="html">Levels like Photoshop.</Abstract>
+			<DeclaredIn>UCloudGPUImageLevelsFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageLevelsFilter/setRedMin:gamma:max:minOut:maxOut:</TokenIdentifier>
+			<Abstract type="html">Set levels for the red channel</Abstract>
+			<DeclaredIn>UCloudGPUImageLevelsFilter.h</DeclaredIn>
+			
+			<Declaration>- (void)setRedMin:(CGFloat)min gamma:(CGFloat)mid max:(CGFloat)max minOut:(CGFloat)minOut maxOut:(CGFloat)maxOut</Declaration>
+			
+			
+			<Anchor>//api/name/setRedMin:gamma:max:minOut:maxOut:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageLevelsFilter/setGreenMin:gamma:max:minOut:maxOut:</TokenIdentifier>
+			<Abstract type="html">Set levels for the green channel</Abstract>
+			<DeclaredIn>UCloudGPUImageLevelsFilter.h</DeclaredIn>
+			
+			<Declaration>- (void)setGreenMin:(CGFloat)min gamma:(CGFloat)mid max:(CGFloat)max minOut:(CGFloat)minOut maxOut:(CGFloat)maxOut</Declaration>
+			
+			
+			<Anchor>//api/name/setGreenMin:gamma:max:minOut:maxOut:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageLevelsFilter/setBlueMin:gamma:max:minOut:maxOut:</TokenIdentifier>
+			<Abstract type="html">Set levels for the blue channel</Abstract>
+			<DeclaredIn>UCloudGPUImageLevelsFilter.h</DeclaredIn>
+			
+			<Declaration>- (void)setBlueMin:(CGFloat)min gamma:(CGFloat)mid max:(CGFloat)max minOut:(CGFloat)minOut maxOut:(CGFloat)maxOut</Declaration>
+			
+			
+			<Anchor>//api/name/setBlueMin:gamma:max:minOut:maxOut:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageLevelsFilter/setMin:gamma:max:minOut:maxOut:</TokenIdentifier>
+			<Abstract type="html">Set levels for all channels at once</Abstract>
+			<DeclaredIn>UCloudGPUImageLevelsFilter.h</DeclaredIn>
+			
+			<Declaration>- (void)setMin:(CGFloat)min gamma:(CGFloat)mid max:(CGFloat)max minOut:(CGFloat)minOut maxOut:(CGFloat)maxOut</Declaration>
+			
+			
+			<Anchor>//api/name/setMin:gamma:max:minOut:maxOut:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

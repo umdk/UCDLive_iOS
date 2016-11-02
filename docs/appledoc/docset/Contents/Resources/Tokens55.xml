@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageWhiteBalanceFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageWhiteBalanceFilter</TokenIdentifier>
+			<Abstract type="html">* Created by Alaric Cole
+* Allows adjustment of color temperature in terms of what an image was effectively shot in. This means higher Kelvin values will warm the image, while lower values will cool it.</Abstract>
+			<DeclaredIn>UCloudGPUImageWhiteBalanceFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="55"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

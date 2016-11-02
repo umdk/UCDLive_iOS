@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageiOSBlurFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageiOSBlurFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="57"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageiOSBlurFilter/setBlurRadiusInPixels:</TokenIdentifier>
+			<Abstract type="html">A radius in pixels to use for the blur, with a default of 12.0. This adjusts the sigma variable in the Gaussian distribution function.</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageiOSBlurFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">A radius in pixels to use for the blur, with a default of 12.0. This adjusts the sigma variable in the Gaussian distribution function.</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageiOSBlurFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">A radius in pixels to use for the blur, with a default of 12.0. This adjusts the sigma variable in the Gaussian distribution function.</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageiOSBlurFilter/setSaturation:</TokenIdentifier>
+			<Abstract type="html">Saturation ranges from 0.0 (fully desaturated) to 2.0 (max saturation), with 0.8 as the normal level</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageiOSBlurFilter/saturation</TokenIdentifier>
+			<Abstract type="html">Saturation ranges from 0.0 (fully desaturated) to 2.0 (max saturation), with 0.8 as the normal level</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageiOSBlurFilter/saturation</TokenIdentifier>
+			<Abstract type="html">Saturation ranges from 0.0 (fully desaturated) to 2.0 (max saturation), with 0.8 as the normal level</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageiOSBlurFilter/setDownsampling:</TokenIdentifier>
+			<Abstract type="html">The degree to which to downsample, then upsample the incoming image to minimize computations within the Gaussian blur, default of 4.0</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat downsampling</Declaration>
+			
+			
+			<Anchor>//api/name/downsampling</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageiOSBlurFilter/downsampling</TokenIdentifier>
+			<Abstract type="html">The degree to which to downsample, then upsample the incoming image to minimize computations within the Gaussian blur, default of 4.0</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat downsampling</Declaration>
+			
+			
+			<Anchor>//api/name/downsampling</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageiOSBlurFilter/downsampling</TokenIdentifier>
+			<Abstract type="html">The degree to which to downsample, then upsample the incoming image to minimize computations within the Gaussian blur, default of 4.0</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat downsampling</Declaration>
+			
+			
+			<Anchor>//api/name/downsampling</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageiOSBlurFilter/setRangeReductionFactor:</TokenIdentifier>
+			<Abstract type="html">The degree to reduce the luminance range, from 0.0 to 1.0. Default is 0.6.</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat rangeReductionFactor</Declaration>
+			
+			
+			<Anchor>//api/name/rangeReductionFactor</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageiOSBlurFilter/rangeReductionFactor</TokenIdentifier>
+			<Abstract type="html">The degree to reduce the luminance range, from 0.0 to 1.0. Default is 0.6.</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat rangeReductionFactor</Declaration>
+			
+			
+			<Anchor>//api/name/rangeReductionFactor</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageiOSBlurFilter/rangeReductionFactor</TokenIdentifier>
+			<Abstract type="html">The degree to reduce the luminance range, from 0.0 to 1.0. Default is 0.6.</Abstract>
+			<DeclaredIn>UCloudGPUImageiOSBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat rangeReductionFactor</Declaration>
+			
+			
+			<Anchor>//api/name/rangeReductionFactor</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

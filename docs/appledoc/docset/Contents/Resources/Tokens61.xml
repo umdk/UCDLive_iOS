@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/UCloudCameraState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/UCloudCameraState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
+            
+			
+			<NodeRef refid="61"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudCameraCode_Off</TokenIdentifier>
+            <Abstract type="html">关闭</Abstract>
+            <Declaration>UCloudCameraCode_Off</Declaration>
+            
+            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
+            
+            <NodeRef refid="61"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudCameraCode_On</TokenIdentifier>
+            <Abstract type="html">打开</Abstract>
+            <Declaration>UCloudCameraCode_On</Declaration>
+            
+            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
+            
+            <NodeRef refid="61"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudCameraCode_Auto</TokenIdentifier>
+            <Abstract type="html">自动</Abstract>
+            <Declaration>UCloudCameraCode_Auto</Declaration>
+            
+            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
+            
+            <NodeRef refid="61"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

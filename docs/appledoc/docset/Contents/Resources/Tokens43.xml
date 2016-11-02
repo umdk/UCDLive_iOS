@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageSoftEleganceFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageSoftEleganceFilter</TokenIdentifier>
+			<Abstract type="html">A photo filter based on Soft Elegance Photoshop action
+    http://h-d-stock.deviantart.com/art/H-D-A-soft-elegance-70107603</Abstract>
+			<DeclaredIn>UCloudGPUImageSoftEleganceFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="43"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>UCloudGPUImageHSBFilter Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">UCloudMediaRecorder </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">UCloud</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/adjustBrightness:">- adjustBrightness:</option>
+		
+		<option value="//api/name/adjustSaturation:">- adjustSaturation:</option>
+		
+		<option value="//api/name/reset">- reset</option>
+		
+		<option value="//api/name/rotateHue:">- rotateHue:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">UCloudGPUImageHSBFilter Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/UCloudGPUImageColorMatrixFilter.html">UCloudGPUImageColorMatrixFilter</a> : <a href="../Classes/UCloudGPUImageFilter.html">UCloudGPUImageFilter</a> : <a href="../Classes/UCloudGPUImageOutput.html">UCloudGPUImageOutput</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>UCloudGPUImageHSBFilter.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/reset" title="reset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reset">&ndash;&nbsp;reset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Reset the filter to have no transformations.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)reset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageHSBFilter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rotateHue:" title="rotateHue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rotateHue:">&ndash;&nbsp;rotateHue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add a hue rotation to the filter.
+The hue rotation is in the range [-360, 360] with 0 being no-change.
+Note that this adjustment is additive, so use the <a href="#//api/name/reset">reset</a> method if you need to.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)rotateHue:(float)<em>h</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageHSBFilter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adjustSaturation:" title="adjustSaturation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adjustSaturation:">&ndash;&nbsp;adjustSaturation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add a saturation adjustment to the filter.
+The saturation adjustment is in the range [0.0, 2.0] with 1.0 being no-change.
+Note that this adjustment is additive, so use the <a href="#//api/name/reset">reset</a> method if you need to.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)adjustSaturation:(float)<em>s</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageHSBFilter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adjustBrightness:" title="adjustBrightness:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adjustBrightness:">&ndash;&nbsp;adjustBrightness:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add a brightness adjustment to the filter.
+The brightness adjustment is in the range [0.0, 2.0] with 1.0 being no-change.
+Note that this adjustment is additive, so use the <a href="#//api/name/reset">reset</a> method if you need to.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)adjustBrightness:(float)<em>b</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageHSBFilter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 UCloud. All rights reserved. Updated: 2016-10-25</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

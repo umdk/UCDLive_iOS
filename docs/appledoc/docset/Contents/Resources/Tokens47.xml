@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageSwirlFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageSwirlFilter</TokenIdentifier>
+			<Abstract type="html">Creates a swirl distortion on the image</Abstract>
+			<DeclaredIn>UCloudGPUImageSwirlFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="47"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageSwirlFilter/setCenter:</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImageSwirlFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageSwirlFilter/center</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImageSwirlFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageSwirlFilter/center</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImageSwirlFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageSwirlFilter/setRadius:</TokenIdentifier>
+			<Abstract type="html">The radius of the distortion, ranging from 0.0 to 1.0, with a default of 0.5</Abstract>
+			<DeclaredIn>UCloudGPUImageSwirlFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageSwirlFilter/radius</TokenIdentifier>
+			<Abstract type="html">The radius of the distortion, ranging from 0.0 to 1.0, with a default of 0.5</Abstract>
+			<DeclaredIn>UCloudGPUImageSwirlFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageSwirlFilter/radius</TokenIdentifier>
+			<Abstract type="html">The radius of the distortion, ranging from 0.0 to 1.0, with a default of 0.5</Abstract>
+			<DeclaredIn>UCloudGPUImageSwirlFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageSwirlFilter/setAngle:</TokenIdentifier>
+			<Abstract type="html">The amount of distortion to apply, with a minimum of 0.0 and a default of 1.0</Abstract>
+			<DeclaredIn>UCloudGPUImageSwirlFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat angle</Declaration>
+			
+			
+			<Anchor>//api/name/angle</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageSwirlFilter/angle</TokenIdentifier>
+			<Abstract type="html">The amount of distortion to apply, with a minimum of 0.0 and a default of 1.0</Abstract>
+			<DeclaredIn>UCloudGPUImageSwirlFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat angle</Declaration>
+			
+			
+			<Anchor>//api/name/angle</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageSwirlFilter/angle</TokenIdentifier>
+			<Abstract type="html">The amount of distortion to apply, with a minimum of 0.0 and a default of 1.0</Abstract>
+			<DeclaredIn>UCloudGPUImageSwirlFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat angle</Declaration>
+			
+			
+			<Anchor>//api/name/angle</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

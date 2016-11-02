@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageHarrisCornerDetectionFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageHarrisCornerDetectionFilter</TokenIdentifier>
+			<Abstract type="html">Harris corner detector</Abstract>
+			<DeclaredIn>UCloudGPUImageHarrisCornerDetectionFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHarrisCornerDetectionFilter/setBlurRadiusInPixels:</TokenIdentifier>
+			<Abstract type="html">The radius of the underlying Gaussian blur. The default is 2.0.</Abstract>
+			<DeclaredIn>UCloudGPUImageHarrisCornerDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHarrisCornerDetectionFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">The radius of the underlying Gaussian blur. The default is 2.0.</Abstract>
+			<DeclaredIn>UCloudGPUImageHarrisCornerDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageHarrisCornerDetectionFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">The radius of the underlying Gaussian blur. The default is 2.0.</Abstract>
+			<DeclaredIn>UCloudGPUImageHarrisCornerDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageBoxBlurFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageBoxBlurFilter</TokenIdentifier>
+			<Abstract type="html">A hardware-accelerated box blur of an image</Abstract>
+			<DeclaredIn>UCloudGPUImageBoxBlurFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

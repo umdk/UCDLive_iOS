@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/UIImageOrientation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/UIImageOrientation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+            
+			
+			<NodeRef refid="64"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UIImageOrientationUp</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UIImageOrientationUp</Declaration>
+            
+            <DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UIImageOrientationDown</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UIImageOrientationDown</Declaration>
+            
+            <DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UIImageOrientationLeft</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UIImageOrientationLeft</Declaration>
+            
+            <DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UIImageOrientationRight</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UIImageOrientationRight</Declaration>
+            
+            <DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UIImageOrientationUpMirrored</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UIImageOrientationUpMirrored</Declaration>
+            
+            <DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UIImageOrientationDownMirrored</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UIImageOrientationDownMirrored</Declaration>
+            
+            <DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UIImageOrientationLeftMirrored</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UIImageOrientationLeftMirrored</Declaration>
+            
+            <DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UIImageOrientationRightMirrored</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UIImageOrientationRightMirrored</Declaration>
+            
+            <DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

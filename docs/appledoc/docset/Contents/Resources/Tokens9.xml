@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageChromaKeyBlendFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageChromaKeyBlendFilter</TokenIdentifier>
+			<Abstract type="html">Selectively replaces a color in the first image with the second image</Abstract>
+			<DeclaredIn>UCloudGPUImageChromaKeyBlendFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageChromaKeyBlendFilter/setThresholdSensitivity:</TokenIdentifier>
+			<Abstract type="html">The threshold sensitivity controls how similar pixels need to be colored to be replaced</Abstract>
+			<DeclaredIn>UCloudGPUImageChromaKeyBlendFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat thresholdSensitivity</Declaration>
+			
+			
+			<Anchor>//api/name/thresholdSensitivity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageChromaKeyBlendFilter/thresholdSensitivity</TokenIdentifier>
+			<Abstract type="html">The threshold sensitivity controls how similar pixels need to be colored to be replaced</Abstract>
+			<DeclaredIn>UCloudGPUImageChromaKeyBlendFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat thresholdSensitivity</Declaration>
+			
+			
+			<Anchor>//api/name/thresholdSensitivity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageChromaKeyBlendFilter/thresholdSensitivity</TokenIdentifier>
+			<Abstract type="html">The threshold sensitivity controls how similar pixels need to be colored to be replaced</Abstract>
+			<DeclaredIn>UCloudGPUImageChromaKeyBlendFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat thresholdSensitivity</Declaration>
+			
+			
+			<Anchor>//api/name/thresholdSensitivity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageChromaKeyBlendFilter/setSmoothing:</TokenIdentifier>
+			<Abstract type="html">The degree of smoothing controls how gradually similar colors are replaced in the image</Abstract>
+			<DeclaredIn>UCloudGPUImageChromaKeyBlendFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat smoothing</Declaration>
+			
+			
+			<Anchor>//api/name/smoothing</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageChromaKeyBlendFilter/smoothing</TokenIdentifier>
+			<Abstract type="html">The degree of smoothing controls how gradually similar colors are replaced in the image</Abstract>
+			<DeclaredIn>UCloudGPUImageChromaKeyBlendFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat smoothing</Declaration>
+			
+			
+			<Anchor>//api/name/smoothing</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageChromaKeyBlendFilter/smoothing</TokenIdentifier>
+			<Abstract type="html">The degree of smoothing controls how gradually similar colors are replaced in the image</Abstract>
+			<DeclaredIn>UCloudGPUImageChromaKeyBlendFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat smoothing</Declaration>
+			
+			
+			<Anchor>//api/name/smoothing</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageChromaKeyBlendFilter/setColorToReplaceRed:green:blue:</TokenIdentifier>
+			<Abstract type="html">The color to be replaced is specified using individual red, green, and blue components (normalized to 1.0).</Abstract>
+			<DeclaredIn>UCloudGPUImageChromaKeyBlendFilter.h</DeclaredIn>
+			
+			<Declaration>- (void)setColorToReplaceRed:(GLfloat)redComponent green:(GLfloat)greenComponent blue:(GLfloat)blueComponent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>redComponent</Name>
+					<Abstract type="html">Red component of color to be replaced</Abstract>
+				</Parameter><Parameter>
+					<Name>greenComponent</Name>
+					<Abstract type="html">Green component of color to be replaced</Abstract>
+				</Parameter><Parameter>
+					<Name>blueComponent</Name>
+					<Abstract type="html">Blue component of color to be replaced</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setColorToReplaceRed:green:blue:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

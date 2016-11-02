@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>UCloudGPUImageOutput Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">UCloudMediaRecorder </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">UCloud</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addTarget:">- addTarget:</option>
+		
+		<option value="//api/name/addTarget:atTextureLocation:">- addTarget:atTextureLocation:</option>
+		
+		<option value="//api/name/removeAllTargets">- removeAllTargets</option>
+		
+		<option value="//api/name/removeTarget:">- removeTarget:</option>
+		
+		<option value="//api/name/targets">- targets</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">UCloudGPUImageOutput Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>UCloudGPUImageOutput.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>GPUImage&rsquo;s base source object</p>
+
+<p>Images or frames of video are uploaded from source objects, which are subclasses of GPUImageOutput. These include:</p>
+
+<ul>
+<li>GPUImageVideoCamera (for live video from an iOS camera)</li>
+<li>GPUImageStillCamera (for taking photos with the camera)</li>
+<li>GPUImagePicture (for still images)</li>
+<li>GPUImageMovie (for movies)</li>
+</ul>
+
+
+<p>Source objects upload still image frames to OpenGL ES as textures, then hand those textures off to the next objects in the processing chain.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Managing targets" name="task_Managing targets"></a>
+						
+<h2 class="task-title">Managing targets</h2>
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/targets" title="targets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/targets">&ndash;&nbsp;targets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an array of the current targets.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)targets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageOutput.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addTarget:" title="addTarget:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addTarget:">&ndash;&nbsp;addTarget:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds a target to receive notifications when new frames are available.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addTarget:(id&lt;UCloudGPUImageInput&gt;)<em>newTarget</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newTarget</code></th>
+						<td><p>Target to be added</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The target will be asked for its next available texture.</p>
+
+<p>See [GPUImageInput newFrameReadyAtTime:]</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageOutput.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addTarget:atTextureLocation:" title="addTarget:atTextureLocation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addTarget:atTextureLocation:">&ndash;&nbsp;addTarget:atTextureLocation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds a target to receive notifications when new frames are available.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addTarget:(id&lt;UCloudGPUImageInput&gt;)<em>newTarget</em> atTextureLocation:(NSInteger)<em>textureLocation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newTarget</code></th>
+						<td><p>Target to be added</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>See [GPUImageInput newFrameReadyAtTime:]</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageOutput.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeTarget:" title="removeTarget:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeTarget:">&ndash;&nbsp;removeTarget:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes a target. The target will no longer receive notifications when new frames are available.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeTarget:(id&lt;UCloudGPUImageInput&gt;)<em>targetToRemove</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>targetToRemove</code></th>
+						<td><p>Target to be removed</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageOutput.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeAllTargets" title="removeAllTargets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeAllTargets">&ndash;&nbsp;removeAllTargets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes all <a href="#//api/name/targets">targets</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeAllTargets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UCloudGPUImageOutput.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 UCloud. All rights reserved. Updated: 2016-10-25</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

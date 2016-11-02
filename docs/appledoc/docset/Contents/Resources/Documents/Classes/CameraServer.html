@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>CameraServer Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">UCloudMediaRecorder </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">UCloud</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/bitrate">bitrate</option>
+		
+		<option value="//api/name/captureDevicePos">captureDevicePos</option>
+		
+		<option value="//api/name/fps">fps</option>
+		
+		<option value="//api/name/height">height</option>
+		
+		<option value="//api/name/isCaptureYUV">isCaptureYUV</option>
+		
+		<option value="//api/name/muted">muted</option>
+		
+		<option value="//api/name/reconnectCount">reconnectCount</option>
+		
+		<option value="//api/name/reconnectInterval">reconnectInterval</option>
+		
+		<option value="//api/name/secretKey">secretKey</option>
+		
+		<option value="//api/name/supportFilter">supportFilter</option>
+		
+		<option value="//api/name/videoOrientation">videoOrientation</option>
+		
+		<option value="//api/name/width">width</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/server">+ server</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addFilters:">- addFilters:</option>
+		
+		<option value="//api/name/cameraPrepare">- cameraPrepare</option>
+		
+		<option value="//api/name/cameraRestart">- cameraRestart</option>
+		
+		<option value="//api/name/cameraStart">- cameraStart</option>
+		
+		<option value="//api/name/changeCamera">- changeCamera</option>
+		
+		<option value="//api/name/changeISO:">- changeISO:</option>
+		
+		<option value="//api/name/closeFilter">- closeFilter</option>
+		
+		<option value="//api/name/configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:">- configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:</option>
+		
+		<option value="//api/name/currentCapturePosition">- currentCapturePosition</option>
+		
+		<option value="//api/name/getCameraView">- getCameraView</option>
+		
+		<option value="//api/name/getSDKVersion">- getSDKVersion</option>
+		
+		<option value="//api/name/initializeCameraViewFrame:">- initializeCameraViewFrame:</option>
+		
+		<option value="//api/name/lowThan5">- lowThan5</option>
+		
+		<option value="//api/name/openFilter">- openFilter</option>
+		
+		<option value="//api/name/outBitrate">- outBitrate</option>
+		
+		<option value="//api/name/setTorchState:">- setTorchState:</option>
+		
+		<option value="//api/name/shutdown:">- shutdown:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">CameraServer Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>CameraServer.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>CameraServer</p>
+
+<p>UCloud直播推流SDK iOS版提供了iOS移动设备上的实时采集推流功能。</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/width" title="width"></a>
+	<h3 class="method-title"><code><a href="#//api/name/width">&nbsp;&nbsp;width</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视频宽，默认360</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) int width</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/height" title="height"></a>
+	<h3 class="method-title"><code><a href="#//api/name/height">&nbsp;&nbsp;height</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视频高，默认640</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) int height</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fps" title="fps"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fps">&nbsp;&nbsp;fps</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>帧率(15\20\25\30)，默认15</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) int fps</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>video frame per seconds 有效范围[1~30], 超出会提示参数错误</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bitrate" title="bitrate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bitrate">&nbsp;&nbsp;bitrate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>音频和视频总比特率<a href="../Constants/UCloudVideoBitrate.html">UCloudVideoBitrate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) int bitrate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>默认UCloudVideoBitrateMedium，可自行设置，该属性的单位为kbps(kilo bits per seccond)</p><p>视频码率高则画面较清晰，低则画面较模糊，同时数据亦是如此，码率高数据大，码率低数据小</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/secretKey" title="secretKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/secretKey">&nbsp;&nbsp;secretKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SDK 鉴权密钥</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *secretKey</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Ulive鉴权，如果填写错误会返回错误码UCloudCamera_AuthFail</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportFilter" title="supportFilter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportFilter">&nbsp;&nbsp;supportFilter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否支持滤镜</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) BOOL supportFilter</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>iphpne5以上才能支持使用滤镜，5以下此值为NO</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/captureDevicePos" title="captureDevicePos"></a>
+	<h3 class="method-title"><code><a href="#//api/name/captureDevicePos">&nbsp;&nbsp;captureDevicePos</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>摄像头位置，默认打开前置摄像头</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) AVCaptureDevicePosition captureDevicePos</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/muted" title="muted"></a>
+	<h3 class="method-title"><code><a href="#//api/name/muted">&nbsp;&nbsp;muted</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否静音，默认NO</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL muted</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/videoOrientation" title="videoOrientation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/videoOrientation">&nbsp;&nbsp;videoOrientation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视频推流方向</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UCloudVideoOrientation videoOrientation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>只在采集初始化时设置有效，默认UIDeviceOrientationPortrait</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reconnectInterval" title="reconnectInterval"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reconnectInterval">&nbsp;&nbsp;reconnectInterval</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>重推流间隔,默认3秒</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval reconnectInterval</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reconnectCount" title="reconnectCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reconnectCount">&nbsp;&nbsp;reconnectCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>重推流次数，默认5次</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger reconnectCount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>如果需要不做重推操作，可将此参数设置为0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isCaptureYUV" title="isCaptureYUV"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isCaptureYUV">&nbsp;&nbsp;isCaptureYUV</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>摄像头采集数据为YUV还是RGB</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) BOOL isCaptureYUV</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>默认为YES，即采集数据为YUV，NO为采集数据为RGB</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/server" title="server"></a>
+	<h3 class="method-title"><code><a href="#//api/name/server">+&nbsp;server</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>CameraServer单例模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (CameraServer *)server</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>CameraServer只支持单例推流，若构造多个实例会造成不同估量的异常</p>
+
+<ul>
+<li><a href="#//api/name/width">width</a>             = 640;</li>
+<li><a href="#//api/name/height">height</a>            = 480;</li>
+<li><a href="#//api/name/fps">fps</a>               = 15;</li>
+<li><a href="#//api/name/muted">muted</a>             = NO;</li>
+<li><a href="#//api/name/reconnectCount">reconnectCount</a>    = 5;</li>
+<li><a href="#//api/name/reconnectInterval">reconnectInterval</a> = 3;</li>
+<li><a href="#//api/name/bitrate">bitrate</a>           = UCloudVideoBitrateMedium;</li>
+<li><a href="#//api/name/videoOrientation">videoOrientation</a>  = UCloudVideoOrientationPortrait</li>
+<li><a href="#//api/name/captureDevicePos">captureDevicePos</a>  = AVCaptureDevicePositionFront;</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:" title="configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:">&ndash;&nbsp;configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>server初始化(不会自动开始要在底层配置完成之后调用<a href="#//api/name/cameraStart">cameraStart</a>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)configureCameraWithOutputUrl:(NSString *)<em>outPutUrl</em> filter:(NSArray *)<em>filters</em> messageCallBack:(CameraMessage)<em>block</em> deviceBlock:(CameraDevice)<em>deviceBlock</em> cameraData:(CameraData)<em>cameraData</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>outPutUrl</code></th>
+						<td><p>推流地址</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filters</code></th>
+						<td><p>滤镜组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>推流状态回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceBlock</code></th>
+						<td><p>相机回调(定制相机参数)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cameraData</code></th>
+						<td><p>视频数据</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>推流从此进入</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraPrepare" title="cameraPrepare"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraPrepare">&ndash;&nbsp;cameraPrepare</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打开摄像头预览，不进行推流上传</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cameraPrepare</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraStart" title="cameraStart"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraStart">&ndash;&nbsp;cameraStart</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>开始录像采集推流上传</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)cameraStart</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回操作结果</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraRestart" title="cameraRestart"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraRestart">&ndash;&nbsp;cameraRestart</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>推流失败之后重新推流</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cameraRestart</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shutdown:" title="shutdown:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shutdown:">&ndash;&nbsp;shutdown:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>关闭录像停止推流</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)shutdown:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>关闭成功回调函数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCameraView" title="getCameraView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCameraView">&ndash;&nbsp;getCameraView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取采集图像</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIView *)getCameraView</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>采集图像视图</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initializeCameraViewFrame:" title="initializeCameraViewFrame:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initializeCameraViewFrame:">&ndash;&nbsp;initializeCameraViewFrame:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置采集图像显示的frame</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initializeCameraViewFrame:(CGRect)<em>frame</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>frame</code></th>
+						<td><p>显示图像的大小</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>如果需要设置显示图像的frame，iOS8以下请在此先设置，直接使用getCameraView方法获取view进行设置是无作用的，iOS8以上两者都可设置frame</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/changeCamera" title="changeCamera"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changeCamera">&ndash;&nbsp;changeCamera</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>切换摄像头</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)changeCamera</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/outBitrate" title="outBitrate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/outBitrate">&ndash;&nbsp;outBitrate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>编码后的实际码率</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)outBitrate</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>码率值，包括视频码率和音频码率</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTorchState:" title="setTorchState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTorchState:">&ndash;&nbsp;setTorchState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置手电筒状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setTorchState:(UCloudCameraState)<em>state</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>state</code></th>
+						<td><p>状态</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>设置是否成功</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentCapturePosition" title="currentCapturePosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentCapturePosition">&ndash;&nbsp;currentCapturePosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前摄像头的位置</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AVCaptureDevicePosition)currentCapturePosition</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>摄像头位置</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lowThan5" title="lowThan5"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lowThan5">&ndash;&nbsp;lowThan5</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否是iPhone5以下的机型</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)lowThan5</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回值</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/changeISO:" title="changeISO:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changeISO:">&ndash;&nbsp;changeISO:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>调整摄像头ISO</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)changeISO:(float)<em>value</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>value</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>操作结果(value越界和8一下系统返回no)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addFilters:" title="addFilters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addFilters:">&ndash;&nbsp;addFilters:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加滤镜组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addFilters:(NSArray *)<em>filters</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filters</code></th>
+						<td><p>滤镜数组</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openFilter" title="openFilter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openFilter">&ndash;&nbsp;openFilter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打开美颜功能</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openFilter</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeFilter" title="closeFilter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeFilter">&ndash;&nbsp;closeFilter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>关闭美颜功能</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)closeFilter</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSDKVersion" title="getSDKVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSDKVersion">&ndash;&nbsp;getSDKVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取SDK version</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getSDKVersion</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 UCloud. All rights reserved. Updated: 2016-10-25</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageToonFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageToonFilter</TokenIdentifier>
+			<Abstract type="html">This uses Sobel edge detection to place a black border around objects,
+and then it quantizes the colors present in the image to give a cartoon-like quality to the image.</Abstract>
+			<DeclaredIn>UCloudGPUImageToonFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="51"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageToonFilter/setThreshold:</TokenIdentifier>
+			<Abstract type="html">The threshold at which to apply the edges, default of 0.2</Abstract>
+			<DeclaredIn>UCloudGPUImageToonFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat threshold</Declaration>
+			
+			
+			<Anchor>//api/name/threshold</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageToonFilter/threshold</TokenIdentifier>
+			<Abstract type="html">The threshold at which to apply the edges, default of 0.2</Abstract>
+			<DeclaredIn>UCloudGPUImageToonFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat threshold</Declaration>
+			
+			
+			<Anchor>//api/name/threshold</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageToonFilter/threshold</TokenIdentifier>
+			<Abstract type="html">The threshold at which to apply the edges, default of 0.2</Abstract>
+			<DeclaredIn>UCloudGPUImageToonFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat threshold</Declaration>
+			
+			
+			<Anchor>//api/name/threshold</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageToonFilter/setQuantizationLevels:</TokenIdentifier>
+			<Abstract type="html">The levels of quantization for the posterization of colors within the scene, with a default of 10.0</Abstract>
+			<DeclaredIn>UCloudGPUImageToonFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat quantizationLevels</Declaration>
+			
+			
+			<Anchor>//api/name/quantizationLevels</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageToonFilter/quantizationLevels</TokenIdentifier>
+			<Abstract type="html">The levels of quantization for the posterization of colors within the scene, with a default of 10.0</Abstract>
+			<DeclaredIn>UCloudGPUImageToonFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat quantizationLevels</Declaration>
+			
+			
+			<Anchor>//api/name/quantizationLevels</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageToonFilter/quantizationLevels</TokenIdentifier>
+			<Abstract type="html">The levels of quantization for the posterization of colors within the scene, with a default of 10.0</Abstract>
+			<DeclaredIn>UCloudGPUImageToonFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat quantizationLevels</Declaration>
+			
+			
+			<Anchor>//api/name/quantizationLevels</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

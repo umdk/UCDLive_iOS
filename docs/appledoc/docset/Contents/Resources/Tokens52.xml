@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageVideoCamera.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageVideoCamera</TokenIdentifier>
+			<Abstract type="html">A GPUImageOutput that provides frames from either camera</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+            
+			
+			<NodeRef refid="52"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/setCaptureAsYUV:</TokenIdentifier>
+			<Abstract type="html">use YUV data or RGBA data,default YES</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) BOOL captureAsYUV</Declaration>
+			
+			
+			<Anchor>//api/name/captureAsYUV</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/captureAsYUV</TokenIdentifier>
+			<Abstract type="html">use YUV data or RGBA data,default YES</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) BOOL captureAsYUV</Declaration>
+			
+			
+			<Anchor>//api/name/captureAsYUV</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageVideoCamera/captureAsYUV</TokenIdentifier>
+			<Abstract type="html">use YUV data or RGBA data,default YES</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) BOOL captureAsYUV</Declaration>
+			
+			
+			<Anchor>//api/name/captureAsYUV</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/setIsRunning:</TokenIdentifier>
+			<Abstract type="html">Whether or not the underlying AVCaptureSession is running</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) BOOL isRunning</Declaration>
+			
+			
+			<Anchor>//api/name/isRunning</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/isRunning</TokenIdentifier>
+			<Abstract type="html">Whether or not the underlying AVCaptureSession is running</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) BOOL isRunning</Declaration>
+			
+			
+			<Anchor>//api/name/isRunning</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageVideoCamera/isRunning</TokenIdentifier>
+			<Abstract type="html">Whether or not the underlying AVCaptureSession is running</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) BOOL isRunning</Declaration>
+			
+			
+			<Anchor>//api/name/isRunning</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/setCaptureSession:</TokenIdentifier>
+			<Abstract type="html">The AVCaptureSession used to capture from the camera</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, retain, nonatomic) AVCaptureSession *captureSession</Declaration>
+			
+			
+			<Anchor>//api/name/captureSession</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/captureSession</TokenIdentifier>
+			<Abstract type="html">The AVCaptureSession used to capture from the camera</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, retain, nonatomic) AVCaptureSession *captureSession</Declaration>
+			
+			
+			<Anchor>//api/name/captureSession</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageVideoCamera/captureSession</TokenIdentifier>
+			<Abstract type="html">The AVCaptureSession used to capture from the camera</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, retain, nonatomic) AVCaptureSession *captureSession</Declaration>
+			
+			
+			<Anchor>//api/name/captureSession</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/setCaptureSessionPreset:</TokenIdentifier>
+			<Abstract type="html">This enables the capture session preset to be changed on the fly</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic, copy) NSString *captureSessionPreset</Declaration>
+			
+			
+			<Anchor>//api/name/captureSessionPreset</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/captureSessionPreset</TokenIdentifier>
+			<Abstract type="html">This enables the capture session preset to be changed on the fly</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic, copy) NSString *captureSessionPreset</Declaration>
+			
+			
+			<Anchor>//api/name/captureSessionPreset</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageVideoCamera/captureSessionPreset</TokenIdentifier>
+			<Abstract type="html">This enables the capture session preset to be changed on the fly</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic, copy) NSString *captureSessionPreset</Declaration>
+			
+			
+			<Anchor>//api/name/captureSessionPreset</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/setFrameRate:</TokenIdentifier>
+			<Abstract type="html">Setting this to 0 or below will set the frame rate back to the default setting for a particular preset.</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite) int32_t frameRate</Declaration>
+			
+			
+			<Anchor>//api/name/frameRate</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/frameRate</TokenIdentifier>
+			<Abstract type="html">Setting this to 0 or below will set the frame rate back to the default setting for a particular preset.</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite) int32_t frameRate</Declaration>
+			
+			
+			<Anchor>//api/name/frameRate</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageVideoCamera/frameRate</TokenIdentifier>
+			<Abstract type="html">Setting this to 0 or below will set the frame rate back to the default setting for a particular preset.</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite) int32_t frameRate</Declaration>
+			
+			
+			<Anchor>//api/name/frameRate</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/setFrontFacingCameraPresent:</TokenIdentifier>
+			<Abstract type="html">Easy way to tell which cameras are present on device</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isFrontFacingCameraPresent) BOOL frontFacingCameraPresent</Declaration>
+			
+			
+			<Anchor>//api/name/frontFacingCameraPresent</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/isFrontFacingCameraPresent</TokenIdentifier>
+			<Abstract type="html">Easy way to tell which cameras are present on device</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isFrontFacingCameraPresent) BOOL frontFacingCameraPresent</Declaration>
+			
+			
+			<Anchor>//api/name/frontFacingCameraPresent</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageVideoCamera/frontFacingCameraPresent</TokenIdentifier>
+			<Abstract type="html">Easy way to tell which cameras are present on device</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isFrontFacingCameraPresent) BOOL frontFacingCameraPresent</Declaration>
+			
+			
+			<Anchor>//api/name/frontFacingCameraPresent</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/setRunBenchmark:</TokenIdentifier>
+			<Abstract type="html">This enables the benchmarking mode, which logs out instantaneous and average frame times to the console</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL runBenchmark</Declaration>
+			
+			
+			<Anchor>//api/name/runBenchmark</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/runBenchmark</TokenIdentifier>
+			<Abstract type="html">This enables the benchmarking mode, which logs out instantaneous and average frame times to the console</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL runBenchmark</Declaration>
+			
+			
+			<Anchor>//api/name/runBenchmark</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageVideoCamera/runBenchmark</TokenIdentifier>
+			<Abstract type="html">This enables the benchmarking mode, which logs out instantaneous and average frame times to the console</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL runBenchmark</Declaration>
+			
+			
+			<Anchor>//api/name/runBenchmark</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/setInputCamera:</TokenIdentifier>
+			<Abstract type="html">Use this property to manage camera settings. Focus point, exposure point, etc.</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) AVCaptureDevice *inputCamera</Declaration>
+			
+			
+			<Anchor>//api/name/inputCamera</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/inputCamera</TokenIdentifier>
+			<Abstract type="html">Use this property to manage camera settings. Focus point, exposure point, etc.</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) AVCaptureDevice *inputCamera</Declaration>
+			
+			
+			<Anchor>//api/name/inputCamera</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageVideoCamera/inputCamera</TokenIdentifier>
+			<Abstract type="html">Use this property to manage camera settings. Focus point, exposure point, etc.</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) AVCaptureDevice *inputCamera</Declaration>
+			
+			
+			<Anchor>//api/name/inputCamera</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/setOutputImageOrientation:</TokenIdentifier>
+			<Abstract type="html">This determines the rotation applied to the output image, based on the source material</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) UIInterfaceOrientation outputImageOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/outputImageOrientation</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/outputImageOrientation</TokenIdentifier>
+			<Abstract type="html">This determines the rotation applied to the output image, based on the source material</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) UIInterfaceOrientation outputImageOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/outputImageOrientation</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageVideoCamera/outputImageOrientation</TokenIdentifier>
+			<Abstract type="html">This determines the rotation applied to the output image, based on the source material</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) UIInterfaceOrientation outputImageOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/outputImageOrientation</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/setHorizontallyMirrorRearFacingCamera:</TokenIdentifier>
+			<Abstract type="html">These properties determine whether or not the two camera orientations should be mirrored. By default, both are NO.</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL horizontallyMirrorFrontFacingCamera , horizontallyMirrorRearFacingCamera</Declaration>
+			
+			
+			<Anchor>//api/name/horizontallyMirrorRearFacingCamera</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/horizontallyMirrorRearFacingCamera</TokenIdentifier>
+			<Abstract type="html">These properties determine whether or not the two camera orientations should be mirrored. By default, both are NO.</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL horizontallyMirrorFrontFacingCamera , horizontallyMirrorRearFacingCamera</Declaration>
+			
+			
+			<Anchor>//api/name/horizontallyMirrorRearFacingCamera</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageVideoCamera/horizontallyMirrorRearFacingCamera</TokenIdentifier>
+			<Abstract type="html">These properties determine whether or not the two camera orientations should be mirrored. By default, both are NO.</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL horizontallyMirrorFrontFacingCamera , horizontallyMirrorRearFacingCamera</Declaration>
+			
+			
+			<Anchor>//api/name/horizontallyMirrorRearFacingCamera</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/initWithSessionPreset:cameraPosition:captureAsYUV:</TokenIdentifier>
+			<Abstract type="html">Begin a capture session</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithSessionPreset:(NSString *)sessionPreset cameraPosition:(AVCaptureDevicePosition)cameraPosition captureAsYUV:(BOOL)isCaptureAsYUV</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sessionPreset</Name>
+					<Abstract type="html">Session preset to use</Abstract>
+				</Parameter><Parameter>
+					<Name>cameraPosition</Name>
+					<Abstract type="html">Camera to capture from</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithSessionPreset:cameraPosition:captureAsYUV:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/addAudioInputsAndOutputs</TokenIdentifier>
+			<Abstract type="html">Add audio capture to the session. Adding inputs and outputs freezes the capture session momentarily, so you
+    can use this method to add the audio inputs and outputs early, if you&apos;re going to set the audioEncodingTarget 
+    later. Returns YES is the audio inputs and outputs were added, or NO if they had already been added.</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)addAudioInputsAndOutputs</Declaration>
+			
+			
+			<Anchor>//api/name/addAudioInputsAndOutputs</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/removeAudioInputsAndOutputs</TokenIdentifier>
+			<Abstract type="html">Remove the audio capture inputs and outputs from this session. Returns YES if the audio inputs and outputs
+    were removed, or NO is they hadn&apos;t already been added.</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)removeAudioInputsAndOutputs</Declaration>
+			
+			
+			<Anchor>//api/name/removeAudioInputsAndOutputs</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/removeInputsAndOutputs</TokenIdentifier>
+			<Abstract type="html">Tear down the capture session</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (void)removeInputsAndOutputs</Declaration>
+			
+			
+			<Anchor>//api/name/removeInputsAndOutputs</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/startCameraCapture</TokenIdentifier>
+			<Abstract type="html">Start camera capturing</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (void)startCameraCapture</Declaration>
+			
+			
+			<Anchor>//api/name/startCameraCapture</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/stopCameraCapture</TokenIdentifier>
+			<Abstract type="html">Stop camera capturing</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (void)stopCameraCapture</Declaration>
+			
+			
+			<Anchor>//api/name/stopCameraCapture</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/pauseCameraCapture</TokenIdentifier>
+			<Abstract type="html">Pause camera capturing</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (void)pauseCameraCapture</Declaration>
+			
+			
+			<Anchor>//api/name/pauseCameraCapture</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/resumeCameraCapture</TokenIdentifier>
+			<Abstract type="html">Resume camera capturing</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (void)resumeCameraCapture</Declaration>
+			
+			
+			<Anchor>//api/name/resumeCameraCapture</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/processVideoSampleBuffer:</TokenIdentifier>
+			<Abstract type="html">Process a video sample</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (void)processVideoSampleBuffer:(CMSampleBufferRef)sampleBuffer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sampleBuffer</Name>
+					<Abstract type="html">Buffer to process</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/processVideoSampleBuffer:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/processAudioSampleBuffer:</TokenIdentifier>
+			<Abstract type="html">Process an audio sample</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (void)processAudioSampleBuffer:(CMSampleBufferRef)sampleBuffer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sampleBuffer</Name>
+					<Abstract type="html">Buffer to process</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/processAudioSampleBuffer:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/cameraPosition</TokenIdentifier>
+			<Abstract type="html">Get the position (front, rear) of the source camera</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (AVCaptureDevicePosition)cameraPosition</Declaration>
+			
+			
+			<Anchor>//api/name/cameraPosition</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/videoCaptureConnection</TokenIdentifier>
+			<Abstract type="html">Get the AVCaptureConnection of the source camera</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (AVCaptureConnection *)videoCaptureConnection</Declaration>
+			
+			
+			<Anchor>//api/name/videoCaptureConnection</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/rotateCamera</TokenIdentifier>
+			<Abstract type="html">This flips between the front and rear cameras</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (void)rotateCamera</Declaration>
+			
+			
+			<Anchor>//api/name/rotateCamera</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageVideoCamera/averageFrameDurationDuringCapture</TokenIdentifier>
+			<Abstract type="html">When benchmarking is enabled, this will keep a running average of the time from uploading, processing, and final recording or display</Abstract>
+			<DeclaredIn>UCloudGPUImageVideoCamera.h</DeclaredIn>
+			
+			<Declaration>- (CGFloat)averageFrameDurationDuringCapture</Declaration>
+			
+			
+			<Anchor>//api/name/averageFrameDurationDuringCapture</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

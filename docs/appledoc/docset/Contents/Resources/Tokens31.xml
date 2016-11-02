@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageMovie.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageMovie</TokenIdentifier>
+			<Abstract type="html">Source object for filtering movies</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMovie/setRunBenchmark:</TokenIdentifier>
+			<Abstract type="html">This enables the benchmarking mode, which logs out instantaneous and average frame times to the console</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL runBenchmark</Declaration>
+			
+			
+			<Anchor>//api/name/runBenchmark</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMovie/runBenchmark</TokenIdentifier>
+			<Abstract type="html">This enables the benchmarking mode, which logs out instantaneous and average frame times to the console</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL runBenchmark</Declaration>
+			
+			
+			<Anchor>//api/name/runBenchmark</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageMovie/runBenchmark</TokenIdentifier>
+			<Abstract type="html">This enables the benchmarking mode, which logs out instantaneous and average frame times to the console</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL runBenchmark</Declaration>
+			
+			
+			<Anchor>//api/name/runBenchmark</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMovie/setPlayAtActualSpeed:</TokenIdentifier>
+			<Abstract type="html">This determines whether to play back a movie as fast as the frames can be processed, or if the original speed of the movie should be respected. Defaults to NO.</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL playAtActualSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/playAtActualSpeed</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMovie/playAtActualSpeed</TokenIdentifier>
+			<Abstract type="html">This determines whether to play back a movie as fast as the frames can be processed, or if the original speed of the movie should be respected. Defaults to NO.</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL playAtActualSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/playAtActualSpeed</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageMovie/playAtActualSpeed</TokenIdentifier>
+			<Abstract type="html">This determines whether to play back a movie as fast as the frames can be processed, or if the original speed of the movie should be respected. Defaults to NO.</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL playAtActualSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/playAtActualSpeed</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMovie/setShouldRepeat:</TokenIdentifier>
+			<Abstract type="html">This determines whether the video should repeat (loop) at the end and restart from the beginning. Defaults to NO.</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL shouldRepeat</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRepeat</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMovie/shouldRepeat</TokenIdentifier>
+			<Abstract type="html">This determines whether the video should repeat (loop) at the end and restart from the beginning. Defaults to NO.</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL shouldRepeat</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRepeat</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageMovie/shouldRepeat</TokenIdentifier>
+			<Abstract type="html">This determines whether the video should repeat (loop) at the end and restart from the beginning. Defaults to NO.</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) BOOL shouldRepeat</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRepeat</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMovie/setProgress:</TokenIdentifier>
+			<Abstract type="html">This specifies the progress of the process on a scale from 0 to 1.0. A value of 0 means the process has not yet begun, A value of 1.0 means the conversaion is complete.
+    This property is not key-value observable.</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) float progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMovie/progress</TokenIdentifier>
+			<Abstract type="html">This specifies the progress of the process on a scale from 0 to 1.0. A value of 0 means the process has not yet begun, A value of 1.0 means the conversaion is complete.
+    This property is not key-value observable.</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) float progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageMovie/progress</TokenIdentifier>
+			<Abstract type="html">This specifies the progress of the process on a scale from 0 to 1.0. A value of 0 means the process has not yet begun, A value of 1.0 means the conversaion is complete.
+    This property is not key-value observable.</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) float progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMovie/setDelegate:</TokenIdentifier>
+			<Abstract type="html">This is used to send the delete Movie did complete playing alert</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic, assign) id&lt;UCloudGPUImageMovieDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMovie/delegate</TokenIdentifier>
+			<Abstract type="html">This is used to send the delete Movie did complete playing alert</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic, assign) id&lt;UCloudGPUImageMovieDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageMovie/delegate</TokenIdentifier>
+			<Abstract type="html">This is used to send the delete Movie did complete playing alert</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic, assign) id&lt;UCloudGPUImageMovieDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

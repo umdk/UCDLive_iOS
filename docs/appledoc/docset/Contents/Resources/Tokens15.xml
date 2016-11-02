@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageFilter</TokenIdentifier>
+			<Abstract type="html">GPUImage&apos;s base filter class</Abstract>
+			<DeclaredIn>UCloudGPUImageFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageFilter/initWithVertexShaderFromString:fragmentShaderFromString:</TokenIdentifier>
+			<Abstract type="html">Initialize with vertex and fragment shaders</Abstract>
+			<DeclaredIn>UCloudGPUImageFilter.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithVertexShaderFromString:(NSString *)vertexShaderString fragmentShaderFromString:(NSString *)fragmentShaderString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>vertexShaderString</Name>
+					<Abstract type="html">Source code of the vertex shader to use</Abstract>
+				</Parameter><Parameter>
+					<Name>fragmentShaderString</Name>
+					<Abstract type="html">Source code of the fragment shader to use</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithVertexShaderFromString:fragmentShaderFromString:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageFilter/initWithFragmentShaderFromString:</TokenIdentifier>
+			<Abstract type="html">Initialize with a fragment shader</Abstract>
+			<DeclaredIn>UCloudGPUImageFilter.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFragmentShaderFromString:(NSString *)fragmentShaderString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fragmentShaderString</Name>
+					<Abstract type="html">Source code of fragment shader to use</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithFragmentShaderFromString:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageFilter/initWithFragmentShaderFromFile:</TokenIdentifier>
+			<Abstract type="html">Initialize with a fragment shader</Abstract>
+			<DeclaredIn>UCloudGPUImageFilter.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFragmentShaderFromFile:(NSString *)fragmentShaderFilename</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fragmentShaderFilename</Name>
+					<Abstract type="html">Filename of fragment shader to load</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithFragmentShaderFromFile:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageFilter/sizeOfFBO</TokenIdentifier>
+			<Abstract type="html">Size of the frame buffer object</Abstract>
+			<DeclaredIn>UCloudGPUImageFilter.h</DeclaredIn>
+			
+			<Declaration>- (CGSize)sizeOfFBO</Declaration>
+			
+			
+			<Anchor>//api/name/sizeOfFBO</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

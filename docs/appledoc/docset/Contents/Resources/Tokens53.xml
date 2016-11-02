@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageView</TokenIdentifier>
+			<Abstract type="html">UIView subclass to use as an endpoint for displaying GPUImage outputs</Abstract>
+			<DeclaredIn>UCloudGPUImageView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageView/setFillMode:</TokenIdentifier>
+			<Abstract type="html">The fill mode dictates how images are fit in the view, with the default being kUCloudGPUImageFillModePreserveAspectRatio</Abstract>
+			<DeclaredIn>UCloudGPUImageView.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) UCloudGPUImageFillModeType fillMode</Declaration>
+			
+			
+			<Anchor>//api/name/fillMode</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageView/fillMode</TokenIdentifier>
+			<Abstract type="html">The fill mode dictates how images are fit in the view, with the default being kUCloudGPUImageFillModePreserveAspectRatio</Abstract>
+			<DeclaredIn>UCloudGPUImageView.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) UCloudGPUImageFillModeType fillMode</Declaration>
+			
+			
+			<Anchor>//api/name/fillMode</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageView/fillMode</TokenIdentifier>
+			<Abstract type="html">The fill mode dictates how images are fit in the view, with the default being kUCloudGPUImageFillModePreserveAspectRatio</Abstract>
+			<DeclaredIn>UCloudGPUImageView.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) UCloudGPUImageFillModeType fillMode</Declaration>
+			
+			
+			<Anchor>//api/name/fillMode</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageView/setSizeInPixels:</TokenIdentifier>
+			<Abstract type="html">This calculates the current display size, in pixels, taking into account Retina scaling factors</Abstract>
+			<DeclaredIn>UCloudGPUImageView.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) CGSize sizeInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/sizeInPixels</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageView/sizeInPixels</TokenIdentifier>
+			<Abstract type="html">This calculates the current display size, in pixels, taking into account Retina scaling factors</Abstract>
+			<DeclaredIn>UCloudGPUImageView.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) CGSize sizeInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/sizeInPixels</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageView/sizeInPixels</TokenIdentifier>
+			<Abstract type="html">This calculates the current display size, in pixels, taking into account Retina scaling factors</Abstract>
+			<DeclaredIn>UCloudGPUImageView.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) CGSize sizeInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/sizeInPixels</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageView/setBackgroundColorRed:green:blue:alpha:</TokenIdentifier>
+			<Abstract type="html">Handling fill mode</Abstract>
+			<DeclaredIn>UCloudGPUImageView.h</DeclaredIn>
+			
+			<Declaration>- (void)setBackgroundColorRed:(GLfloat)redComponent green:(GLfloat)greenComponent blue:(GLfloat)blueComponent alpha:(GLfloat)alphaComponent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>redComponent</Name>
+					<Abstract type="html">Red component for background color</Abstract>
+				</Parameter><Parameter>
+					<Name>greenComponent</Name>
+					<Abstract type="html">Green component for background color</Abstract>
+				</Parameter><Parameter>
+					<Name>blueComponent</Name>
+					<Abstract type="html">Blue component for background color</Abstract>
+				</Parameter><Parameter>
+					<Name>alphaComponent</Name>
+					<Abstract type="html">Alpha component for background color</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBackgroundColorRed:green:blue:alpha:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

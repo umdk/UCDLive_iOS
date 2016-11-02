@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageCannyEdgeDetectionFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageCannyEdgeDetectionFilter</TokenIdentifier>
+			<Abstract type="html">This applies the edge detection process described by John Canny in</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/setTexelWidth:</TokenIdentifier>
+			<Abstract type="html">The image width and height factors tweak the appearance of the edges.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat texelWidth</Declaration>
+			
+			
+			<Anchor>//api/name/texelWidth</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/texelWidth</TokenIdentifier>
+			<Abstract type="html">The image width and height factors tweak the appearance of the edges.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat texelWidth</Declaration>
+			
+			
+			<Anchor>//api/name/texelWidth</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageCannyEdgeDetectionFilter/texelWidth</TokenIdentifier>
+			<Abstract type="html">The image width and height factors tweak the appearance of the edges.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat texelWidth</Declaration>
+			
+			
+			<Anchor>//api/name/texelWidth</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/setTexelHeight:</TokenIdentifier>
+			<Abstract type="html">The image width and height factors tweak the appearance of the edges.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat texelHeight</Declaration>
+			
+			
+			<Anchor>//api/name/texelHeight</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/texelHeight</TokenIdentifier>
+			<Abstract type="html">The image width and height factors tweak the appearance of the edges.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat texelHeight</Declaration>
+			
+			
+			<Anchor>//api/name/texelHeight</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageCannyEdgeDetectionFilter/texelHeight</TokenIdentifier>
+			<Abstract type="html">The image width and height factors tweak the appearance of the edges.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat texelHeight</Declaration>
+			
+			
+			<Anchor>//api/name/texelHeight</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/setBlurRadiusInPixels:</TokenIdentifier>
+			<Abstract type="html">The underlying blur radius for the Gaussian blur. Default is 2.0.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">The underlying blur radius for the Gaussian blur. Default is 2.0.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageCannyEdgeDetectionFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">The underlying blur radius for the Gaussian blur. Default is 2.0.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/setBlurTexelSpacingMultiplier:</TokenIdentifier>
+			<Abstract type="html">The underlying blur texel spacing multiplier. Default is 1.0.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurTexelSpacingMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/blurTexelSpacingMultiplier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/blurTexelSpacingMultiplier</TokenIdentifier>
+			<Abstract type="html">The underlying blur texel spacing multiplier. Default is 1.0.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurTexelSpacingMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/blurTexelSpacingMultiplier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageCannyEdgeDetectionFilter/blurTexelSpacingMultiplier</TokenIdentifier>
+			<Abstract type="html">The underlying blur texel spacing multiplier. Default is 1.0.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurTexelSpacingMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/blurTexelSpacingMultiplier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/setUpperThreshold:</TokenIdentifier>
+			<Abstract type="html">Any edge with a gradient magnitude above this threshold will pass and show up in the final result.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat upperThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/upperThreshold</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/upperThreshold</TokenIdentifier>
+			<Abstract type="html">Any edge with a gradient magnitude above this threshold will pass and show up in the final result.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat upperThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/upperThreshold</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageCannyEdgeDetectionFilter/upperThreshold</TokenIdentifier>
+			<Abstract type="html">Any edge with a gradient magnitude above this threshold will pass and show up in the final result.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat upperThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/upperThreshold</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/setLowerThreshold:</TokenIdentifier>
+			<Abstract type="html">Any edge with a gradient magnitude below this threshold will fail and be removed from the final result.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat lowerThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/lowerThreshold</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageCannyEdgeDetectionFilter/lowerThreshold</TokenIdentifier>
+			<Abstract type="html">Any edge with a gradient magnitude below this threshold will fail and be removed from the final result.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat lowerThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/lowerThreshold</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageCannyEdgeDetectionFilter/lowerThreshold</TokenIdentifier>
+			<Abstract type="html">Any edge with a gradient magnitude below this threshold will fail and be removed from the final result.</Abstract>
+			<DeclaredIn>UCloudGPUImageCannyEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat lowerThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/lowerThreshold</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
