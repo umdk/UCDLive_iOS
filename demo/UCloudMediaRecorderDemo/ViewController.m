@@ -66,14 +66,20 @@
 @property (weak, nonatomic) IBOutlet UIButton    *btnOpenFilter;
 @property (weak, nonatomic) IBOutlet UIButton    *btnMuted;
 @property (weak, nonatomic) IBOutlet UIButton    *btnTorch;
-@property (weak, nonatomic) IBOutlet UISwitch    *switchOrientation;
 @property (weak, nonatomic) IBOutlet UIButton    *btnHorizontal;
 @property (weak, nonatomic) IBOutlet UIButton    *btnVertical;
+@property (weak, nonatomic) IBOutlet UIButton    *btnRouterOne;
+@property (weak, nonatomic) IBOutlet UIButton    *btnRouterTwo;
+@property (weak, nonatomic) IBOutlet UIButton    *btnMixAudio;
 
 @property (strong, nonatomic) NSMutableArray  *filterValues;
 @property (strong, nonatomic) FilterManager   *filterManager;
 @property (strong, nonatomic) UIView          *videoView;
+@property (strong, nonatomic) UIView          *waterView;
 @property (strong, nonatomic) NSString        *pathStr;
+@property (strong, nonatomic) NSString        *audioPathStr;//背景音乐路径
+@property (strong, nonatomic) NSString        *recordDomain;
+@property (strong, nonatomic) NSString        *playDomain;
 @property (strong, nonatomic) AVCaptureDevice *currentDev;
 @property (assign, nonatomic) BOOL            shouldAutoStarted;
 
@@ -85,6 +91,8 @@
 - (IBAction)btnMutedTouchUpInside:(id)sender;
 - (IBAction)btnTorchTouchUpInside:(id)sender;
 - (IBAction)switchOrientationTouchUpInside:(id)sender;
+- (IBAction)switchRouterTouchUpInside:(id)sender;
+- (IBAction)btnMixAudioTouchEvent:(id)sender;
 
 @end
 
@@ -103,9 +111,15 @@
     self.pathTextField.text = [NSString stringWithFormat:@"%ld", (long)num];
     struct utsname systemInfo;
     uname(&systemInfo);
+    NSURL *audioUrl   = [[NSBundle mainBundle] URLForResource: @"audioMixTest"
+                                                withExtension: @"mp3"];
+    self.audioPathStr = [audioUrl path];
     self.modelLabel.adjustsFontSizeToFitWidth = YES;
-    self.modelLabel.text =  [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];//[[UIDevice currentDevice] model];
-    self.sysVerLabel.text =  [[UIDevice currentDevice] systemVersion];
+    self.modelLabel.text =  [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    self.sysVerLabel.adjustsFontSizeToFitWidth = YES;
+    self.sysVerLabel.text = [NSString stringWithFormat:@"sys:%@,sdk:%@",[[UIDevice currentDevice] systemVersion],[CameraServer server].getSDKVersion];
+    [self switchRouterTouchUpInside:nil];
+    [self updateOrientationBtnState:[CameraServer server].videoOrientation];
     [self setBtnStateInSel:1];
 }
 
@@ -146,39 +160,15 @@
 {
     NSLog(@"noti name :%@",noti.name);
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
-    if ([noti.name isEqualToString:UCloudMoviePlayerClickBack])
-    {
+    if ([noti.name isEqualToString:UCloudMoviePlayerClickBack]){
         self.playerManager = nil;
         [self setBtnStateInSel:1];
     }
-    else if ([noti.name isEqualToString:UIApplicationDidEnterBackgroundNotification])
-    {
+    else if ([noti.name isEqualToString:UIApplicationDidEnterBackgroundNotification]){
         
-        while (!isShutDown) {
-            [[CameraServer server] shutdown:^{
-                blackView = [[UIView alloc]initWithFrame:self.videoView.frame];
-                blackView.backgroundColor = [UIColor blackColor];
-                [self.videoView addSubview:blackView];
-                
-                UIActivityIndicatorView *activity = [[UIActivityIndicatorView alloc]init];
-                activity.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
-                activity.center = blackView.center;
-                [activity startAnimating];
-                [blackView addSubview:activity];
-                
-            }];
-            isShutDown = YES;
-        }
-        isload = NO;
     }
-    else if ([noti.name isEqualToString:UIApplicationWillEnterForegroundNotification])
-    {
-        while (!isload) {
-            [self removeNoti];
-            [self record:nil];
-            isShutDown = NO;
-            isload = YES;
-        }
+    else if ([noti.name isEqualToString:UIApplicationWillEnterForegroundNotification]){
+        
     }
 }
 
@@ -197,8 +187,7 @@
     [self addNoti];
     self.shouldAutoStarted = YES;
     
-    if (![self checkPath])
-    {
+    if (![self checkPath]) {
         return;
     }
     
@@ -206,7 +195,8 @@
         //5以下支持4：3
         [[CameraServer server] setHeight:640];
         [[CameraServer server] setWidth:480];
-    } else {
+    }
+    else {
         //5以上的支持16：9
         [[CameraServer server] setHeight:640];
         [[CameraServer server] setWidth:360];
@@ -234,7 +224,8 @@
             self.view.transform = CGAffineTransformMakeRotation(-M_PI_2);
             self.view.frame = CGRectMake(0, 0, keyFrame.size.width, keyFrame.size.height);
             [self.view setNeedsUpdateConstraints];
-        } else if (!GREATER_IOS9) {
+        }
+        else if (!GREATER_IOS9) {
             [self forceLandscape:UIInterfaceOrientationLandscapeRight];
         }
     }
@@ -246,14 +237,23 @@
 //        [[CameraServer server] initializeCameraViewFrame:CGRectMake(10, 10, 240, 230)];
     [[CameraServer server] setSecretKey:AccessKey];
     [[CameraServer server] setBitrate:UCloudVideoBitrateMedium];
+    if (_btnRouterOne.selected) {
+        self.recordDomain = RecordDomainOne(self.pathTextField.text);
+    }
+    else {
+        self.recordDomain = RecordDomainTwo(self.pathTextField.text);
+    }
+
     
-    NSString *path = RecordDomain(self.pathTextField.text);
+    NSString *path = self.recordDomain;
     __weak ViewController *weakSelf = self;
     
     self.recordBtn.enabled = NO;
     
     originalFilters = [self.filterManager filters];
     _btnOpenFilter.selected = YES;
+    
+    [self addWaterMark:[CameraServer server].videoOrientation];
     [[CameraServer server] configureCameraWithOutputUrl:path filter:originalFilters messageCallBack:^(UCloudCameraCode code, NSInteger arg1, NSInteger arg2, id data) {
                                             
                                             [weakSelf handlerMessageCallBackWithCode:code arg1:arg1 arg2:arg2 data:data weakSelf:weakSelf];
@@ -268,9 +268,66 @@
                                         }];
     [UIApplication sharedApplication].idleTimerDisabled = YES;
     
-    if (!self.timer)
-    {
+    if (!self.timer){
         self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(getBitrate) userInfo:nil repeats:YES];
+    }
+    
+}
+
+- (void)addWaterMark:(UCloudVideoOrientation)videoOrient
+{
+    
+    if (self.waterView == nil) {
+        CGSize size;
+        CGSize sizeOrigin = [UIScreen mainScreen].bounds.size;
+        if (videoOrient == UCloudVideoOrientationLandscapeRight ||
+            videoOrient == UCloudVideoOrientationLandscapeLeft) {
+            if (sizeOrigin.width < sizeOrigin.height) {
+                size = CGSizeMake(sizeOrigin.height, sizeOrigin.width);
+            }
+            else {
+                size = sizeOrigin;
+            }
+        }
+        else {
+            
+            if (sizeOrigin.width > sizeOrigin.height) {
+                size = CGSizeMake(sizeOrigin.height, sizeOrigin.width);
+            }
+            else {
+                size = sizeOrigin;
+            }
+            
+        }
+        __block UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, size.width, 44)];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.text = @"我是水印";
+        UIImageView *imgV = [[UIImageView alloc]initWithFrame:CGRectMake(size.width/2 -20, _changeBtn.frame.origin.y + 40, 60, 60)];
+        imgV.image = [UIImage imageNamed:@"ucloud_logo"];
+        imgV.alpha = 0.5;
+        UIView *subView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
+        subView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        subView.backgroundColor = [UIColor clearColor];
+        [subView addSubview:label];
+        [subView addSubview:imgV];
+        self.waterView = subView;
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        [[CameraServer server] setWatermarkView:subView Block:^{
+            label.text = [NSString stringWithFormat:@"UCloud:%@", [dateFormatter stringFromDate: [NSDate date]]];
+        }];
+    }
+}
+
+- (void)removeWaterMark
+{
+    if (self.waterView) {
+        NSArray* subViewS = [self.waterView subviews];
+        for (UIView* subView in subViewS) {
+            [subView removeFromSuperview];
+        }
+        [self.waterView removeFromSuperview];
+        self.waterView = nil;
     }
     
 }
@@ -283,54 +340,45 @@
     NSString *codeStr = [NSString stringWithFormat:@"%ld",(unsigned long)code];
     self.codeLabel.text = [NSString stringWithFormat:@"state:%@",[codeStr cameraCodeToMessage]];
     
-    if (code == UCloudCamera_Permission)
-    {
+    if (code == UCloudCamera_Permission) {
         UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"相机授权" message:@"没有权限访问您的相机，请在“设置－隐私－相机”中允许使用" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
         [alterView show];
         weakSelf.recordBtn.enabled = YES;
     }
-    else if (code == UCloudCamera_Micphone)
-    {
+    else if (code == UCloudCamera_Micphone) {
         [[[UIAlertView alloc] initWithTitle:@"麦克风授权" message:@"没有权限访问您的麦克风，请在“设置－隐私－麦克风”中允许使用" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil] show];
         weakSelf.recordBtn.enabled = YES;
     }
-    else if (code == UCloudCamera_SecretkeyNil)
-    {
+    else if (code == UCloudCamera_SecretkeyNil) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"密钥为空" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
         [weakSelf setBtnStateInSel:1];
     }
-    else if (code == UCloudCamera_AuthFail)
-    {
+    else if (code == UCloudCamera_AuthFail) {
         NSDictionary *dic = data;
         NSError *error = dic[@"error"];
         NSLog(@"errcode:%@\n msg:%@\n errdesc:%@", dic[@"retcode"], dic[@"message"], error.description);
         weakSelf.recordBtn.enabled = YES;
     }
-    else if (code == UCloudCamera_PreviewOK)
-    {
+    else if (code == UCloudCamera_PreviewOK) {
         [self.videoView removeFromSuperview];
         self.videoView = nil;
         [weakSelf startPreview];
     }
-    else if (code == UCloudCamera_PublishOk)
-    {
+    else if (code == UCloudCamera_PublishOk) {
         [[CameraServer server] cameraStart];
         [weakSelf setBtnStateInSel:3];
         weakSelf.recordBtn.enabled = YES;
         
         [weakSelf.filterManager setCurrentValue:weakSelf.filterValues];
     }
-    else if (code == UCloudCamera_StartPublish)
-    {
+    else if (code == UCloudCamera_StartPublish) {
         weakSelf.recordBtn.enabled = YES;
     }
-    else if (code == UCloudCamera_OUTPUT_ERROR)
-    {
+    else if (code == UCloudCamera_OUTPUT_ERROR) {
         weakSelf.recordBtn.enabled = YES;
     }
-    else if (code == UCloudCamera_BUFFER_OVERFLOW)
-    {
+    else if (code == UCloudCamera_BUFFER_OVERFLOW) {
         
     }
 }
@@ -357,13 +405,16 @@
     __weak ViewController *weakSelf = self;
     [self.timer invalidate];
     self.timer = nil;
+    _btnMixAudio.selected = NO;
+    [CameraServer server].backgroudMusicOn = NO;
+    [[CameraServer server] setBackgroudMusicOn:NO];
     [[CameraServer server] shutdown:^{
-        if (weakSelf.videoView)
-        {
+        if (weakSelf.videoView) {
             [weakSelf.videoView removeFromSuperview];
         }
-        weakSelf.videoView = nil;
         
+        [self removeWaterMark];
+        weakSelf.videoView = nil;
         self.stopBtn.enabled = YES;
         [weakSelf setBtnStateInSel:1];
         
@@ -386,7 +437,7 @@
             else if (!GREATER_IOS9) {
                 [self forceLandscape:UIInterfaceOrientationPortrait];
             }
-
+            [UIViewController attemptRotationToDeviceOrientation];
         }
     }];
     [UIApplication sharedApplication].idleTimerDisabled = NO;
@@ -400,9 +451,12 @@
     self.changeBtn.enabled = YES;
     
     if([[CameraServer server] currentCapturePosition] == AVCaptureDevicePositionBack){
-        self.btnTorch.hidden = NO;
-    }else{
-        self.btnTorch.hidden = YES;
+        self.btnTorch.enabled = YES;
+    } else {
+        self.btnTorch.enabled = NO;
+        if (self.btnTorch.selected) {
+            self.btnTorch.selected = NO;
+        }
     }
 }
 
@@ -427,8 +481,7 @@
 #pragma mark - 播放
 - (IBAction)play:(id)sender
 {
-    if ([self checkPath])
-    {
+    if ([self checkPath]) {
         [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
         AppDelegate *delegate = [UIApplication sharedApplication].delegate;
         delegate.vc = self;
@@ -439,7 +492,14 @@
         //        [self.playerManager setSupportAngleChange:YES];
         float height = self.view.frame.size.height;
         [self.playerManager setPortraitViewHeight:height];
-        [self.playerManager buildMediaPlayer:self.pathTextField.text];
+        if (_btnRouterOne.selected) {
+            self.playDomain = PlayDomainOne(self.pathTextField.text);
+        }
+        else {
+            self.playDomain = PlayDomainTwo(self.pathTextField.text);
+        }
+        
+        [self.playerManager buildMediaPlayer:self.playDomain];
         [self setBtnStateInSel:2];
     }
     [self.view bringSubviewToFront:_btnShutdown];
@@ -453,8 +513,7 @@
 - (void)forceLandscape:(UIInterfaceOrientation)orientation
 {
     UIDevice  *myDevice = [UIDevice currentDevice];
-    if([myDevice respondsToSelector:@selector(setOrientation:)])
-    {
+    if([myDevice respondsToSelector:@selector(setOrientation:)]) {
         NSInteger param;
         
         param = orientation;
@@ -467,16 +526,16 @@
                         atIndex:2];
         [invocation invoke];
     }
+    AppDelegate *appdelegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    [appdelegate application:[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:self.view.window];
 }
 
 -(UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    if (self.playerManager)
-    {
+    if (self.playerManager) {
         return self.playerManager.supportInterOrtation;
     }
-    else
-    {
+    else {
         /**
          *  这个在播放之外的程序支持的设备方向
          */
@@ -502,12 +561,9 @@
     }
 }
 
-
-
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    if ([self.pathTextField isFirstResponder])
-    {
+    if ([self.pathTextField isFirstResponder]) {
         [self.pathTextField resignFirstResponder];
     }
 }
@@ -535,11 +591,11 @@
 }
 
 - (IBAction)btnOpenFilterTouchUpInside:(id)sender {
-    
     if (_btnOpenFilter.selected) {
         _btnOpenFilter.selected = NO;
         [[CameraServer server] closeFilter];
-    } else {
+    }
+    else {
         _btnOpenFilter.selected = YES;
         originalFilters = [self.filterManager filters];
         [[CameraServer server] openFilter];
@@ -547,7 +603,6 @@
 }
 
 - (IBAction)btnMutedTouchUpInside:(id)sender {
-    
     [CameraServer server].muted = ![CameraServer server].muted;
     _btnMuted.selected = [CameraServer server].muted;
 }
@@ -556,30 +611,71 @@
     if (_btnTorch.selected) {
         _btnTorch.selected = NO;
         [[CameraServer server] setTorchState:UCloudCameraCode_Off];
-    } else {
+    }
+    else {
         _btnTorch.selected = YES;
         [[CameraServer server] setTorchState:UCloudCameraCode_On];
     }
 }
 
 - (IBAction)switchOrientationTouchUpInside:(id)sender {
+    NSInteger touchOrientation;
     
-    NSInteger touchOrientation = [CameraServer server].videoOrientation;
-    if (touchOrientation == UCloudVideoOrientationPortrait) {
-        [[CameraServer server] setVideoOrientation:UCloudVideoOrientationLandscapeRight];
-        [_switchOrientation setOn:YES animated:YES];
-    } else {
+    if(sender == _btnVertical) {
         [[CameraServer server] setVideoOrientation:UCloudVideoOrientationPortrait];
-        [_switchOrientation setOn:NO animated:YES];
+        touchOrientation = UCloudVideoOrientationPortrait;
     }
+    else {
+        [[CameraServer server] setVideoOrientation:UCloudVideoOrientationLandscapeRight];
+        touchOrientation = UCloudVideoOrientationLandscapeRight;
+    }
+    
+    [self updateOrientationBtnState:touchOrientation];
+}
+
+- (void)updateOrientationBtnState:(UCloudVideoOrientation)orientation
+{
+    if (orientation != UCloudVideoOrientationPortrait) {
+        _btnVertical.selected = NO;
+        _btnHorizontal.selected = YES;
+    }
+    else {
+        _btnVertical.selected = YES;
+        _btnHorizontal.selected = NO;
+    }
+}
+
+- (IBAction)switchRouterTouchUpInside:(id)sender {
+    self.playDomain = PlayDomainOne(self.pathTextField.text);
+    self.recordDomain = RecordDomainOne(self.pathTextField.text);
+    
+    if(sender != _btnRouterTwo) {
+        _btnRouterOne.selected = YES;
+        _btnRouterTwo.selected = NO;
+    }
+    else {
+        _btnRouterOne.selected = NO;
+        _btnRouterTwo.selected = YES;
+    }
+}
+
+- (IBAction)btnMixAudioTouchEvent:(id)sender {
+    
+    if (_btnMixAudio.selected) {
+        _btnMixAudio.selected = NO;
+    }
+    else {
+        _btnMixAudio.selected = YES;
+    }
+    [CameraServer server].audioPlayStr = self.audioPathStr;
+    [CameraServer server].backgroudMusicOn = ![CameraServer server].backgroudMusicOn;
 }
 
 #pragma mark - Custom Method
 
 - (void)setBtnStateInSel:(NSInteger)num
 {
-    if (num == 1)
-    {
+    if (num == 1) {
         //初始状态
         self.recordBtn.hidden     = NO;
         self.stopBtn.hidden       = YES;
@@ -598,12 +694,13 @@
         self.btnOpenFilter.hidden = YES;
         self.btnMuted.hidden      = YES;
         self.btnTorch.hidden = YES;
-        self.switchOrientation.hidden = NO;
         self.btnHorizontal.hidden = NO;
         self.btnVertical.hidden = NO;
+        self.btnRouterOne.hidden = NO;
+        self.btnRouterTwo.hidden = NO;
+        self.btnMixAudio.hidden = YES;
     }
-    else if (num == 2)
-    {
+    else if (num == 2) {
         //选择play
         self.recordBtn.hidden     = YES;
         self.stopBtn.hidden       = YES;
@@ -625,12 +722,13 @@
         self.btnShutdown.hidden   = NO;
         self.btnMuted.hidden      = YES;
         self.btnTorch.hidden = YES;
-        self.switchOrientation.hidden = YES;
+        self.btnMixAudio.hidden = YES;
         self.btnHorizontal.hidden = YES;
         self.btnVertical.hidden = YES;
+        self.btnRouterOne.hidden = YES;
+        self.btnRouterTwo.hidden = YES;
     }
-    else if (num == 3)
-    {
+    else if (num == 3) {
         //选择camera
         self.recordBtn.hidden     = YES;
         self.stopBtn.hidden       = NO;
@@ -651,12 +749,19 @@
         self.changeBtn.hidden     = NO;
         self.btnShutdown.hidden   = YES;
         self.btnMuted.hidden      = NO;
-        self.btnTorch.hidden = YES;
-        self.switchOrientation.hidden = YES;
+        self.btnTorch.hidden = NO;
+        if ([CameraServer server].captureDevicePos == AVCaptureDevicePositionFront) {
+            self.btnTorch.enabled = NO;
+        }
+        else {
+            self.btnTorch.enabled = YES;
+        }
         self.btnHorizontal.hidden = YES;
         self.btnVertical.hidden = YES;
-        if (self.filterValues.count > 0)
-        {
+        self.btnRouterOne.hidden = YES;
+        self.btnRouterTwo.hidden = YES;
+        self.btnMixAudio.hidden = NO;
+        if (self.filterValues.count > 0) {
             self.sliderSmooth.hidden     = NO;
             self.sliderBrightness.hidden  = NO;
             self.sliderSaturation.hidden  = NO;
@@ -664,8 +769,7 @@
             self.lblBrightness.hidden = NO;
             self.lblSaturation.hidden = NO;
         }
-        else
-        {
+        else {
             self.sliderSmooth.hidden     = YES;
             self.sliderBrightness.hidden     = YES;
             self.sliderSaturation.hidden     = YES;
@@ -678,15 +782,13 @@
 
 - (BOOL)checkPath
 {
-    if (self.pathTextField.text.length == 0)
-    {
+    if (self.pathTextField.text.length == 0) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Path can not null" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alertView show];
         [alertView becomeFirstResponder];
         return NO;
     }
-    else
-    {
+    else {
         return YES;
     }
 }
@@ -695,7 +797,6 @@
 {
     self.filterValues = [self.filterManager buildData];
     if (!self.filterValues) {
-        
         _sliderSmooth.hidden = _sliderBrightness.hidden = _sliderSaturation.hidden = YES;
         _lblSmooth.hidden = _lblBrightness.hidden = _lblSaturation.hidden = YES;
         return;

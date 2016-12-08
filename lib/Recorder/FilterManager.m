@@ -24,12 +24,10 @@
 @implementation FilterManager
 - (NSArray *)filters
 {
-    if ([[CameraServer server] lowThan5])
-    {
+    if ([[CameraServer server] lowThan5]) {
         return nil;
     }
-    else
-    {
+    else {
         //第一套滤镜方案
 //        self.bilateralFilter = [[UCloudGPUImageBilateralFilter alloc] init];
 //        self.beautyFilter = [[UCloudGPUImageBeautyFilter alloc] init];
@@ -45,8 +43,7 @@
 
 - (void)setCurrentValue:(NSArray *)filterValues
 {
-    for (NSDictionary *filter in filterValues)
-    {
+    for (NSDictionary *filter in filterValues) {
         float current = [[filter objectForKey:@"current"] floatValue];
         NSString *type = [filter objectForKey:@"type"];
         [self valueChange:type value:current];
@@ -55,29 +52,22 @@
 
 - (void)valueChange:(NSString *)name value:(float)value
 {
-    if ([name isEqualToString:@"smooth"])
-    {
+    if ([name isEqualToString:@"smooth"]) {
         [self.beautyFilter2 setSmooth:value];
     }
-    else if ([name isEqualToString:@"brightness"])
-    {
+    else if ([name isEqualToString:@"brightness"]) {
         [self.beautyFilter2 setBrightness:value];
     }
-    else if ([name isEqualToString:@"saturation"])
-    {
+    else if ([name isEqualToString:@"saturation"]) {
         [self.beautyFilter2 setSaturation:value];
     }
-    
-    else if ([name isEqualToString:@"beautyFilter"])
-    {
+    else if ([name isEqualToString:@"beautyFilter"]) {
         [self.beautyFilter setBeautyLevel:value];
     }
-    else if ([name isEqualToString:@"bilateralFilter"])
-    {
+    else if ([name isEqualToString:@"bilateralFilter"]) {
         [self.bilateralFilter setDistanceNormalizationFactor:value];
     }
-    else if ([name isEqualToString:@"ISO"])
-    {
+    else if ([name isEqualToString:@"ISO"]) {
         [[CameraServer server]changeISO:value];
     }
 }
@@ -85,14 +75,11 @@
 - (NSMutableArray *)buildData
 {
     NSArray *infos;
-    if ([[CameraServer server] lowThan5])
-    {
+    if ([[CameraServer server] lowThan5]) {
         return nil;
     }
-    else
-    {
-        if (SysVersion >= 8.f)
-        {
+    else {
+        if (SysVersion >= 8.f) {
             //第一套滤镜方案
 //            infos = @[
 //                      @{@"name":@"美颜", @"type":@"bilateralFilter", @"min":@(0.0), @"max":@(20.0), @"current":@(16.5)},

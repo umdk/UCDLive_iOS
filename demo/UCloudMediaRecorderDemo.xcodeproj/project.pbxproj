@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1D11FC01DEEE0CB00569A5D /* ucloud_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C1D11FBE1DEEE0CB00569A5D /* ucloud_logo.png */; };
+		C1D11FC31DEEE8DE00569A5D /* audioMixTest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C1D11FC21DEEE8DE00569A5D /* audioMixTest.mp3 */; };
 		C1F47A771CD9D01000563409 /* bg_screen_shot_complete.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F47A741CD9D01000563409 /* bg_screen_shot_complete.png */; };
 		C1F47A781CD9D01000563409 /* bg_screen_shot_complete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F47A751CD9D01000563409 /* bg_screen_shot_complete@2x.png */; };
 		C1F47A791CD9D01000563409 /* bg_screen_shot_complete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F47A761CD9D01000563409 /* bg_screen_shot_complete@3x.png */; };
@@ -77,6 +79,8 @@
 
 /* Begin PBXFileReference section */
 		C15B45121DB0D9D8003B5A6E /* UCloudRecorderTypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCloudRecorderTypeDef.h; sourceTree = "<group>"; };
+		C1D11FBE1DEEE0CB00569A5D /* ucloud_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ucloud_logo.png; sourceTree = "<group>"; };
+		C1D11FC21DEEE8DE00569A5D /* audioMixTest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioMixTest.mp3; sourceTree = "<group>"; };
 		C1F47A741CD9D01000563409 /* bg_screen_shot_complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_screen_shot_complete.png; sourceTree = "<group>"; };
 		C1F47A751CD9D01000563409 /* bg_screen_shot_complete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_screen_shot_complete@2x.png"; sourceTree = "<group>"; };
 		C1F47A761CD9D01000563409 /* bg_screen_shot_complete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_screen_shot_complete@3x.png"; sourceTree = "<group>"; };
@@ -459,6 +463,8 @@
 		E94670C61BD78B9B00374D7A = {
 			isa = PBXGroup;
 			children = (
+				C1D11FC21DEEE8DE00569A5D /* audioMixTest.mp3 */,
+				C1D11FBE1DEEE0CB00569A5D /* ucloud_logo.png */,
 				E96F3D891C17FE410099718A /* Default-568h@2x.png */,
 				E94670D11BD78B9B00374D7A /* UCloudMediaRecorderDemo */,
 				E94670EB1BD78B9B00374D7A /* UCloudMediaRecorderDemoTests */,
@@ -786,12 +792,14 @@
 				E9271CDF1C3CAC21000DBADF /* loading.png in Resources */,
 				C1F47A781CD9D01000563409 /* bg_screen_shot_complete@2x.png in Resources */,
 				E9271CCD1C3CAC21000DBADF /* bright_point.png in Resources */,
+				C1D11FC31DEEE8DE00569A5D /* audioMixTest.mp3 in Resources */,
 				E9271CCC1C3CAC21000DBADF /* bg_screen_shot_frame.png in Resources */,
 				E9271CD41C3CAC21000DBADF /* icon_bottomview_brightness_button_selected.png in Resources */,
 				E9271CD71C3CAC21000DBADF /* icon_bottomview_volume_button_normal.png in Resources */,
 				E9271CDB1C3CAC21000DBADF /* icon_topview_left__button_selected.png in Resources */,
 				E9271CCF1C3CAC21000DBADF /* brightness_bg~iphone@3x.png in Resources */,
 				E9271CD61C3CAC21000DBADF /* icon_bottomview_play_button_normal.png in Resources */,
+				C1D11FC01DEEE0CB00569A5D /* ucloud_logo.png in Resources */,
 				E96F3D8A1C17FE410099718A /* Default-568h@2x.png in Resources */,
 				E9271CDC1C3CAC21000DBADF /* icon_topview_left_button_normal.png in Resources */,
 				E94670E01BD78B9B00374D7A /* Images.xcassets in Resources */,

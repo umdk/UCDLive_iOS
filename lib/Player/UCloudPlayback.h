@@ -171,14 +171,14 @@ UCLOUD_EXTERN NSString *const UCloudPlayerVideoChangeRotationNotification;
 
 /**
  *
- * 缓冲buffer变更，适用于点播
+ * 缓冲buffer变更，直播下cachedDuration>0才生效
  *
  */
 UCLOUD_EXTERN NSString *const UCloudPlayerBufferingUpdateNotification;
 
 /**
  *
- * 缓冲buffer变更的Key，适用于点播
+ * 缓冲buffer变更的Key，直播下cachedDuration>0才生效
  *
  */
 UCLOUD_EXTERN NSString *const UCloudPlayerBufferStateKey;

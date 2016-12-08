@@ -42,30 +42,15 @@
 - (void)buildMediaPlayer:(NSString *)path
 {
     _pathString = path;
-    path = PlayDomain(path);
-    /*
-    //老版本的初始化播放方式
-    NSURL *theMovieURL = [NSURL URLWithString:path];
-    self.mediaPlayer = [[UCloudMediaPlayer alloc] init];
-    self.mediaPlayer.urlType = UrlTypeAuto;
-    [self.mediaPlayer setUrl:theMovieURL];
-    
-    __weak PlayerManager *weakSelf = self;
-    [self.mediaPlayer showInview:self.view definition:^(NSInteger defaultNum, NSArray *data) {
-        if (self.mediaPlayer) {
-            [weakSelf buildMediaControl:defaultNum data:data];
-            [weakSelf configurePlayer];
-        }
-
-    }];
-    */
-    
     __weak PlayerManager *weakSelf = self;
     //新版的初始化播放方式
     //多个实例播放器模式
     //self.mediaPlayer = [[UCloudMediaPlayer alloc] init];
     //单例模式
     self.mediaPlayer = [UCloudMediaPlayer ucloudMediaPlayer];
+    [self.mediaPlayer setDelayOptimization:YES];
+    [self.mediaPlayer setCachedDuration:1000];
+    [self.mediaPlayer setBufferDuration:1000];
     [self.mediaPlayer showMediaPlayer:path urltype:UrlTypeLive frame:CGRectNull view:self.view completion:^(NSInteger defaultNum, NSArray *data) {
         if (self.mediaPlayer) {
             [weakSelf buildMediaControl:defaultNum data:data];
@@ -84,12 +69,10 @@
     self.controlVC.center = CGPointMake(100, 100);
     
     self.controlVC.defultQingXiDu = defaultNum;
-    if (self.mediaPlayer.defaultDecodeMethod == DecodeMethodHard)
-    {
+    if (self.mediaPlayer.defaultDecodeMethod == DecodeMethodHard) {
         self.controlVC.defultJieMaQi = 0;
     }
-    else if (self.mediaPlayer.defaultDecodeMethod == DecodeMethodSoft)
-    {
+    else if (self.mediaPlayer.defaultDecodeMethod == DecodeMethodSoft) {
         self.controlVC.defultJieMaQi = 1;
     }
     self.controlVC.urlType = self.mediaPlayer.urlType;
@@ -107,8 +90,7 @@
 - (void)configurePlayer
 {
     //点播默认是横屏播放，直播进来默认是竖屏播放
-    if (self.mediaPlayer.urlType == UrlTypeLive)
-    {
+    if (self.mediaPlayer.urlType == UrlTypeLive) {
         self.isFullscreen = YES;
     }
     [self clickFull:nil];
@@ -130,8 +112,7 @@
     self.playerContraints = [NSArray arrayWithArray:cons];
     self.vcBottomConstraint = [self addConstraintForView:self.controlVC.view inView:self.view constraint:nil];
     
-    if (self.mediaPlayer.urlType == UrlTypeLive)
-    {
+    if (self.mediaPlayer.urlType == UrlTypeLive) {
         //生成新的ijksdlView默认旋转角度
         [[NSNotificationCenter defaultCenter] postNotificationName:UCloudPlayerVideoChangeRotationNotification object:@(0)];
     }
@@ -199,16 +180,13 @@
     
     NSArray *array = [NSArray arrayWithObjects:contraint1, contraint2, contraint3, contraint4, contraint5, contraint6, nil];
     
-    if (contraints)
-    {
+    if (contraints) {
         [contraints addObjectsFromArray:array];
     }
-    if (p)
-    {
+    if (p) {
         [p addObjectsFromArray:@[contraint3, contraint4]];
     }
-    if (l)
-    {
+    if (l) {
         [l addObjectsFromArray:@[contraint5, contraint6]];
     }
     
@@ -217,13 +195,6 @@
     
     self.contrants = @[ contraint5,contraint6];
     [view removeConstraints:self.contrants];
-    
-    
-    
-//    [NSLayoutConstraint deactivateConstraints:@[contraint5, contraint6]];
-    
-    
-    
     
     self.playerCenterXContraint = contraint2;
     self.playerHeightContraint = contraint4;
@@ -272,8 +243,7 @@
     //把约束添加到父视图上
     NSArray *array = [NSArray arrayWithObjects:contraint1, contraint2, contraint3, contraint4, nil];
     
-    if (contraints)
-    {
+    if (contraints) {
         [contraints addObjectsFromArray:array];
     }
     [view addConstraints:array];
@@ -301,8 +271,7 @@
     self.playerCenterXContraint.constant = centerX;
     self.playerContraints = [NSArray arrayWithArray:cons];
     
-    if (self.mediaPlayer.urlType == UrlTypeLive)
-    {
+    if (self.mediaPlayer.urlType == UrlTypeLive) {
         //生成新的ijksdlView默认旋转角度
         [[NSNotificationCenter defaultCenter] postNotificationName:UCloudPlayerVideoChangeRotationNotification object:@(0)];
     }
@@ -313,9 +282,6 @@
     [self.controlVC setRightPanelHidden:YES];
 }
 
-
-
-
 #pragma mark - 屏幕旋转
 - (void)awakeSupportInterOrtation:(UIViewController *)showVC completion:(void(^)(void))block
 {
@@ -323,8 +289,7 @@
     void(^completion)() = ^() {
         [showVC dismissViewControllerAnimated:NO completion:nil];
         
-        if (block)
-        {
+        if (block) {
             block();
         }
     };
@@ -332,23 +297,19 @@
     // This check is needed if you need to support iOS version older than 7.0
     BOOL canUseTransitionCoordinator = [showVC respondsToSelector:@selector(transitionCoordinator)];
     BOOL animated = YES;
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] > 8.0)
-    {
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] > 8.0) {
         animated = NO;
     }
-    else
-    {
+    else {
         animated = YES;
     }
-    if (canUseTransitionCoordinator)
-    {
+    if (canUseTransitionCoordinator) {
         [showVC presentViewController:vc animated:animated completion:nil];
         [showVC.transitionCoordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
             completion();
         }];
     }
-    else
-    {
+    else {
         [showVC presentViewController:vc animated:NO completion:completion];
     }
 }
@@ -357,28 +318,24 @@
 {
     [self.controlVC setRightPanelHidden:YES];
     
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
-    {
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
         self.view.transform = CGAffineTransformIdentity;
     }
     
     switch (interfaceOrientation) {
-        case UIInterfaceOrientationPortrait:
-        {
+        case UIInterfaceOrientationPortrait: {
             [self turnToPortraint:^{
                 
             }];
         }
             break;
-        case UIInterfaceOrientationLandscapeLeft:
-        {
+        case UIInterfaceOrientationLandscapeLeft: {
             [self turnToLeft:^{
                 
             }];
         }
             break;
-        case UIInterfaceOrientationLandscapeRight:
-        {
+        case UIInterfaceOrientationLandscapeRight: {
             [self turnToRight:^{
                 
             }];
@@ -389,14 +346,12 @@
     }
     
     BOOL shouldChangeFrame = NO;
-    if ((UIInterfaceOrientationIsLandscape(interfaceOrientation) && UIInterfaceOrientationIsPortrait(self.currentOrientation)) || (UIInterfaceOrientationIsPortrait(interfaceOrientation) && UIInterfaceOrientationIsLandscape(self.currentOrientation)))
-    {
+    if ((UIInterfaceOrientationIsLandscape(interfaceOrientation) && UIInterfaceOrientationIsPortrait(self.currentOrientation)) || (UIInterfaceOrientationIsPortrait(interfaceOrientation) && UIInterfaceOrientationIsLandscape(self.currentOrientation))) {
         shouldChangeFrame = YES;
     }
     
     //调整缓冲提示的位置
-    if (shouldChangeFrame)
-    {
+    if (shouldChangeFrame) {
         [self.controlVC.view.window changeFrame:interfaceOrientation];
     }
     
@@ -420,7 +375,7 @@
 
 -(void)turnToPortraint:(void(^)(void))block
 {
-    //    _playerBottomContraint.constant = -(UISCREEN_HEIGHT - UISCREEN_WIDTH);
+//    _playerBottomContraint.constant = -(UISCREEN_HEIGHT - UISCREEN_WIDTH);
     
     _playerHeightContraint.constant = -[self getContraintConstant];
     _playerCenterXContraint.constant = -[self getContraintConstant]/2.f;
@@ -438,15 +393,14 @@
     self.isFullscreen = NO;
     
     [self.controlVC hideMenu];
-    if (block)
-    {
+    if (block) {
         block();
     }
 }
 
 -(void)turnToLeft:(void(^)(void))block
 {
-    //    _playerBottomContraint.constant = -0.0;
+//    _playerBottomContraint.constant = -0.0;
     self.playerCenterXContraint.constant = 0.0;
     self.playerHeightContraint.constant = 0.0;
     
@@ -463,7 +417,7 @@
 
 -(void)turnToRight:(void(^)(void))block
 {
-    //    _playerBottomContraint.constant = -0.0;
+//    _playerBottomContraint.constant = -0.0;
     self.playerCenterXContraint.constant = 0.0;
     self.playerHeightContraint.constant = 0.0;
     
@@ -471,8 +425,7 @@
     self.danmuBottomContraint.constant = -0.0;
     [self.mediaPlayer refreshView];
     self.isFullscreen = YES;
-    if (block)
-    {
+    if (block) {
         block();
     }
 }
@@ -481,12 +434,10 @@
 {
     float delta = UISCREEN_HEIGHT - self.portraitViewHeight;
     
-    if (delta < 0)
-    {
+    if (delta < 0) {
         delta = 0;
     }
-    else if (delta >= UISCREEN_HEIGHT)
-    {
+    else if (delta >= UISCREEN_HEIGHT) {
         delta = UISCREEN_HEIGHT - UISCREEN_WIDTH;
     }
     return delta;
@@ -494,12 +445,10 @@
 
 -(UIInterfaceOrientationMask)supportInterOrtation
 {
-    if (self.supportAutomaticRotation)
-    {
+    if (self.supportAutomaticRotation) {
         return _supportInterOrtation;
     }
-    else
-    {
+    else {
         return UIInterfaceOrientationMaskPortrait;
     }
 }
@@ -507,12 +456,10 @@
 - (void)setSupportAutomaticRotation:(BOOL)supportAutomaticRotation
 {
     _supportAutomaticRotation = supportAutomaticRotation;
-    if (_supportAutomaticRotation)
-    {
+    if (_supportAutomaticRotation) {
         [self.controlVC setFullBtnState:NO];
     }
-    else
-    {
+    else {
         [self.controlVC setFullBtnState:YES];
     }
 }
@@ -525,9 +472,10 @@
 - (void)image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
 {
     NSString *msg = nil ;
-    if(error != NULL){
+    if(error != NULL) {
         msg = @"保存图片失败" ;
-    }else{
+    }
+    else {
         msg = @"保存图片成功" ;
     }
     
@@ -543,8 +491,7 @@ static bool showing = NO;
 #pragma mark - loading view
 - (void)showLoadingView
 {
-    if (!showing)
-    {
+    if (!showing) {
         showing = YES;
         
         CGAffineTransform trans = self.view.transform;
@@ -569,7 +516,7 @@ static bool showing = NO;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noti:) name:UCloudPlayerPlaybackStateDidChangeNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noti:) name:UCloudPlayerPlaybackDidFinishNotification object:nil];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noti:) name:UCloudMoviePlayerBufferingUpdate object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noti:) name:UCloudPlayerBufferingUpdateNotification object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(rotateEnd) name:UCloudViewControllerDidRotate object:nil];
     
@@ -584,7 +531,7 @@ static bool showing = NO;
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UCloudMoviePlayerSeekCompleted object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UCloudPlayerPlaybackStateDidChangeNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UCloudPlayerPlaybackDidFinishNotification object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UCloudMoviePlayerBufferingUpdate object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UCloudPlayerBufferingUpdateNotification object:nil];
     
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UCloudViewControllerDidRotate object:nil];
     
@@ -595,57 +542,47 @@ static bool showing = NO;
 - (void)noti:(NSNotification *)noti
 {
     NSLog(@"%@", noti.name);
-    if ([noti.name isEqualToString:UCloudPlaybackIsPreparedToPlayDidChangeNotification])
-    {
+    if ([noti.name isEqualToString:UCloudPlaybackIsPreparedToPlayDidChangeNotification]) {
         [self.controlVC refreshMediaControl];
         self.retryConnectNumber = 3;
-        if (self.current != 0)
-        {
+        if (self.current != 0) {
             [self.mediaPlayer.player setCurrentPlaybackTime:self.current];
             self.current = 0;
         }
     }
-    else if ([noti.name isEqualToString:UCloudPlayerLoadStateDidChangeNotification])
-    {
-        if ([self.mediaPlayer.player loadState] == MPMovieLoadStateStalled)
-        {
+    else if ([noti.name isEqualToString:UCloudPlayerLoadStateDidChangeNotification]) {
+        if ([self.mediaPlayer.player loadState] == MPMovieLoadStateStalled) {
             //网速不好，开始缓冲
             [self showLoadingView];
         }
-        else if ([self.mediaPlayer.player loadState] == (MPMovieLoadStatePlayable|MPMovieLoadStatePlaythroughOK))
-        {
+        else if ([self.mediaPlayer.player loadState] == (MPMovieLoadStatePlayable|MPMovieLoadStatePlaythroughOK)) {
             //缓冲完毕
             [self hideLoadingView];
         }
     }
-    else if ([noti.name isEqualToString:UCloudMoviePlayerSeekCompleted])
-    {
+    else if ([noti.name isEqualToString:UCloudMoviePlayerSeekCompleted]) {
         
     }
-    else if ([noti.name isEqualToString:UCloudPlayerPlaybackStateDidChangeNotification])
-    {
+    else if ([noti.name isEqualToString:UCloudPlayerPlaybackStateDidChangeNotification]) {
         NSLog(@"backState:%ld", (long)[self.mediaPlayer.player playbackState]);
-        if (!self.isPrepared)
-        {
+        if (!self.isPrepared) {
             self.isPrepared = YES;
             [self.mediaPlayer.player play];
             
-            if (![self.mediaPlayer.player isPlaying])
-            {
+            if (![self.mediaPlayer.player isPlaying]) {
                 [self.controlVC refreshCenterState];
             }
         }
     }
-    else if ([noti.name isEqualToString:UCloudPlayerPlaybackDidFinishNotification])
-    {
+    else if ([noti.name isEqualToString:UCloudPlayerPlaybackDidFinishNotification]) {
         MPMovieFinishReason reson = [[noti.userInfo objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey] integerValue];
-        if (reson == MPMovieFinishReasonPlaybackEnded)
-        {
+        SubErrorCode subErrorCode = [[noti.userInfo objectForKey:@"error"] integerValue];
+        
+        if (reson == MPMovieFinishReasonPlaybackEnded) {
             [self.controlVC stop];
         }
-        else if (reson == MPMovieFinishReasonPlaybackError)
-        {
-            NSLog(@"player manager finish reason playback error");
+        else if (reson == MPMovieFinishReasonPlaybackError) {
+            NSLog(@"player manager finish reason playback error! subErrorCode:%d",subErrorCode);
 
             // 尝试重连，注意这里需要你自己来处理重连尝试的次数以及重连的时间间隔
             if (_retryConnectNumber > 0) {
@@ -660,19 +597,14 @@ static bool showing = NO;
             _retryAlert.tag = AlertViewPlayerError;
             [_retryAlert show];
         }
-        
-        
     }
-    else if ([noti.name isEqualToString:UCloudPlayerVideoChangeRotationNotification]&& self.supportAngleChange)
-    {
+    else if ([noti.name isEqualToString:UCloudPlayerVideoChangeRotationNotification]&& self.supportAngleChange) {
         NSInteger rotation = [noti.object integerValue];
         self.mediaPlayer.player.view.transform = CGAffineTransformIdentity;
         float height = self.playerHeightContraint.constant;
         
-        switch (rotation)
-        {
-            case 0:
-            {
+        switch (rotation) {
+            case 0: {
 //                [NSLayoutConstraint deactivateConstraints:self.p];
                 
                 [self.view removeConstraints:self.l];
@@ -686,8 +618,7 @@ static bool showing = NO;
                 self.mediaPlayer.player.view.transform = CGAffineTransformIdentity;
             }
                 break;
-            case 90:
-            {
+            case 90: {
 //                [NSLayoutConstraint deactivateConstraints:self.l];
                 
                 [self.view removeConstraints:self.p];
@@ -700,8 +631,7 @@ static bool showing = NO;
                 self.mediaPlayer.player.view.transform = CGAffineTransformMakeRotation(-M_PI_2);
             }
                 break;
-            case 180:
-            {
+            case 180: {
 //                [NSLayoutConstraint deactivateConstraints:self.p];
                 
                 
@@ -717,8 +647,7 @@ static bool showing = NO;
                 self.mediaPlayer.player.view.transform = CGAffineTransformMakeRotation(-M_PI);
             }
                 break;
-            case 270:
-            {
+            case 270: {
 //                [NSLayoutConstraint deactivateConstraints:self.l];
                 
                 
@@ -852,11 +781,9 @@ static bool showing = NO;
 {
     [self.mediaPlayer.player pause];
     
-    if(!self.isFullscreen)
-    {
+    if(!self.isFullscreen) {
         UIDeviceOrientation deviceOr = [UIDevice currentDevice].orientation;
-        if (deviceOr == UIInterfaceOrientationLandscapeRight)
-        {
+        if (deviceOr == UIInterfaceOrientationLandscapeRight) {
             self.supportInterOrtation = UIInterfaceOrientationMaskLandscapeRight;
             [self awakeSupportInterOrtation:self.viewContorller completion:^() {
                 
@@ -869,8 +796,7 @@ static bool showing = NO;
                 }];
             }];
         }
-        else
-        {
+        else {
             self.supportInterOrtation = UIInterfaceOrientationMaskLandscapeLeft;
             [self awakeSupportInterOrtation:self.viewContorller completion:^() {
                 
@@ -884,8 +810,7 @@ static bool showing = NO;
             }];
         }
     }
-    else
-    {
+    else {
         self.supportInterOrtation = UIInterfaceOrientationMaskPortrait;
         [self awakeSupportInterOrtation:self.viewContorller completion:^() {
             

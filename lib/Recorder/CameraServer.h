@@ -22,6 +22,8 @@ typedef void(^CameraDevice)(AVCaptureDevice *dev);
 
 typedef CMSampleBufferRef (^CameraData)(CMSampleBufferRef buffer);
 
+typedef void(^WatermarkBlock)();
+
 /*!
  CameraServer
  
@@ -67,6 +69,14 @@ typedef CMSampleBufferRef (^CameraData)(CMSampleBufferRef buffer);
 @property (strong, nonatomic) NSString *secretKey;
 
 /*!
+ *property audioPlayStr
+ @abstract 背景音乐路径
+ */
+
+@property (nonatomic,   copy) NSString *audioPlayStr;
+
+
+/*!
  @property supportFilter
  @abstract 是否支持滤镜
  
@@ -85,6 +95,12 @@ typedef CMSampleBufferRef (^CameraData)(CMSampleBufferRef buffer);
  @abstract 是否静音，默认NO
  */
 @property (nonatomic, assign) BOOL muted;
+
+/*!
+ @property backgroudMusicOn
+ @abstract 是否开启背景音乐，默认NO
+ */
+@property (nonatomic, assign) BOOL backgroudMusicOn;
 
 /*!
  @property videoOrientation
@@ -126,6 +142,9 @@ typedef CMSampleBufferRef (^CameraData)(CMSampleBufferRef buffer);
  */
 + (CameraServer*) server;
 
+
+
+- (void)setWatermarkView:(UIView *)watermarkView Block:(WatermarkBlock)block;
 /*!
  @method configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:
  @abstract server初始化(不会自动开始要在底层配置完成之后调用cameraStart)
@@ -138,6 +157,9 @@ typedef CMSampleBufferRef (^CameraData)(CMSampleBufferRef buffer);
  
  @discussion 推流从此进入
  */
+
+
+
 - (void)configureCameraWithOutputUrl:(NSString *)outPutUrl filter:(NSArray *)filters messageCallBack:(CameraMessage)block deviceBlock:(CameraDevice)deviceBlock cameraData:(CameraData)cameraData;
 
 /*!
