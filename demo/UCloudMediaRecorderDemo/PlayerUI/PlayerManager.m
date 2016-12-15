@@ -48,9 +48,20 @@
     //self.mediaPlayer = [[UCloudMediaPlayer alloc] init];
     //单例模式
     self.mediaPlayer = [UCloudMediaPlayer ucloudMediaPlayer];
-    [self.mediaPlayer setDelayOptimization:YES];
-    [self.mediaPlayer setCachedDuration:1000];
-    [self.mediaPlayer setBufferDuration:1000];
+    
+    //如果为直播且使用HLS(.m3u8后缀文件)播放
+    if ([_pathString.pathExtension hasSuffix:@"m3u8"]) {
+        //HLS如果对累积延时没要求，建议把setDelayOptimization设置为NO，这样播放过程中卡顿率会更低
+        [self.mediaPlayer setDelayOptimization:YES];
+        [self.mediaPlayer setCachedDuration:5000];
+        [self.mediaPlayer setBufferDuration:3000];
+    }
+    else {
+        [self.mediaPlayer setDelayOptimization:YES];
+        [self.mediaPlayer setCachedDuration:2000];
+        [self.mediaPlayer setBufferDuration:2000];
+    }
+    
     [self.mediaPlayer showMediaPlayer:path urltype:UrlTypeLive frame:CGRectNull view:self.view completion:^(NSInteger defaultNum, NSArray *data) {
         if (self.mediaPlayer) {
             [weakSelf buildMediaControl:defaultNum data:data];
@@ -541,7 +552,7 @@ static bool showing = NO;
 
 - (void)noti:(NSNotification *)noti
 {
-    NSLog(@"%@", noti.name);
+//    NSLog(@"PlayerManager->noti:%@", noti.name);
     if ([noti.name isEqualToString:UCloudPlaybackIsPreparedToPlayDidChangeNotification]) {
         [self.controlVC refreshMediaControl];
         self.retryConnectNumber = 3;

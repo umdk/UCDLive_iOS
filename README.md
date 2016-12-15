@@ -784,6 +784,7 @@ typedef NS_ENUM(NSInteger, UCloudVideoBitrate) {
 
 | 版本号   | 发布日期       | 说明                                       |
 | ----- | ---------- | ---------------------------------------- |
+| 1.5.2 | 2016.12.15 | 1、播放器增加https播放的支持<br/>2、优化前后台切换摄像头资源的使用<br/> 3、优化推流端横屏模式下的适配<br/> 4、修复推流时接听/拒绝来电的问题<br/>5、Demo增加针对HLS播放设置不同的参数示例<br/>6、修复8.3系统下推流时预览画面不角度不对的问题|
 | 1.5.1 | 2016.12.05 | 1、增加水印功能<br/> 2、增加混音功能<br/> 3、调整UI布局及文字描述<br/> 4、增加播放器delayOptimization、cacheDuration、bufferDuration、prepareTimeout、getAVFrameTimeout设置，详见UCloudMediaPlayer.h文件<br/>|
 | 1.5.0 | 2016.10.20 | 1、优化底层推流模块结构<br/> 2、增加 推流与服务器异常断开消息(详见UCloudRecorderTypeDef.h)，sdk内部已做重连处理，外部不需要做操作 |
 | 1.4.1 | 2016.10.14 | 1、暂时关闭降噪功能<br/> 2、UCloudMediaPlayer.h增加rtmpSubscribe属性设置来满足海外CDN播放前需要发送FCSubscribe命令的需求<br/> 3、优化后台切到前台重推流的场景<br/> 4、修复电话呼入未接通时，对方主动挂断电话后回到app推流失败的问题 |
