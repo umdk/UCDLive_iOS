@@ -75,7 +75,6 @@ typedef void(^WatermarkBlock)();
 
 @property (nonatomic,   copy) NSString *audioPlayStr;
 
-
 /*!
  @property supportFilter
  @abstract 是否支持滤镜
@@ -125,6 +124,15 @@ typedef void(^WatermarkBlock)();
 @property (nonatomic, assign) NSInteger reconnectCount;
 
 /*!
+ @property isCaptureYUV
+ @abstract 摄像头采集数据为YUV还是RGB
+ 
+ @discussion 默认为YES，即采集数据为YUV，NO为采集数据为RGB
+ */
+@property (assign, nonatomic) BOOL isCaptureYUV;
+
+
+/*!
  @method server
  @abstract CameraServer单例模式
  
@@ -157,9 +165,6 @@ typedef void(^WatermarkBlock)();
  
  @discussion 推流从此进入
  */
-
-
-
 - (void)configureCameraWithOutputUrl:(NSString *)outPutUrl filter:(NSArray *)filters messageCallBack:(CameraMessage)block deviceBlock:(CameraDevice)deviceBlock cameraData:(CameraData)cameraData;
 
 /*!
@@ -189,6 +194,8 @@ typedef void(^WatermarkBlock)();
  @param completion 关闭成功回调函数
  */
 - (void)shutdown:(void(^)(void))completion;
+
+- (void)pushPixelBuffer:(CVPixelBufferRef)pixelBuffer completion:(void(^)(void))completion;
 
 - (UCloudGPUImageView *)createBlurringScreenshot;
 
@@ -232,6 +239,14 @@ typedef void(^WatermarkBlock)();
  */
 - (BOOL)setTorchState:(UCloudCameraState)state;
 
+
+/*!
+ @method getStreamShot
+ @abstract 对当前视频流数据截图，不同于手机截屏
+ @return 截帧图像
+ */
+-(UIImage *)getStreamShot;
+
 /*!
  @method currentCapturePosition
  @abstract 获取当前摄像头的位置
@@ -247,16 +262,6 @@ typedef void(^WatermarkBlock)();
  @return 返回值
  */
 - (BOOL)lowThan5;
-
-/*!
- @method changeISO:
- @abstract 调整摄像头ISO
- 
- @param value value
- 
- @return 操作结果(value越界和8一下系统返回no)
- */
-- (BOOL)changeISO:(float)value;
 
 /*!
  @method addFilters:

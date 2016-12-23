@@ -355,9 +355,7 @@
         [weakSelf setBtnStateInSel:1];
     }
     else if (code == UCloudCamera_AuthFail) {
-        NSDictionary *dic = data;
-        NSError *error = dic[@"error"];
-        NSLog(@"errcode:%@\n msg:%@\n errdesc:%@", dic[@"retcode"], dic[@"message"], error.description);
+        NSLog(@"鉴权失败\n");
         weakSelf.recordBtn.enabled = YES;
     }
     else if (code == UCloudCamera_PreviewOK) {
@@ -646,9 +644,6 @@
 }
 
 - (IBAction)switchRouterTouchUpInside:(id)sender {
-    self.playDomain = PlayDomainOne(self.pathTextField.text);
-    self.recordDomain = RecordDomainOne(self.pathTextField.text);
-    
     if(sender != _btnRouterTwo) {
         _btnRouterOne.selected = YES;
         _btnRouterTwo.selected = NO;

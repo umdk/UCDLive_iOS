@@ -67,9 +67,6 @@
     else if ([name isEqualToString:@"bilateralFilter"]) {
         [self.bilateralFilter setDistanceNormalizationFactor:value];
     }
-    else if ([name isEqualToString:@"ISO"]) {
-        [[CameraServer server]changeISO:value];
-    }
 }
 
 - (NSMutableArray *)buildData
