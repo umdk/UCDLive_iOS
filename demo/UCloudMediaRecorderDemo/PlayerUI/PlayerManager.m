@@ -51,15 +51,13 @@
     
     //如果为直播且使用HLS(.m3u8后缀文件)播放
     if ([_pathString.pathExtension hasSuffix:@"m3u8"]) {
-        //HLS如果对累积延时没要求，建议把setDelayOptimization设置为NO，这样播放过程中卡顿率会更低
-        [self.mediaPlayer setDelayOptimization:YES];
-        [self.mediaPlayer setCachedDuration:5000];
+        //HLS如果对累积延时没要求，建议把setCachedDuration设置为0，这样播放过程中卡顿率会更低
+        [self.mediaPlayer setCachedDuration:0];
         [self.mediaPlayer setBufferDuration:3000];
     }
     else {
-        [self.mediaPlayer setDelayOptimization:YES];
-        [self.mediaPlayer setCachedDuration:2000];
-        [self.mediaPlayer setBufferDuration:2000];
+        [self.mediaPlayer setCachedDuration:3000];
+        [self.mediaPlayer setBufferDuration:3000];
     }
     
     [self.mediaPlayer showMediaPlayer:path urltype:UrlTypeLive frame:CGRectNull view:self.view completion:^(NSInteger defaultNum, NSArray *data) {
@@ -589,22 +587,25 @@ static bool showing = NO;
         MPMovieFinishReason reson = [[noti.userInfo objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey] integerValue];
         SubErrorCode subErrorCode = [[noti.userInfo objectForKey:@"error"] integerValue];
         
+        //播放结束
         if (reson == MPMovieFinishReasonPlaybackEnded) {
             [self.controlVC stop];
+            
+            //部分cdn对于主播中途退出的情况也定义为播放结束，如果客户有自己的信令服务则可以自己来管理主播掉线、切后台、退出等状态，如果没有自己的信令服务则可以在此添加重连的机制，具体可以参考下面的出错重连代码。
         }
+        //播放出错
         else if (reson == MPMovieFinishReasonPlaybackError) {
-            NSLog(@"player manager finish reason playback error! subErrorCode:%d",subErrorCode);
+            NSLog(@"player manager finish reason playback error! subErrorCode:%ld",(long)subErrorCode);
 
             // 尝试重连，注意这里需要你自己来处理重连尝试的次数以及重连的时间间隔
             if (_retryConnectNumber > 0) {
-                NSLog(@"视频播放错误，正在尝试重连，剩余次数%ld", _retryConnectNumber);
-                
+                NSLog(@"视频播放错误，小U君正在为您抢救，剩余次数%ld", _retryConnectNumber);
                 [self performSelector:@selector(restartPlayer) withObject:self afterDelay:5.0f];
                 
                 return;
             }
             
-            _retryAlert.message = @"视频播放错误";
+            _retryAlert.message = @"视频播放错误，请稍候再试";
             _retryAlert.tag = AlertViewPlayerError;
             [_retryAlert show];
         }
