@@ -202,7 +202,7 @@
         [[CameraServer server] setWidth:360];
     }
     
-    [[CameraServer server] setFps:15];
+    [[CameraServer server] setFps:20];
     [[CameraServer server] setSupportFilter:YES];
     
     //横屏推流

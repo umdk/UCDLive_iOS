@@ -51,7 +51,7 @@
     
     //如果为直播且使用HLS(.m3u8后缀文件)播放
     if ([_pathString.pathExtension hasSuffix:@"m3u8"]) {
-        //HLS如果对累积延时没要求，建议把setCachedDuration设置为0，这样播放过程中卡顿率会更低
+        //HLS如果对累积延时没要求，建议把setCachedDuration设置为0(即关闭消除累积延时功能)，这样播放过程中卡顿率会更低
         [self.mediaPlayer setCachedDuration:0];
         [self.mediaPlayer setBufferDuration:3000];
     }
