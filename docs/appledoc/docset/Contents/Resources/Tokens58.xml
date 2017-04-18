@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSMutableArray+UCDPop.html">
+	<File path="Protocols/UCloudGPUImageMovieDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSMutableArray(UCDPop)</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSMutableArray+UCDPop.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/UCloudGPUImageMovieDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol for getting Movie played callback.</Abstract>
+			<DeclaredIn>UCloudGPUImageMovie.h</DeclaredIn>
             
 			
 			<NodeRef refid="58"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSMutableArray/ucdPopFirstObject</TokenIdentifier>
-			<Abstract type="html">The first object, or nil.</Abstract>
-			<DeclaredIn>NSMutableArray+UCDPop.h</DeclaredIn>
-			
-			<Declaration>- (nullable id)ucdPopFirstObject</Declaration>
-			
-			<ReturnValue><Abstract type="html">The first object, or nil.</Abstract></ReturnValue>
-			<Anchor>//api/name/ucdPopFirstObject</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
 		
         
         

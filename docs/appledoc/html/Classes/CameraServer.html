@@ -56,6 +56,10 @@
 	
 	<optgroup label="Properties">
 		
+		<option value="//api/name/audioPlayStr">audioPlayStr</option>
+		
+		<option value="//api/name/backgroudMusicOn">backgroudMusicOn</option>
+		
 		<option value="//api/name/bitrate">bitrate</option>
 		
 		<option value="//api/name/captureDevicePos">captureDevicePos</option>
@@ -73,6 +77,8 @@
 		<option value="//api/name/reconnectInterval">reconnectInterval</option>
 		
 		<option value="//api/name/secretKey">secretKey</option>
+		
+		<option value="//api/name/streamMirrorFrontFacing">streamMirrorFrontFacing</option>
 		
 		<option value="//api/name/supportFilter">supportFilter</option>
 		
@@ -104,8 +110,6 @@
 		
 		<option value="//api/name/changeCamera">- changeCamera</option>
 		
-		<option value="//api/name/changeISO:">- changeISO:</option>
-		
 		<option value="//api/name/closeFilter">- closeFilter</option>
 		
 		<option value="//api/name/configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:">- configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:</option>
@@ -116,6 +120,8 @@
 		
 		<option value="//api/name/getSDKVersion">- getSDKVersion</option>
 		
+		<option value="//api/name/getStreamShot">- getStreamShot</option>
+		
 		<option value="//api/name/initializeCameraViewFrame:">- initializeCameraViewFrame:</option>
 		
 		<option value="//api/name/lowThan5">- lowThan5</option>
@@ -125,6 +131,8 @@
 		<option value="//api/name/outBitrate">- outBitrate</option>
 		
 		<option value="//api/name/setTorchState:">- setTorchState:</option>
+		
+		<option value="//api/name/setWatermarkView:Block:">- setWatermarkView:Block:</option>
 		
 		<option value="//api/name/shutdown:">- shutdown:</option>
 		
@@ -400,6 +408,47 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/audioPlayStr" title="audioPlayStr"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioPlayStr">&nbsp;&nbsp;audioPlayStr</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>背景音乐路径</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *audioPlayStr</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/supportFilter" title="supportFilter"></a>
 	<h3 class="method-title"><code><a href="#//api/name/supportFilter">&nbsp;&nbsp;supportFilter</a></code>
 </h3>
@@ -528,6 +577,47 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/backgroudMusicOn" title="backgroudMusicOn"></a>
+	<h3 class="method-title"><code><a href="#//api/name/backgroudMusicOn">&nbsp;&nbsp;backgroudMusicOn</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否开启背景音乐，默认NO</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL backgroudMusicOn</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/videoOrientation" title="videoOrientation"></a>
 	<h3 class="method-title"><code><a href="#//api/name/videoOrientation">&nbsp;&nbsp;videoOrientation</a></code>
 </h3>
@@ -558,6 +648,47 @@
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>只在采集初始化时设置有效，默认UIDeviceOrientationPortrait</p>
 			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/streamMirrorFrontFacing" title="streamMirrorFrontFacing"></a>
+	<h3 class="method-title"><code><a href="#//api/name/streamMirrorFrontFacing">&nbsp;&nbsp;streamMirrorFrontFacing</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>推流镜像，只对前置有效</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL streamMirrorFrontFacing</code></div>
+
+		    
+			
+
+			
+
+			
+
 			
 
 			
@@ -738,8 +869,8 @@
 				<p>CameraServer只支持单例推流，若构造多个实例会造成不同估量的异常</p>
 
 <ul>
-<li><a href="#//api/name/width">width</a>             = 640;</li>
-<li><a href="#//api/name/height">height</a>            = 480;</li>
+<li><a href="#//api/name/width">width</a>             = 360;</li>
+<li><a href="#//api/name/height">height</a>            = 640;</li>
 <li><a href="#//api/name/fps">fps</a>               = 15;</li>
 <li><a href="#//api/name/muted">muted</a>             = NO;</li>
 <li><a href="#//api/name/reconnectCount">reconnectCount</a>    = 5;</li>
@@ -750,6 +881,59 @@
 </ul>
 
 			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setWatermarkView:Block:" title="setWatermarkView:Block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setWatermarkView:Block:">&ndash;&nbsp;setWatermarkView:Block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置水印</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setWatermarkView:(UIView *)<em>watermarkView</em> Block:(WatermarkBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>watermarkView</code></th>
+						<td><p>设置水印视图</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
 			
 
 			
@@ -1274,6 +1458,52 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/getStreamShot" title="getStreamShot"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getStreamShot">&ndash;&nbsp;getStreamShot</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>对当前视频流数据截图，不同于手机截屏</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIImage *)getStreamShot</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>截帧图像</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/currentCapturePosition" title="currentCapturePosition"></a>
 	<h3 class="method-title"><code><a href="#//api/name/currentCapturePosition">&ndash;&nbsp;currentCapturePosition</a></code>
 </h3>
@@ -1345,64 +1575,6 @@
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
 				<p>返回值</p>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">CameraServer.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/changeISO:" title="changeISO:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/changeISO:">&ndash;&nbsp;changeISO:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>调整摄像头ISO</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)changeISO:(float)<em>value</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>value</code></th>
-						<td><p>value</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>操作结果(value越界和8一下系统返回no)</p>
 			</div>
 			
 
@@ -1614,7 +1786,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 UCloud. All rights reserved. Updated: 2016-10-25</p>
+						<p class="copyright">Copyright &copy; 2017 UCloud. All rights reserved. Updated: 2017-03-29</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

@@ -73,8 +73,9 @@
 				</Node>
 				
 				
+                
 				<Node>
-					<Name>Categories</Name>
+					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
 						<NodeRef refid="58"/>
@@ -84,24 +85,14 @@
 				
                 
 				<Node>
-					<Name>Protocols</Name>
-					<Path>index.html</Path>
-					<Subnodes>
-						<NodeRef refid="59"/>
-						
-					</Subnodes>
-				</Node>
-				
-                
-				<Node>
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="59"/>
 						<NodeRef refid="60"/>
 						<NodeRef refid="61"/>
 						<NodeRef refid="62"/>
 						<NodeRef refid="63"/>
-						<NodeRef refid="64"/>
 						
 					</Subnodes>
 				</Node>
@@ -111,6 +102,7 @@
                     <Name>Blocks</Name>
                     <Path>index.html</Path>
                     <Subnodes>
+                        <NodeRef refid="64"/>
                         <NodeRef refid="65"/>
                         <NodeRef refid="66"/>
                         <NodeRef refid="67"/>
@@ -1393,79 +1385,57 @@
             
         </Node>
 		
-		<Node id="58" type="file" documentType="reference">
-            <Name>NSMutableArray(UCDPop)</Name>
-            <Path>Categories/NSMutableArray+UCDPop.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Categories/NSMutableArray+UCDPop.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Categories/NSMutableArray+UCDPop.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Categories/NSMutableArray+UCDPop.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
 		
-        <Node id="59" type="file" documentType="reference">
+        <Node id="58" type="file" documentType="reference">
             <Name>UCloudGPUImageMovieDelegate</Name>
             <Path>Protocols/UCloudGPUImageMovieDelegate.html</Path>
             
         </Node>
 		
-        <Node id="60" type="file" documentType="reference">
+        <Node id="59" type="file" documentType="reference">
             <Name>UCloudCameraCode</Name>
             <Path>Constants/UCloudCameraCode.html</Path>
             
         </Node>
-		<Node id="61" type="file" documentType="reference">
+		<Node id="60" type="file" documentType="reference">
             <Name>UCloudCameraState</Name>
             <Path>Constants/UCloudCameraState.html</Path>
             
         </Node>
-		<Node id="62" type="file" documentType="reference">
+		<Node id="61" type="file" documentType="reference">
             <Name>UCloudVideoBitrate</Name>
             <Path>Constants/UCloudVideoBitrate.html</Path>
             
         </Node>
-		<Node id="63" type="file" documentType="reference">
+		<Node id="62" type="file" documentType="reference">
             <Name>UCloudVideoOrientation</Name>
             <Path>Constants/UCloudVideoOrientation.html</Path>
             
         </Node>
-		<Node id="64" type="file" documentType="reference">
+		<Node id="63" type="file" documentType="reference">
             <Name>UIImageOrientation</Name>
             <Path>Constants/UIImageOrientation.html</Path>
             
         </Node>
 		
-        <Node id="65" type="file" documentType="reference">
+        <Node id="64" type="file" documentType="reference">
             <Name>CameraData</Name>
             <Path>Blocks/CameraData.html</Path>
             
         </Node>
-        <Node id="66" type="file" documentType="reference">
+        <Node id="65" type="file" documentType="reference">
             <Name>CameraDevice</Name>
             <Path>Blocks/CameraDevice.html</Path>
             
         </Node>
-        <Node id="67" type="file" documentType="reference">
+        <Node id="66" type="file" documentType="reference">
             <Name>CameraMessage</Name>
             <Path>Blocks/CameraMessage.html</Path>
+            
+        </Node>
+        <Node id="67" type="file" documentType="reference">
+            <Name>WatermarkBlock</Name>
+            <Path>Blocks/WatermarkBlock.html</Path>
             
         </Node>
         <Node id="68" type="file" documentType="reference">

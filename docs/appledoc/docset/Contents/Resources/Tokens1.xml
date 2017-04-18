@@ -193,6 +193,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setAudioPlayStr:</TokenIdentifier>
+			<Abstract type="html">背景音乐路径</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *audioPlayStr</Declaration>
+			
+			
+			<Anchor>//api/name/audioPlayStr</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/audioPlayStr</TokenIdentifier>
+			<Abstract type="html">背景音乐路径</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *audioPlayStr</Declaration>
+			
+			
+			<Anchor>//api/name/audioPlayStr</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/audioPlayStr</TokenIdentifier>
+			<Abstract type="html">背景音乐路径</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *audioPlayStr</Declaration>
+			
+			
+			<Anchor>//api/name/audioPlayStr</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setSupportFilter:</TokenIdentifier>
 			<Abstract type="html">是否支持滤镜</Abstract>
 			<DeclaredIn>CameraServer.h</DeclaredIn>
@@ -301,6 +337,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setBackgroudMusicOn:</TokenIdentifier>
+			<Abstract type="html">是否开启背景音乐，默认NO</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL backgroudMusicOn</Declaration>
+			
+			
+			<Anchor>//api/name/backgroudMusicOn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/backgroudMusicOn</TokenIdentifier>
+			<Abstract type="html">是否开启背景音乐，默认NO</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL backgroudMusicOn</Declaration>
+			
+			
+			<Anchor>//api/name/backgroudMusicOn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/backgroudMusicOn</TokenIdentifier>
+			<Abstract type="html">是否开启背景音乐，默认NO</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL backgroudMusicOn</Declaration>
+			
+			
+			<Anchor>//api/name/backgroudMusicOn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setVideoOrientation:</TokenIdentifier>
 			<Abstract type="html">视频推流方向</Abstract>
 			<DeclaredIn>CameraServer.h</DeclaredIn>
@@ -333,6 +405,42 @@
 			
 			
 			<Anchor>//api/name/videoOrientation</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setStreamMirrorFrontFacing:</TokenIdentifier>
+			<Abstract type="html">推流镜像，只对前置有效</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL streamMirrorFrontFacing</Declaration>
+			
+			
+			<Anchor>//api/name/streamMirrorFrontFacing</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/streamMirrorFrontFacing</TokenIdentifier>
+			<Abstract type="html">推流镜像，只对前置有效</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL streamMirrorFrontFacing</Declaration>
+			
+			
+			<Anchor>//api/name/streamMirrorFrontFacing</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CameraServer/streamMirrorFrontFacing</TokenIdentifier>
+			<Abstract type="html">推流镜像，只对前置有效</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL streamMirrorFrontFacing</Declaration>
+			
+			
+			<Anchor>//api/name/streamMirrorFrontFacing</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -453,6 +561,23 @@
 			
 			
 			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/setWatermarkView:Block:</TokenIdentifier>
+			<Abstract type="html">设置水印</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (void)setWatermarkView:(UIView *)watermarkView Block:(WatermarkBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>watermarkView</Name>
+					<Abstract type="html">设置水印视图</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setWatermarkView:Block:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -609,6 +734,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/getStreamShot</TokenIdentifier>
+			<Abstract type="html">对当前视频流数据截图，不同于手机截屏</Abstract>
+			<DeclaredIn>CameraServer.h</DeclaredIn>
+			
+			<Declaration>- (UIImage *)getStreamShot</Declaration>
+			
+			<ReturnValue><Abstract type="html">截帧图像</Abstract></ReturnValue>
+			<Anchor>//api/name/getStreamShot</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/currentCapturePosition</TokenIdentifier>
 			<Abstract type="html">获取当前摄像头的位置</Abstract>
 			<DeclaredIn>CameraServer.h</DeclaredIn>
@@ -629,23 +766,6 @@
 			
 			<ReturnValue><Abstract type="html">返回值</Abstract></ReturnValue>
 			<Anchor>//api/name/lowThan5</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CameraServer/changeISO:</TokenIdentifier>
-			<Abstract type="html">调整摄像头ISO</Abstract>
-			<DeclaredIn>CameraServer.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)changeISO:(float)value</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>value</Name>
-					<Abstract type="html">value</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">操作结果(value越界和8一下系统返回no)</Abstract></ReturnValue>
-			<Anchor>//api/name/changeISO:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

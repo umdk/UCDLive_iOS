@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/UCloudVideoBitrate.html">
+	<File path="Constants/UCloudVideoOrientation.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/UCloudVideoBitrate</TokenIdentifier>
-			<Abstract type="html">采集的视频流码率，包括视频流码率和音频流码率，音频流码率默认128kbps</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/UCloudVideoOrientation</TokenIdentifier>
+			<Abstract type="html">视频采集方向</Abstract>
 			<DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoBitrateLow</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoOrientationPortrait</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>UCloudVideoBitrateLow</Declaration>
+            <Declaration>UCloudVideoOrientationPortrait</Declaration>
             
             <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoBitrateNormal</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoOrientationPortraitUpsideDown</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>UCloudVideoBitrateNormal</Declaration>
+            <Declaration>UCloudVideoOrientationPortraitUpsideDown</Declaration>
             
             <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoBitrateMedium</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoOrientationLandscapeRight</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>UCloudVideoBitrateMedium</Declaration>
+            <Declaration>UCloudVideoOrientationLandscapeRight</Declaration>
             
             <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
             
@@ -44,9 +44,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoBitrateHigh</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudVideoOrientationLandscapeLeft</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>UCloudVideoBitrateHigh</Declaration>
+            <Declaration>UCloudVideoOrientationLandscapeLeft</Declaration>
             
             <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
             

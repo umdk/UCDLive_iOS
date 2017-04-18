@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/UCloudCameraCode.html">
+	<File path="Constants/UCloudCameraState.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/UCloudCameraCode</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/UCloudCameraState</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_COMPLETED</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_COMPLETED</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudCameraCode_Off</TokenIdentifier>
+            <Abstract type="html">关闭</Abstract>
+            <Declaration>UCloudCameraCode_Off</Declaration>
             
             <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_FILE_SIZE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_FILE_SIZE</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudCameraCode_On</TokenIdentifier>
+            <Abstract type="html">打开</Abstract>
+            <Declaration>UCloudCameraCode_On</Declaration>
             
             <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
             
@@ -34,259 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_FILE_DURATION</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_FILE_DURATION</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_CUR_POS</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_CUR_POS</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_CUR_TIME</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_CUR_TIME</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_URL_ERROR</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_URL_ERROR</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_OUT_FAIL</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_OUT_FAIL</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_STARTED</TokenIdentifier>
-            <Abstract type="html">推流开始</Abstract>
-            <Declaration>UCloudCamera_STARTED</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_READ_AUD_ERROR</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_READ_AUD_ERROR</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_READ_VID_ERROR</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_READ_VID_ERROR</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_OUTPUT_ERROR</TokenIdentifier>
-            <Abstract type="html">推流错误</Abstract>
-            <Declaration>UCloudCamera_OUTPUT_ERROR</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_STOPPED</TokenIdentifier>
-            <Abstract type="html">推流停止</Abstract>
-            <Declaration>UCloudCamera_STOPPED</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_READ_AUD_EOS</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_READ_AUD_EOS</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_READ_VID_EOS</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_READ_VID_EOS</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_BUFFER_OVERFLOW</TokenIdentifier>
-            <Abstract type="html">推流上行带宽不足</Abstract>
-            <Declaration>UCloudCamera_BUFFER_OVERFLOW</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_SecretkeyNil</TokenIdentifier>
-            <Abstract type="html">SDK 密钥为空</Abstract>
-            <Declaration>UCloudCamera_SecretkeyNil</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_DomainNil</TokenIdentifier>
-            <Abstract type="html">推流域名为空</Abstract>
-            <Declaration>UCloudCamera_DomainNil</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_AuthFail</TokenIdentifier>
-            <Abstract type="html">SDK 鉴权失败</Abstract>
-            <Declaration>UCloudCamera_AuthFail</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_ServerIpError</TokenIdentifier>
-            <Abstract type="html">SDK 鉴权返回IP列表为空</Abstract>
-            <Declaration>UCloudCamera_ServerIpError</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_PreviewOK</TokenIdentifier>
-            <Abstract type="html">预览视图准备好</Abstract>
-            <Declaration>UCloudCamera_PreviewOK</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_PublishOk</TokenIdentifier>
-            <Abstract type="html">底层推流配置完毕</Abstract>
-            <Declaration>UCloudCamera_PublishOk</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_StartPublish</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UCloudCamera_StartPublish</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_DigError</TokenIdentifier>
-            <Abstract type="html">SDK dig错误</Abstract>
-            <Declaration>UCloudCamera_DigError</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_AlreadyPublish</TokenIdentifier>
-            <Abstract type="html">推流ID已被占用</Abstract>
-            <Declaration>UCloudCamera_AlreadyPublish</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_CannotConnect</TokenIdentifier>
-            <Abstract type="html">推流url对应的服务器连接失败</Abstract>
-            <Declaration>UCloudCamera_CannotConnect</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_DisConnected</TokenIdentifier>
-            <Abstract type="html">服务器连接异常断开</Abstract>
-            <Declaration>UCloudCamera_DisConnected</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_Permission</TokenIdentifier>
-            <Abstract type="html">摄像头权限</Abstract>
-            <Declaration>UCloudCamera_Permission</Declaration>
-            
-            <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
-            
-            <NodeRef refid="60"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UCloudCamera_Micphone</TokenIdentifier>
-            <Abstract type="html">麦克风权限</Abstract>
-            <Declaration>UCloudCamera_Micphone</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/UCloudCameraCode_Auto</TokenIdentifier>
+            <Abstract type="html">自动</Abstract>
+            <Declaration>UCloudCameraCode_Auto</Declaration>
             
             <DeclaredIn>UCloudRecorderTypeDef.h</DeclaredIn>
             
