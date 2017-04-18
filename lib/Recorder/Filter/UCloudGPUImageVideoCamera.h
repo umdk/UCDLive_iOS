@@ -142,6 +142,8 @@ void setUCloudColorConversion709( GLfloat conversionMatrix[9] );
  */
 - (AVCaptureConnection *)videoCaptureConnection;
 
+- (void)updateTargetsForVideoCameraUsingCacheTextureAtWidth:(int)bufferWidth height:(int)bufferHeight time:(CMTime)currentTime;
+
 /** This flips between the front and rear cameras
  */
 - (void)rotateCamera;
