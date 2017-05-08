@@ -784,6 +784,7 @@ typedef NS_ENUM(NSInteger, UCloudVideoBitrate) {
 
 | 版本号   | 发布日期       | 说明                                       |
 | ----- | ---------- | ---------------------------------------- |
+| 1.6.3 | 2017.05.05 |1、增加推流本地日志输出，新增API见CameraServer.h<br/>2、sdk外层增加对demo的友盟统计<br/>3、播放器更新至1.5.1|
 | 1.6.2 | 2017.04.18 |1、调整推流端SDK、播放器SDK体验质量采集<br/> 2、播放器SDK加入本地日志模块，更方便普通用户定位问题，具体API详见UCloudMediaPlayer.h|
 | 1.6.1 | 2017.03.10 |1、增加前置摄像头出去的流翻转API streamMirrorFrontFacing<br/> 2、统一rtmp发送头部，与android一致<br/> 3、修复8.1系统下的推流兼容性问题<br/> 4、播放器增加对speex音频播放支持|
 | 1.6.0 | 2017.01.25 | 1、全面支持bitcode（静态库体积会变大，但是不影响最终ipa的体积，bitcode只有在上传applestore后才有效果）<br/> 2、升级播放器解码内核<br/> 3、优化摄像头频繁切换时的处理<br/> 4、优化首次安装app时的cpu占用率|

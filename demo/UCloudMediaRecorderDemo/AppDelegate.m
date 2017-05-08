@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <UMMobClick/MobClick.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    UMConfigInstance.appKey = @"58f87ccc82b63574e2001590";
+    [MobClick startWithConfigure:UMConfigInstance];
+
     return YES;
 }
 
