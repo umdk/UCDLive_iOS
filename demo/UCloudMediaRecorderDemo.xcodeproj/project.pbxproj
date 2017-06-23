@@ -81,6 +81,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C1307DE21EFD2F9A009AC2C1 /* UCloudGPUImageVideoInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCloudGPUImageVideoInput.h; sourceTree = "<group>"; };
+		C1307DE31EFD2F9A009AC2C1 /* UCloudGPUVideoMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCloudGPUVideoMixer.h; sourceTree = "<group>"; };
+		C1307DE41EFD2F9A009AC2C1 /* UCloudGPUVideoOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCloudGPUVideoOutput.h; sourceTree = "<group>"; };
 		C15B45121DB0D9D8003B5A6E /* UCloudRecorderTypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCloudRecorderTypeDef.h; sourceTree = "<group>"; };
 		C1D11FBE1DEEE0CB00569A5D /* ucloud_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ucloud_logo.png; sourceTree = "<group>"; };
 		C1D11FC21DEEE8DE00569A5D /* audioMixTest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioMixTest.mp3; sourceTree = "<group>"; };
@@ -561,6 +564,9 @@
 		E9A752131C86CE030043DF1B /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				C1307DE21EFD2F9A009AC2C1 /* UCloudGPUImageVideoInput.h */,
+				C1307DE31EFD2F9A009AC2C1 /* UCloudGPUVideoMixer.h */,
+				C1307DE41EFD2F9A009AC2C1 /* UCloudGPUVideoOutput.h */,
 				E9A6A3561D1154AE00E94124 /* UCloudGPUImageBeautyFilter2.h */,
 				E9A752141C86CE030043DF1B /* UCloudGLProgram.h */,
 				E9A752151C86CE030043DF1B /* UCloudGPUImage.h */,
@@ -770,7 +776,7 @@
 					E94670CE1BD78B9B00374D7A = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = CFP9KY4MGC;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -971,7 +977,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CFP9KY4MGC;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -990,8 +996,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.ucloud.UCloudLiveDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "64961819-84f5-4423-8a6e-b5728bc851b1";
-				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;

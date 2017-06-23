@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "UCloudGPUImageFilter.h"
 
-@interface UCloudGPUImageBeautyFilter : UCloudGPUImageFilter
-{
-    GLint beautyLevelUniform;
-    GLint singleUniform;
+@interface UCloudGPUImageBeautyFilter : UCloudGPUImageFilter {
 }
-@property (assign, nonatomic) int beautyLevel;
+
+@property (nonatomic, assign) CGFloat smoothLevel;
+@property (nonatomic, assign) CGFloat brightLevel;
+@property (nonatomic, assign) CGFloat toneLevel;
 @end

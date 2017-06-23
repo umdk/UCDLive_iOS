@@ -167,6 +167,9 @@
 #import "UCloudGPUImageColourFASTFeatureDetector.h"
 #import "UCloudGPUImageColourFASTSamplingOperation.h"
 
+//UCloud
 #import "UCloudGPUImageBeautyFilter.h"
 #import "UCloudGPUImageBeautyFilter2.h"
-
+#import "UCloudGPUVideoMixer.h"
+#import "UCloudGPUImageVideoInput.h"
+#import "UCloudGPUVideoOutput.h"

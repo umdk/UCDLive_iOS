@@ -253,7 +253,7 @@
     originalFilters = [self.filterManager filters];
     _btnOpenFilter.selected = YES;
     
-    [self addWaterMark:[CameraServer server].videoOrientation];
+//    [self addWaterMark:[CameraServer server].videoOrientation];
     [[CameraServer server] configureCameraWithOutputUrl:path filter:originalFilters messageCallBack:^(UCloudCameraCode code, NSInteger arg1, NSInteger arg2, id data) {
                                             
                                             [weakSelf handlerMessageCallBackWithCode:code arg1:arg1 arg2:arg2 data:data weakSelf:weakSelf];
