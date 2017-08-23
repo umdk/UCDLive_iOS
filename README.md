@@ -121,23 +121,23 @@ git clone https://github.com/umdk/UCDLive_iOS.git --depth 1
 
 <a name="3"></a>
 ## 三 推流库集成
-请参考 wiki 文档：[UCDLive_IOS 开发指南](https://github.com/umdk/UCDLive_iOS/wiki/4-%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90#4)
+请参考 wiki 文档：[UCDLive_IOS 开发指南](https://github.com/umdk/UCDLive_iOS/wiki/4_Guide#4)
 
 
 <a name="4"></a>
 ## 四 连麦解决方案
 
-详细请参考 [UCDMediaPlayer项目](https://github.com/umdk/UCDLive_iOS/wiki/4-%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90#4.3)。
+详细请参考 [连麦配置](https://github.com/umdk/UCDLive_iOS/wiki/4_Guide#4.3)。
 
 <a name="5"></a>
 ## 五 播放器接入
 
-详细请参考 [UCDMediaPlayer项目](https://github.com/umdk/UCDLive_iOS/wiki/4-%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90#4.4)。
+详细请参考 [UCDMediaPlayer项目](https://github.com/umdk/UCDLive_iOS/wiki/4_Guide#4.4)。
 
 <a name="6"></a>
 ## 六 常见问题
 
-详细请见 [UCDLive_IOS 常见问题](https://github.com/umdk/UCDLive_iOS/wiki/6-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98#6)
+详细请见 [UCDLive_IOS 常见问题](https://github.com/umdk/UCDLive_iOS/wiki/6_FAQ#6#6)
 
 <a name="7"></a>
 ## 七 反馈和建议
