@@ -10,7 +10,6 @@
 #import "UCloudGPUImage.h"
 #import "UCloudRecorderTypeDef.h"
 
-
 /*!
  @abstract 推流状态回调
  * NSInteger arg1, 预留未定义
@@ -20,7 +19,10 @@ typedef void(^CameraMessage)(UCloudCameraCode code, NSInteger arg1, NSInteger ar
 /// 相机回调
 typedef void(^CameraDevice)(AVCaptureDevice *dev);
 
-typedef CMSampleBufferRef (^CameraData)(CMSampleBufferRef buffer);
+//typedef CMSampleBufferRef (^CameraData)(CMSampleBufferRef buffer);
+typedef CVPixelBufferRef (^CameraData)(CVPixelBufferRef buffer);
+
+typedef void(^videoProcessingCallback)(CVPixelBufferRef pixelBuffer, CMTime timeInfo );
 
 typedef void(^WatermarkBlock)();
 
@@ -43,6 +45,8 @@ typedef void(^WatermarkBlock)();
  */
 @property (assign, nonatomic) int height;
 
+@property (strong, nonatomic) UCloudGPUImageVideoCamera *videoCamera;
+
 /*!
  @property fps
  @abstract 帧率(15\20\25\30)，默认15
@@ -59,6 +63,26 @@ typedef void(^WatermarkBlock)();
  @discussion 视频码率高则画面较清晰，低则画面较模糊，同时数据亦是如此，码率高数据大，码率低数据小
  */
 @property (assign, nonatomic) int bitrate;
+
+
+/*!
+ @property audiochannels
+ @abstract  音频采集通道数 默认是1
+ */
+@property (assign, nonatomic) int audiochannels;
+
+/*!
+ @property audioSamplerate
+ @abstract 音频采样率(48000,44100 32000,22050,22050,11025默认44100）
+ */
+@property (assign, nonatomic) int audioSamplerate;
+
+
+/*!
+ @property audioBitrate
+ @abstract 音频比特率(32kps,64kps,96kps,128kps默认128kps,采样率小于441100时，比特率应不大于64kps)
+*/
+@property (assign, nonatomic) int audioBitrate;
  
 /*!
  @property secretKey
@@ -144,6 +168,12 @@ typedef void(^WatermarkBlock)();
 @property (assign, nonatomic) bool enableLogFile;
 
 /**
+ @property logLevel
+ @abstract 日志输出等级设置，默认UCDLiveLogLevelInfo
+ */
+@property (assign, nonatomic) UCDLiveLogLevel logLevel;
+
+/**
  @property logFiles
  @abstract 所有日志文件名
  */
@@ -151,9 +181,9 @@ typedef void(^WatermarkBlock)();
 
 /**
  @property logsDirectory
- @abstract 日志文件路径，
+ @abstract 日志文件路径，默认Documents/Logs/UCloud/ULive
  */
-@property (strong, nonatomic, readonly) NSString *logsDirectory;
+@property (strong, nonatomic) NSString *logsDirectory;
 
 /**
  @property lastLogFilePath
@@ -178,6 +208,8 @@ typedef void(^WatermarkBlock)();
  @abstract 日志文件夹大小，超过会清理日志，默认20M
  */
 @property (assign, nonatomic) NSInteger logFilesMaxSize;
+
+@property (strong, nonatomic) videoProcessingCallback videoProcessing;
 
 /*!
  @method server
@@ -235,6 +267,18 @@ typedef void(^WatermarkBlock)();
 - (BOOL)cameraStart;
 
 /*!
+ @method cameraStopPublish
+ @abstract 停止推流上传
+ */
+- (void)cameraStopPublish;
+
+/*!
+ @method cameraResumePublish
+ @abstract 恢复推流上传
+ */
+- (void)cameraResumePublish;
+
+/*!
  @method cameraRestart
  @abstract 推流失败之后重新推流
  */
@@ -242,11 +286,24 @@ typedef void(^WatermarkBlock)();
 
 /*!
  @method shutdown
- @abstract 关闭录像停止推流
+ @abstract 关闭视频采集并停止推流
  
  @param completion 关闭成功回调函数
  */
 - (void)shutdown:(void(^)(void))completion;
+
+/*!
+ *method stopAudioModule
+ @abstract 关闭模块内部声音采集
+ */
+- (void)stopAudioModule;
+
+/*!
+ *method startAudioModule
+ @abstract 开启模块内部声音采集
+ */
+- (void)startAudioModule;
+
 
 - (void)pushPixelBuffer:(CVPixelBufferRef)pixelBuffer completion:(void(^)(void))completion;
 
@@ -335,6 +392,15 @@ typedef void(^WatermarkBlock)();
  @abstract 关闭美颜功能
  */
 - (void)closeFilter;
+
+/*！
+ @ method    mixerAudioDataInBus:AudioData:
+ @ abstract 多路音频数据合流
+ @param busIndex  NSInteger 音频通道
+ @param audiodata NSData*   该音频通道的音频数据
+ */
+
+-(void)mixerAudioDataInBus:(NSInteger)busIndex AudioData:(NSData*)audiodata;
 
 
 /**

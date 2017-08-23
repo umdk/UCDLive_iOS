@@ -1,10 +1,8 @@
-//
-//  GPUImageBeautyFilter.h
-//  GPUImage
-//
-//  Created by yisanmao on 16/2/1.
-//  Copyright © 2016年 Brad Larson. All rights reserved.
-//
+//#if __has_include(<GPUImage/GPUImageFramework.h>)
+//#import <GPUImage/GPUImageFramework.h>
+//#else
+//#import "GPUImage.h"
+//#endif
 
 #import <Foundation/Foundation.h>
 #import "UCloudGPUImageFilter.h"

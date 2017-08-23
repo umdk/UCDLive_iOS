@@ -173,3 +173,5 @@
 #import "UCloudGPUVideoMixer.h"
 #import "UCloudGPUImageVideoInput.h"
 #import "UCloudGPUVideoOutput.h"
+#import "UCloudGPUImageEmptyFilter.h"
+#import "UCloudGPUImagePhotoFilter.h"

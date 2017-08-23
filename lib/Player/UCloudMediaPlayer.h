@@ -86,6 +86,16 @@ typedef void(^UCloudMediaCompletionBlock)(NSInteger defaultNum, NSArray *data);
 
 @interface UCloudMediaPlayer : NSObject
 
+
+/**
+ *  设备网络切换时是否自动重连,默认开启(YES)
+ */
+@property (assign, nonatomic) BOOL                  bReconEnable;
+
+/**
+ *  最大重连次数
+ */
+@property (assign, nonatomic) NSUInteger            maxReconCount;
 /**
  *  画面填充方式
  */
@@ -110,6 +120,12 @@ typedef void(^UCloudMediaCompletionBlock)(NSInteger defaultNum, NSArray *data);
  * 适用于rtmp直播协议，向服务器发送FCSubscribe命令,一般填写streamID，比如播放地址为rtmp://xxx.com/app/id,此处填写id
  */
 @property (strong, nonatomic) NSString              *rtmpSubscribe;
+
+/*!
+ @property dropframeInterval
+ @abstract 检测是否丢帧时间间隔设置，适用于直播，单位 ms，建议范围:5000-60000，默认为30000
+ */
+@property (assign, nonatomic) NSInteger             dropframeInterval;
 
 /*!
  @property cachedDuration

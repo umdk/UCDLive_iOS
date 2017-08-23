@@ -71,10 +71,10 @@ typedef NS_ENUM(NSInteger, UCloudCameraState)
  *  @abstract  视频采集方向
  */
 typedef NS_ENUM(NSInteger, UCloudVideoOrientation) {
-    UCloudVideoOrientationPortrait           = UIDeviceOrientationPortrait,
-    UCloudVideoOrientationPortraitUpsideDown = UIDeviceOrientationPortraitUpsideDown,
-    UCloudVideoOrientationLandscapeRight      = UIDeviceOrientationLandscapeRight,
-    UCloudVideoOrientationLandscapeLeft     = UIDeviceOrientationLandscapeLeft
+    UCloudVideoOrientationPortrait           = UIInterfaceOrientationPortrait,
+    UCloudVideoOrientationPortraitUpsideDown = UIInterfaceOrientationPortraitUpsideDown,
+    UCloudVideoOrientationLandscapeRight      = UIInterfaceOrientationLandscapeRight,
+    UCloudVideoOrientationLandscapeLeft     = UIInterfaceOrientationLandscapeLeft
 };
 
 /*!
@@ -89,6 +89,25 @@ typedef NS_ENUM(NSInteger, UCloudVideoBitrate) {
     UCloudVideoBitrateHigh      = 1000
 };
 
+/*!
+ @typedef    UCDLiveLogLevel
+ @abstract   推流日志级别。
+ */
+typedef NS_OPTIONS(NSUInteger, UCDLiveLogLevel){
+    // No logs
+    UCDLiveLogLevelOff       = 0,
+    // Error logs only
+    UCDLiveLogLevelError     = (1<<0),
+    // Error and warning logs
+    UCDLiveLogLevelWarning   = (UCDLiveLogLevelError | 1<<1),
+    // Error, warning and info logs
+    UCDLiveLogLevelInfo      = (UCDLiveLogLevelWarning | 1<<2),
+    // Error, warning, info and debug logs
+    UCDLiveLogLevelDebug     = (UCDLiveLogLevelInfo | 1<<3),
+    // Error, warning, info, debug and verbose logs
+    UCDLiveLogLevelVerbose   = (UCDLiveLogLevelDebug | 1<<4),
+};
+
 #pragma mark Notifications
 
 #ifdef __cplusplus
@@ -96,11 +115,6 @@ typedef NS_ENUM(NSInteger, UCloudVideoBitrate) {
 #else
 #define UCLOUD_EXTERN extern __attribute__((visibility ("default")))
 #endif
-
-/**
- *  推流出错，重新推流
- */
-UCLOUD_EXTERN NSString *const UCloudNeedRestart;
 
 
 #define System_Version [UIDevice currentDevice].systemVersion.floatValue

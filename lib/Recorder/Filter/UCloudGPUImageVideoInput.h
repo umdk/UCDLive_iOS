@@ -20,10 +20,11 @@
  */
 @interface UCloudGPUImageVideoInput : UCloudGPUImageOutput {
     dispatch_semaphore_t frameRenderingSemaphore;
-    
-    UCloudGPUImageRotationMode outputRotation, internalRotation;
     GLuint luminanceTexture, chrominanceTexture;
 }
+
+@property(nonatomic, assign)UCloudGPUImageRotationMode outputRotation;
+@property(nonatomic, assign)UCloudGPUImageRotationMode internalRotation;
 
 /*!
  *  Initialization
