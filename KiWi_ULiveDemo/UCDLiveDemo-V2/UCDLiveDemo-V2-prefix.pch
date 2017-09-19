@@ -1,0 +1,28 @@
+//
+//  UCDLiveDemo-V2-prefix.pch
+//  UCDLiveDemo-V2
+//
+//  Created by Sidney on 21/04/17.
+//  Copyright © 2017年 https://ucloud.cn. All rights reserved.
+//
+
+#ifndef UCDLiveDemo_V2_prefix_pch
+#define UCDLiveDemo_V2_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* UCDLiveDemo_V2_prefix_pch */
+
+#ifdef __OBJC__
+
+#import "UCDLiveDemoHeader.h"
+/*
+#define NSLog(format, ...) do {\
+    (NSLog)((format), ##__VA_ARGS__);\
+    dispatch_async(dispatch_get_main_queue(), ^{\
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"LOGNOTIFICATION" object:nil];\
+    });\
+} while (0)
+*/
+#endif
