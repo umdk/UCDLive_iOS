@@ -837,16 +837,16 @@
 		E958BA3E1F7CE15000C79AFD /* UCloudGPUImage */ = {
 			isa = PBXGroup;
 			children = (
-				E958BA3F1F7CE15000C79AFD /* Filters */,
-				E958BAD51F7CE15000C79AFD /* Advanced */,
-				E958BADD1F7CE15000C79AFD /* Pipeline */,
-				E958BADF1F7CE15000C79AFD /* UCloudGPUImageFramebufferCache.h */,
 				E958BAE01F7CE15000C79AFD /* UCloudGLProgram.h */,
-				E958BAE11F7CE15000C79AFD /* UCloudGPUImageContext.h */,
-				E958BAE21F7CE15000C79AFD /* Sources */,
-				E958BAEE1F7CE15000C79AFD /* Outputs */,
 				E958BAF31F7CE15000C79AFD /* UCloudGPUImage.h */,
+				E958BAE11F7CE15000C79AFD /* UCloudGPUImageContext.h */,
 				E958BAF41F7CE15000C79AFD /* UCloudGPUImageFramebuffer.h */,
+				E958BADF1F7CE15000C79AFD /* UCloudGPUImageFramebufferCache.h */,
+				E958BAD51F7CE15000C79AFD /* Advanced */,
+				E958BA3F1F7CE15000C79AFD /* Filters */,
+				E958BAEE1F7CE15000C79AFD /* Outputs */,
+				E958BADD1F7CE15000C79AFD /* Pipeline */,
+				E958BAE21F7CE15000C79AFD /* Sources */,
 			);
 			path = UCloudGPUImage;
 			sourceTree = "<group>";

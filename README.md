@@ -115,9 +115,27 @@ git clone https://github.com/umdk/UCDLive_iOS.git --depth 1
 \<string\>允许此权限才能录音\</string\>
 
 <a name="2.3.5"></a>
-#### 2.3.5 iOS11beta版运行出错问题解决
+#### 2.3.5 在Xcode9，iOS 11环境下出现主线程日志打印问题
+![error1](screenshot/error2.jpg)
+此处为GPUImage在做OpenGL渲染的时候获取view的大小，而这操作并没有在主线程去实现，因此在Xcode9的`Main Thread Checker`检查到并打印到控制台；对于程序本身的运行并没有影响，暂时还没有解决方案，如果觉得在调试的时候有些碍眼的话，可以：  
+请打开项目工程，`edit scheme->Run->Diagnostics`中`Runtime API Checking`选项将`Main Thread Checker`选项不选中即可
+
+<a name="2.3.6"></a>
+#### 2.3.6 更新SDK后出现_res_9_getservers错误提示
+![error2](screenshot/error1.jpg)
+添加library库：  (Build Phases-->Link Binary With Libraries)  
+`libresolv.tbd`
+
+<a name="2.3.7"></a>
+#### 2.3.7 iOS11beta版运行出错问题解决
 ![error](screenshot/iOS11beta_error.jpeg)  
-如果出现类似的情况，请打开项目工程，edit scheme->Run->Options中GPU Frame Capture选项更改为Disable
+如果出现类似的情况，请打开项目工程，`edit scheme->Run->Options中GPU Frame Capture`选项更改为`Disable`
+
+<b>注：  
+从1.7.0升级至1.8.0时，需要注意一下几点：  
+lib文件夹下的Recorder库中的Filters文件夹已更换为include文件夹，需替换  
+连麦需要添加库链接：`libresolv.tbd`
+
 
 <a name="3"></a>
 ## 三 推流库集成
@@ -163,6 +181,7 @@ git clone https://github.com/umdk/UCDLive_iOS.git --depth 1
 
 | 版本号   | 发布日期       | 说明                                       |
 | ----- | ---------- | ---------------------------------------- |
+| 1.8.0 | 2017.09.28 |1、升级底层连麦SDK至最新版本<br/>2、支持多人连麦<br/>3、推流可先开启预览后再设置推流地址|
 | 1.7.0 | 2017.08.22 |1、增加连麦解决方案和美颜场景特效<br/>2、增加推流暂停与恢复的API<br/>3、修复输出音频电流声问题|
 | 1.6.4 | 2017.06.23 |1、优化推流端滤镜，功耗更低，发热小<br/>2、开放ip推流<br/>3、更新1.5.2版本播放器|
 | 1.6.3 | 2017.05.05 |1、增加推流本地日志输出，新增API见CameraServer.h<br/>2、sdk外层增加对demo的友盟统计<br/>3、播放器更新至1.5.1|
