@@ -281,11 +281,15 @@
 {
     _kit.selfInFront = NO;
     _kit.agoraKit.videoProfile = AgoraRtc_VideoProfile_DEFAULT;
-    //设置小窗口属性
-    _kit.winRect = CGRectMake(0.6, 0.6, 0.3, 0.3);//设置小窗口属性
+    //设置第一小窗口属性，双人连麦
+    _kit.winRect = CGRectMake(0.6f, 0.6f, 0.3f, 0.3f);//设置小窗口属性
     _kit.rtcLayer = 1;//设置小窗口图层，设置为1
     
-    //为小窗口增加圆角
+    //设置第二小窗口的属性，适用于三人连麦，四人连麦依次可在kit中添加属性和设置
+    _kit.winFansRect = CGRectMake(0.1, 0.6, 0.3, 0.3);
+    _kit.rtcFansLayer = 2;
+    
+    //为第一小窗口增加圆角
     _kit.maskPicture = [[UCloudGPUImagePicture alloc] initWithImage:[UIImage imageNamed:@"rtcMask.png"]];
     
     __weak RTCLiveViewController *weak_demo = self;
@@ -768,7 +772,7 @@
 
 - (void)showAlertTitle:(NSString *)title message:(NSString *)message tag:(NSInteger)tag
 {
-    if (System_Version < 9.0) {
+    if (USystem_Version < 9.0) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
                                                         message:message
                                                        delegate:nil

@@ -1,6 +1,6 @@
 //
 //  UCDKitDemoVC.h
-//  UCloudMediaRecorderDemo
+//  UCDLiveDemo-V2
 //
 //  Created by Sidney on 6/13/17.
 //  Copyright © 2017 https://UCloud.cn. All rights reserved.
@@ -11,7 +11,7 @@
 
 @class AgoraRtcStats;
 
-typedef void (^RTCVideoDataBlock)(CVPixelBufferRef pixelBuffer);
+typedef void (^RTCVideoDataBlock)(CVPixelBufferRef pixelBuffer, unsigned int uid);
 typedef void (^RTCAudioDataBlock)(void* buffer,int sampleRate,int samples,int bytesPerSample,int channels,int64_t pts);
 
 

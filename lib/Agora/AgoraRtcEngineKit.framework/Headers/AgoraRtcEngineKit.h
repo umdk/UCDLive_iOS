@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreMedia/CoreMedia.h>
 
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
@@ -39,7 +40,6 @@ typedef NS_ENUM(NSInteger, AgoraRtcWarningCode) {
     AgoraRtc_Warn_Adm_PlaybackMalfunction = 1020,
     AgoraRtc_Warn_Adm_RecordMalfunction = 1021,
     AgoraRtc_Warn_Adm_Interruption = 1025,
-    AgoraRtc_Warn_Adm_RouteChange = 1026,
     AgoraRtc_Warn_Apm_Howling = 1051,
 };
 
@@ -184,21 +184,25 @@ typedef NS_ENUM(NSUInteger, AgoraRtcUserOfflineReason) {
 };
 
 typedef NS_ENUM(NSInteger, AgoraRtcVideoStreamType) {
-    AgoraRtc_VideoStream_Unknown = -1,
     AgoraRtc_VideoStream_High = 0,
     AgoraRtc_VideoStream_Low = 1,
-    AgoraRtc_VideoStream_Medium = 2,
 };
 
-typedef NS_ENUM(NSInteger, AudioOutputRouting)
+typedef NS_ENUM(NSInteger, AgoraRtcAudioOutputRouting)
 {
-    AudioOutputRouting_Default = -1,
-    AudioOutputRouting_Headset = 0,
-    AudioOutputRouting_Earpiece = 1,
-    AudioOutputRouting_HeadsetNoMic = 2,
-    AudioOutputRouting_Speakerphone = 3,
-    AudioOutputRouting_Loudspeaker = 4,
-    AudioOutputRouting_HeadsetBluetooth = 5
+    AgoraRtc_AudioOutputRouting_Default = -1,
+    AgoraRtc_AudioOutputRouting_Headset = 0,
+    AgoraRtc_AudioOutputRouting_Earpiece = 1,
+    AgoraRtc_AudioOutputRouting_HeadsetNoMic = 2,
+    AgoraRtc_AudioOutputRouting_Speakerphone = 3,
+    AgoraRtc_AudioOutputRouting_Loudspeaker = 4,
+    AgoraRtc_AudioOutputRouting_HeadsetBluetooth = 5
+};
+
+typedef NS_ENUM(NSInteger, AgoraRtcAudioRecordingQuality) {
+    AgoraRtc_AudioRecordingQuality_Low = 0,
+    AgoraRtc_AudioRecordingQuality_Medium = 1,
+    AgoraRtc_AudioRecordingQuality_High = 2
 };
 
 typedef NS_ENUM(NSUInteger, AgoraRtcLogFilter) {
@@ -210,6 +214,10 @@ typedef NS_ENUM(NSUInteger, AgoraRtcLogFilter) {
     AgoraRtc_LogFilter_Critical = 0x0008,
 };
 
+typedef NS_ENUM(NSInteger, AgoraRtmpStreamLifeCycle) {
+    RtmpStream_LifeCycle_Bind2Channel = 1,
+    RtmpStream_LifeCycle_Bind2Ownner = 2,
+};
 
 typedef NS_ENUM(NSUInteger, AgoraRtcRenderMode) {
     /**
@@ -272,6 +280,84 @@ __attribute__((visibility("default"))) @interface AgoraRtcVideoCanvas : NSObject
 @property (assign, nonatomic) NSUInteger uid; // the user id of view
 @end
 
+/**
+ * For AgoraVideoFrame: color format field
+ */
+typedef NS_ENUM(NSUInteger, AgoraVideoFormat) {
+    AgoraRtc_FrameFormat_texture = 12,
+    AgoraRtc_FrameFormat_I420 = 1,
+    AgoraRtc_FrameFormat_RGBA = 4,
+    AgoraRtc_FrameFormat_IMC2 = 5,
+};
+
+__attribute__((visibility("default"))) @interface AgoraVideoFrame : NSObject
+@property (assign, nonatomic) NSInteger format; /* 10: android texture (GL_TEXTURE_2D)
+                                                 11: android texture (OES, typically from camera)
+                                                 12: ios texture (CVPixelBufferRef)
+                                                 1: I420
+                                                 2: BGRA
+                                                 3: NV21
+                                                 4: RGBA
+                                                 5: IMC2
+                                                 6: BGRA (same as 2)
+                                                 7: ARGB
+                                                 8: NV12
+                                                 */
+@property (assign, nonatomic) CMTime time; // time for this frame.
+@property (assign, nonatomic) int stride DEPRECATED_MSG_ATTRIBUTE("use strideInPixels instead");
+@property (assign, nonatomic) int strideInPixels; // how many pixels between 2 consecutive rows. Note: in pixel, not byte.
+                                                  // in case of ios texture, it is not used
+@property (assign, nonatomic) int height; // how many rows of pixels, in case of ios texture, it is not used
+
+@property (assign, nonatomic) CVPixelBufferRef textureBuf;
+
+@property (strong, nonatomic) NSData *dataBuf;  // raw data buffer. in case of ios texture, it is not used
+@property (assign, nonatomic) int cropLeft;   // how many pixels to crop on the left boundary
+@property (assign, nonatomic) int cropTop;    // how many pixels to crop on the top boundary
+@property (assign, nonatomic) int cropRight;  // how many pixels to crop on the right boundary
+@property (assign, nonatomic) int cropBottom; // how many pixels to crop on the bottom boundary
+@property (assign, nonatomic) int rotation;   // 0, 90, 180, 270. See document for rotation calculation
+/* Note
+ * 1. strideInPixels
+ *    Stride is in unit of pixel, not byte
+ * 2. About frame width and height
+ *    No field defined for width. However, it can be deduced by:
+ *       croppedWidth = (strideInPixels - cropLeft - cropRight)
+ *    And
+ *       croppedHeight = (height - cropTop - cropBottom)
+ * 3. About crop
+ *    _________________________________________________________________.....
+ *    |                        ^                                      |  ^
+ *    |                        |                                      |  |
+ *    |                     cropTop                                   |  |
+ *    |                        |                                      |  |
+ *    |                        v                                      |  |
+ *    |                ________________________________               |  |
+ *    |                |                              |               |  |
+ *    |                |                              |               |  |
+ *    |<-- cropLeft -->|          valid region        |<- cropRight ->|
+ *    |                |                              |               | height
+ *    |                |                              |               |
+ *    |                |_____________________________ |               |  |
+ *    |                        ^                                      |  |
+ *    |                        |                                      |  |
+ *    |                     cropBottom                                |  |
+ *    |                        |                                      |  |
+ *    |                        v                                      |  v
+ *    _________________________________________________________________......
+ *    |                                                               |
+ *    |<---------------- strideInPixels ----------------------------->|
+ *
+ *    If your buffer contains garbage data, you can crop them. E.g. frame size is
+ *    360 x 640, often the buffer stride is 368, i.e. there extra 8 pixels on the
+ *    right are for padding, and should be removed. In this case, you can set:
+ *    strideInPixels = 368;
+ *    height = 640;
+ *    cropRight = 8;
+ *    // cropLeft, cropTop, cropBottom are default to 0
+ */
+
+@end
 
 __attribute__((visibility("default"))) @interface AgoraRtcStats : NSObject
 @property (assign, nonatomic) NSUInteger duration;
@@ -282,6 +368,8 @@ __attribute__((visibility("default"))) @interface AgoraRtcStats : NSObject
 @property (assign, nonatomic) NSUInteger txVideoKBitrate;
 @property (assign, nonatomic) NSUInteger rxVideoKBitrate;
 @property (assign, nonatomic) NSUInteger users;
+@property (assign, nonatomic) double cpuAppUsage;
+@property (assign, nonatomic) double cpuTotalUsage;
 @end
 
 __attribute__((visibility("default"))) @interface AgoraRtcLocalVideoStats : NSObject
@@ -323,6 +411,35 @@ __attribute__((visibility("default"))) @interface AgoraRtcVideoCompositingLayout
 @property (copy, nonatomic) NSString* appData;//app defined data
 @end
 
+__attribute__((visibility("default"))) @interface AgoraPublisherConfiguration : NSObject
+@property (assign, nonatomic) BOOL owner;
+@property (assign, nonatomic) NSInteger width;
+@property (assign, nonatomic) NSInteger height;
+@property (assign, nonatomic) NSInteger framerate;
+@property (assign, nonatomic) NSInteger bitrate;
+@property (assign, nonatomic) NSInteger defaultLayout;
+@property (assign, nonatomic) AgoraRtmpStreamLifeCycle lifeCycle;
+@property (assign, nonatomic) NSInteger injectStreamWidth;
+@property (assign, nonatomic) NSInteger injectStreamHeight;
+@property (copy, nonatomic) NSString* injectStreamUrl;
+@property (copy, nonatomic) NSString* publishUrl;
+@property (copy, nonatomic) NSString* rawStreamUrl;
+@property (copy, nonatomic) NSString* extraInfo;
+-(BOOL) validate;
+-(NSString *) toJsonString;
+@end
+
+__attribute__((visibility("default"))) @interface AgoraPublisherConfigurationBuilder : NSObject
+- (AgoraPublisherConfigurationBuilder *) setOwner:(BOOL)isOwner;
+- (AgoraPublisherConfigurationBuilder *) setWidth:(NSInteger)width height:(NSInteger)height framerate:(NSInteger)framerate bitrate:(NSInteger)bitrate;
+- (AgoraPublisherConfigurationBuilder *) setDefaultLayout:(NSInteger)layoutStyle;
+- (AgoraPublisherConfigurationBuilder *) setLifeCycle:(AgoraRtmpStreamLifeCycle)lifecycle;
+- (AgoraPublisherConfigurationBuilder *) setPublisherUrl:(NSString*)url;
+- (AgoraPublisherConfigurationBuilder *) setRawStreamUrl:(NSString*)url;
+- (AgoraPublisherConfigurationBuilder *) setExtraInfo:(NSString *)info;
+- (AgoraPublisherConfigurationBuilder *) injectStream:(NSString *)url width:(NSInteger)width height:(NSInteger)height;
+- (AgoraPublisherConfiguration *) build;
+@end
 
 @class AgoraRtcEngineKit;
 @protocol AgoraRtcEngineDelegate <NSObject>
@@ -434,7 +551,7 @@ __attribute__((visibility("default"))) @interface AgoraRtcVideoCompositingLayout
  *  @param engine The engine kit
  *  @param routing the current audio output routing
  */
-- (void)rtcEngine:(AgoraRtcEngineKit *)engine didAudioRouteChanged:(AudioOutputRouting)routing;
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine didAudioRouteChanged:(AgoraRtcAudioOutputRouting)routing;
 
 
 /**
@@ -482,6 +599,13 @@ __attribute__((visibility("default"))) @interface AgoraRtcVideoCompositingLayout
  *  @param engine The engine kit
  */
 - (void)rtcEngineMediaEngineDidAudioMixingFinish:(AgoraRtcEngineKit *)engine;
+
+/**
+ *  Event of meida engine finish audio mixing.
+ *
+ *  @param engine The engine kit
+ */
+- (void)rtcEngineMediaEngineDidAudioEffectFinish:(AgoraRtcEngineKit *)engine soundId:(NSInteger)soundId;
 
 /**
  *  Event of camera opened
@@ -639,6 +763,41 @@ __attribute__((visibility("default"))) @interface AgoraRtcVideoCompositingLayout
  *  @param engine The engine kit
  */
 - (void)rtcEngineRequestChannelKey:(AgoraRtcEngineKit *)engine;
+
+/**
+ *  Event of the first audio frame is sent.
+ *
+ *  @param engine  The engine kit
+ *  @param elapsed The elapsed time(ms) from the beginning of the session.
+ */
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine firstLocalAudioFrame:(NSInteger)elapsed;
+
+/**
+ *  Event of the first audio frame from remote user is received.
+ *
+ *  @param engine  The engine kit
+ *  @param uid     The remote user id
+ *  @param elapsed The elapsed time(ms) from the beginning of the session.
+ */
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine firstRemoteAudioFrameOfUid:(NSUInteger)uid elapsed:(NSInteger)elapsed;
+
+
+/**
+ *  The sdk reports who is active speaker in the channel
+ *
+ *  @param engine      The engine kit
+ *  @param speakerUid  The speaker who is talking
+ */
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine activeSpeaker:(NSUInteger)speakerUid;
+
+/**
+ *  Event of cient role change. only take effect under broadcasting mode
+ *
+ *  @param engine The engine kit
+ *  @param oldRole the previous role
+ *  @param newRole the new role
+ */
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine didClientRoleChanged:(AgoraRtcClientRole)oldRole newRole:(AgoraRtcClientRole)newRole;
 @end
 
 
@@ -920,10 +1079,12 @@ __attribute__((visibility("default"))) @interface AgoraRtcEngineKit : NSObject
  *  Start recording conversation to file specified by the file path.
  *
  *  @param filePath file path to save recorded conversation.
+ *  @param quality  encode quality for the record file
  *
  *  @return 0 when executed successfully. return negative value if failed.
  */
-- (int)startAudioRecording:(NSString*)filePath;
+- (int)startAudioRecording:(NSString*)filePath
+                   quality:(AgoraRtcAudioRecordingQuality)quality;
 
 
 /**
@@ -943,25 +1104,11 @@ __attribute__((visibility("default"))) @interface AgoraRtcEngineKit : NSObject
 - (int)adjustAudioMixingVolume:(NSInteger) volume;
 - (int)getAudioMixingDuration;
 - (int)getAudioMixingCurrentPosition;
+- (int)setAudioMixingPosition:(NSInteger) pos;
 
 
-/**
- *  Start screen capture
- *
- *  @return 0 when executed successfully. return negative value if failed.
- */
-- (int)startScreenCapture:(NSUInteger)windowId;
 
-
-/**
- *  Stop screen capture
- *
- *  @return 0 when executed successfully. return negative value if failed.
- */
-- (int)stopScreenCapture;
-
-
-- (int)setScreenCaptureId:(NSUInteger)windowId;
+//- (int)setScreenCaptureId:(NSUInteger)windowId;
 
 
 /**
@@ -1182,15 +1329,6 @@ __attribute__((visibility("default"))) @interface AgoraRtcEngineKit : NSObject
 - (int) setRemoteVideoStream: (NSUInteger) uid
                         type: (AgoraRtcVideoStreamType) streamType;
 
-/**
- * play the video stream from network
- *
- * @param [in] uri the link of video source
- *
- * @return return 0 if success or an error code
- */
-- (int) startPlayingStream:(NSString*)uri __deprecated;
-- (int) stopPlayingStream __deprecated;
 
 - (int) startRecordingService:(NSString*)recordingKey;
 - (int) stopRecordingService:(NSString*)recordingKey;
@@ -1210,6 +1348,8 @@ __attribute__((visibility("default"))) @interface AgoraRtcEngineKit : NSObject
                                channel:(NSInteger)channel
                                   mode:(AgoraRtcRawAudioFrameOpMode)mode
                         samplesPerCall:(NSInteger)samplesPerCall;
+- (int)setMixedAudioFrameParametersWithSampleRate:(NSInteger)sampleRate
+                                   samplesPerCall:(NSInteger)samplesPerCall;
 
 /**
  * adjust recording signal volume
@@ -1238,11 +1378,34 @@ __attribute__((visibility("default"))) @interface AgoraRtcEngineKit : NSObject
 
 - (int)setVideoQualityParameters:(BOOL)preferFrameRateOverImageQuality;
 
+- (int)configPublisher:(AgoraPublisherConfiguration *)config;
+
 - (int)setVideoCompositingLayout:(AgoraRtcVideoCompositingLayout*)layout;
 
 - (int)clearVideoCompositingLayout;
 
 #if (!(TARGET_OS_IPHONE) && (TARGET_OS_MAC))
+/**
+ *  Start screen capture
+ *
+ *  @return 0 when executed successfully. return negative value if failed.
+ */
+- (int)startScreenCapture:(NSUInteger)windowId withCaptureFreq: (int) captureFreq AndRect :(CGRect)rect;
+
+
+/**
+ *  Stop screen capture
+ *
+ *  @return 0 when executed successfully. return negative value if failed.
+ */
+- (int)stopScreenCapture;
+
+/**
+ *  Update screen capture Region
+ *
+ *  @return 0 when executed successfully. return negative value if failed.
+ */
+- (int)updateScreenCaptureRegion:(CGRect)rect;
 
 - (void) monitorDeviceChange: (BOOL)enabled;
 - (NSArray*) enumerateDevices:(AgoraRtcDeviceType)type;  // return array of AgoraRtcDeviceInfo
@@ -1261,7 +1424,35 @@ __attribute__((visibility("default"))) @interface AgoraRtcEngineKit : NSObject
 - (int) stopCaptureDeviceTest;
 #endif
 
-- (int) checkAVUrlCompatibility:(NSURL*)url
-                 completionBlock:(void(^)())checkCompletionBlock;
+//Audio Effects
+- (double) getEffectsVolume;
+- (int) setEffectsVolume:(double) volume;
+- (int) setVolumeOfEffect:(int) soundId
+               withVolume:(double) volume;
+- (int) playEffect:(int) soundId
+          filePath:(NSString*)filePath
+              loop:(BOOL)loop
+              pitch:(double) pitch
+                pan:(double) pan
+               gain:(double) gain;
+- (int) stopEffect:(int) soundId;
+- (int) stopAllEffects;
+- (int) preloadEffect:(int) soundId
+             filePath:(NSString*) filePath;
+- (int) unloadEffect:(int) soundId;
+- (int) pauseEffect:(int) soundId;
+- (int) pauseAllEffects;
+- (int) resumeEffect:(int) soundId;
+- (int) resumeAllEffects;
 
+/**
+ * External video source support
+ * For new application, uses this interface instead of the one in libvideoprp
+ */
+// query whether texture can be supported (always returns YES)
+//+ (BOOL) isTextureEncodeSupported;
+// If external video source is to use, call this API before enableVideo/startPreview
+- (void) setExternalVideoSource:(BOOL) enable useTexture:(BOOL)useTexture pushMode:(BOOL)pushMode;
+// Push a video frame to SDK
+- (BOOL) pushExternalVideoFrame:(AgoraVideoFrame *)frame;
 @end

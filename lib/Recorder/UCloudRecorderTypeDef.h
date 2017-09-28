@@ -117,7 +117,7 @@ typedef NS_OPTIONS(NSUInteger, UCDLiveLogLevel){
 #endif
 
 
-#define System_Version [UIDevice currentDevice].systemVersion.floatValue
-#define System_Version_String(x) [[UIDevice currentDevice].systemVersion isEqualToString:x]
+#define USystem_Version [UIDevice currentDevice].systemVersion.floatValue
+#define USystem_Version_String(x) [[UIDevice currentDevice].systemVersion isEqualToString:x]
 
 #endif /* UCloudRecorderTypeDef_h */

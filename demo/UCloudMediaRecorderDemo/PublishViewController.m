@@ -528,7 +528,7 @@
 
 - (void)showAlertTitle:(NSString *)title message:(NSString *)message tag:(NSInteger)tag
 {
-    if (System_Version < 9.0) {
+    if (USystem_Version < 9.0) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
                                             message:message
                                            delegate:nil

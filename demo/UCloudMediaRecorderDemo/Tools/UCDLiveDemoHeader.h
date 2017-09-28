@@ -10,8 +10,9 @@
 #define UCDLiveDemoHeader_h
 
 
-//demo中的推流地址仅供demo测试使用，如果更换推流域名地址，请发邮件至spt_sdk@ucloud.cn或联系客服、客户经理索取对应的AccessKey
+// demo中的推流地址仅供demo测试使用，如果更换推流域名地址，请发邮件至spt_sdk@ucloud.cn或联系客服、客户经理索取对应的AccessKey
 #define AccessKey @"publish3-key"
+// 此ID仅供demo连麦测试使用，需要发邮件至spt_sdk@ucloud.cn或联系客服、客户经理对接相关ID值
 #define RTCAPPid @"f6da0ba61b7d409280d3623320c425ba"
 
 /**

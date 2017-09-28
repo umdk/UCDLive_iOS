@@ -12,7 +12,6 @@
 #import "PlayViewController.h"
 
 #import "UCDLiveDemoHeader.h"
-//#import "CameraServer.h"
 
 typedef NS_ENUM(NSUInteger, LiveType) {
     LiveTypeRtmp,
@@ -99,6 +98,9 @@ typedef NS_ENUM(NSUInteger, LiveType) {
 //    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.303 green:0.617 blue:0.999 alpha:1.000];
     self.navigationController.navigationBar.barTintColor = CelestialBlue;
     
+    _segmentedControlRoute.currentState = 1;
+    _segmentedControlLiveType.currentState = 1;;
+    _segmentedControlDirection.currentState = 1;
 }
 
 - (void)viewDidAppear:(BOOL)animated

@@ -14,6 +14,7 @@ typedef NS_ENUM(NSInteger, AgoraEnhancerType) {
 @property (assign, nonatomic) CGFloat colortemperature;
 @property (assign, nonatomic) CGFloat lighteningFactor;
 @property (assign, nonatomic) CGFloat smoothness;
+@property (assign, nonatomic) CGFloat gammaFactor;
 @property (assign, nonatomic) AgoraEnhancerType type;
 
 - (void)turnOn;

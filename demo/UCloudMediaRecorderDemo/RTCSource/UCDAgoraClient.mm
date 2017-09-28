@@ -1,8 +1,8 @@
 //
 //  UCDKitDemoVC.h
-//  UCloudMediaRecorderDemo
+//  UCDLiveDemo-V2
 //
-//  Created by Sidney on 6/13/17.
+//  Created by sidney on 6/13/17.
 //  Copyright © 2017 https://ucloud.cn. All rights reserved.
 
 #import <Foundation/Foundation.h>
@@ -26,9 +26,10 @@
 
 @property (strong, nonatomic) AgoraRtcEngineKit *rtcEngine;
 @property (strong, nonatomic) NSString * appId;
+@property (assign, nonatomic) NSUInteger userId1;
+@property (assign, nonatomic) NSUInteger userId2;
 @property (strong, nonatomic) AgoraVideoSource *videoSource;
 @property(nonatomic, copy) void(^internJoinChannelBlock)(NSString* channel, NSUInteger uid, NSInteger elapsed);
-
 
 -(void)processRemoteVideoWithYbuffer:(void* )ybuffer
                              Ubuffer:(void* )ubuffer
@@ -37,7 +38,9 @@
                              UStride:(int)uStride
                              VStride:(int)vStride
                               Height:(int)height
-                               Width:(int)width;
+                               Width:(int)width
+                              userId:(unsigned int)uid;
+- (void)processRemoteVideoFrame:(NSDictionary *)videoFrameDict;
 @end
 
 class AgoraAudioFrameObserver : public agora::media::IAudioFrameObserver
@@ -65,6 +68,10 @@ public:
     {
         return true;
     }
+    virtual bool onMixedAudioFrame(AudioFrame& audioFrame) override
+    {
+        return true;
+    }
 private:
     UCDAgoraClient* _kit;
 };
@@ -82,8 +89,9 @@ public:
     }
     virtual bool onRenderVideoFrame(unsigned int uid, VideoFrame& videoFrame) override
     {
-//        NSLog(@"videoFrame.width:%d,videoFrame.height:%d",videoFrame.width,videoFrame.height);
-        [_kit processRemoteVideoWithYbuffer:videoFrame.yBuffer Ubuffer:videoFrame.uBuffer Vbuffer:videoFrame.vBuffer YStride:videoFrame.yStride UStride:videoFrame.uStride VStride:videoFrame.vStride Height:videoFrame.height Width:videoFrame.width];
+        [_kit.rtcEngine setRemoteVideoStream:uid type:AgoraRtc_VideoStream_High];
+//        NSLog(@"uid:%u, videoFrame.width:%d,videoFrame.height:%d", uid,videoFrame.width,videoFrame.height);
+        [_kit processRemoteVideoWithYbuffer:videoFrame.yBuffer Ubuffer:videoFrame.uBuffer Vbuffer:videoFrame.vBuffer YStride:videoFrame.yStride UStride:videoFrame.uStride VStride:videoFrame.vStride Height:videoFrame.height Width:videoFrame.width userId:uid];
         return true;
     }
 private:
@@ -117,7 +125,9 @@ private:
         _videoBuffer = (unsigned char *)malloc(_videoBufferSize);
         _videoDataCallback = nil;
         _delegate = delegate;
-    
+        self.userId2 = 0;
+        self.userId1 = 0;
+        
     }
 
     return self;
@@ -140,7 +150,6 @@ private:
         NSLog(@"rtc engine init fail");
         return;
     }
-//    [_rtcEngine enableDualStreamMode:YES];
     [_rtcEngine enableVideo];
     [_rtcEngine setRecordingAudioFrameParametersWithSampleRate:44100 channel:1 mode:AgoraRtc_RawAudioFrame_OpMode_ReadOnly samplesPerCall:1024];
     [_rtcEngine adjustRecordingSignalVolume:100];
@@ -212,7 +221,7 @@ private:
 {
     agora::rtc::IRtcEngine* rtc_engine = (agora::rtc::IRtcEngine*)kit.getNativeHandle;
     agora::util::AutoPtr<agora::media::IMediaEngine> mediaEngine;
-    mediaEngine.queryInterface(*rtc_engine, agora::rtc::AGORA_IID_MEDIA_ENGINE);
+    mediaEngine.queryInterface(rtc_engine, agora::rtc::AGORA_IID_MEDIA_ENGINE);
     if (mediaEngine)
     {
         mediaEngine->registerAudioFrameObserver(_audioFrameObserver);
@@ -225,7 +234,7 @@ private:
 {
     agora::rtc::IRtcEngine* rtc_engine = (agora::rtc::IRtcEngine*)kit.getNativeHandle;
     agora::util::AutoPtr<agora::media::IMediaEngine> mediaEngine;
-    mediaEngine.queryInterface(*rtc_engine, agora::rtc::AGORA_IID_MEDIA_ENGINE);
+    mediaEngine.queryInterface(rtc_engine, agora::rtc::AGORA_IID_MEDIA_ENGINE);
     if (mediaEngine)
     {
         mediaEngine->registerAudioFrameObserver(NULL);
@@ -247,6 +256,7 @@ private:
     
     [self fillVideoBuf:y420];
     
+//    NSLog(@"send1 packet width:%d,height:%d", width, height);
     [_videoSource DeliverFrame:_videoBuffer width:width height:height cropLeft:0 cropTop:0 cropRight:0 cropBottom:0 rotation:0 timeStamp:pts.value format:1];
 }
 
@@ -269,6 +279,7 @@ private:
     int width = (int)CVPixelBufferGetWidth(videoFrame);
     int height = (int)CVPixelBufferGetHeight(videoFrame);
     
+    NSLog(@"send packet width:%d,height:%d", width, height);
     [_videoSource DeliverFrame:baseAddress width:width height:height cropLeft:0 cropTop:0 cropRight:0 cropBottom:0 rotation:0 timeStamp:CACurrentMediaTime() * 1000 format:2];
     
     CVPixelBufferUnlockBaseAddress(videoFrame, kFlags);
@@ -320,6 +331,22 @@ void AgoraNV21ToI420(const unsigned char *nv21,
     }
 }
 
+#pragma mark - Remote Buffer
+
+- (void)processRemoteVideoFrame:(NSDictionary *)videoFrameDict
+{
+    [self processRemoteVideoWithYbuffer:(__bridge void *)videoFrameDict[@"ubuffer"]
+                                Ubuffer:(__bridge void *)videoFrameDict[@"ubuffer"]
+                                Vbuffer:(__bridge void *)videoFrameDict[@"vBuffer"]
+                                YStride:[videoFrameDict[@"yStride"] intValue]
+                                UStride:[videoFrameDict[@"uStride"] intValue]
+                                VStride:[videoFrameDict[@"vStride"] intValue]
+                                 Height:[videoFrameDict[@"height"] intValue]
+                                  Width:[videoFrameDict[@"width"] intValue]
+                                 userId:[videoFrameDict[@"uid"] intValue]
+     ];
+}
+
 -(void)processRemoteVideoWithYbuffer:(void* )ybuffer
                              Ubuffer:(void* )ubuffer
                              Vbuffer:(void* )vbuffer
@@ -328,25 +355,35 @@ void AgoraNV21ToI420(const unsigned char *nv21,
                              VStride:(int)vStride
                               Height:(int)height
                                Width:(int)width
+                              userId:(unsigned int)uid
 {
-    CVPixelBufferRef y420 = [self makeUpYUV420Ybuffer:ybuffer Ubuffer:ubuffer Vbuffer:vbuffer YStride:yStride UStride:uStride VStride:vStride Height:height Width:width];
+    
+    __weak UCDAgoraClient *weakSelf = self;
+    if (_userId1 == 0 || _userId1 == uid) {
+        _userId1 = uid;
+    } else {
+        _userId2 = uid;
+    }
+
+    CVPixelBufferRef y420 = [weakSelf makeUpYUV420Ybuffer:ybuffer Ubuffer:ubuffer Vbuffer:vbuffer YStride:yStride UStride:uStride VStride:vStride Height:height Width:width];
     if(!y420)
     {
         NSLog(@"makeUpYUV420Ybuffer fail");
-        CFRelease(y420);
+//            CFRelease(y420);
         return;
     }
     
-    CVPixelBufferRef nv12 = [self convertToNV12:y420];
+    CVPixelBufferRef nv12 = [weakSelf convertToNV12:y420];
     if(!nv12)
     {
       NSLog(@"makeUpYUV420Ybuffer fail");
-      CFRelease(nv12);
+//          CFRelease(nv12);
       return;
     }
+
+    if(weakSelf.videoDataCallback && nv12)
+        weakSelf.videoDataCallback(nv12, uid);
     
-    if(_videoDataCallback && nv12)
-        _videoDataCallback(nv12);
 
     CFRelease(nv12);
     CFRelease(y420);
@@ -467,6 +504,8 @@ void AgoraNV21ToI420(const unsigned char *nv21,
     
     return dst;
 }
+
+#pragma mark - Local Buffer
 
 -(CVPixelBufferRef) BGRAToI420:(CVPixelBufferRef)src
 {

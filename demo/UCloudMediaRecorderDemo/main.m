@@ -2,8 +2,8 @@
 //  main.m
 //  UCloudMediaRecorderDemo
 //
-//  Created by yisanmao on 15/10/21.
-//  Copyright (c) 2015年 zmw. All rights reserved.
+//  Created by Sidney on 07/02/17.
+//  Copyright © 2017年 https://ucloud.cn. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

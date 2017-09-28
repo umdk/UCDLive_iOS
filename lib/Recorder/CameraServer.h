@@ -24,7 +24,7 @@ typedef CVPixelBufferRef (^CameraData)(CVPixelBufferRef buffer);
 
 typedef void(^videoProcessingCallback)(CVPixelBufferRef pixelBuffer, CMTime timeInfo );
 
-typedef void(^WatermarkBlock)();
+typedef void(^WatermarkBlock)(void);
 
 /*!
  CameraServer
@@ -209,7 +209,14 @@ typedef void(^WatermarkBlock)();
  */
 @property (assign, nonatomic) NSInteger logFilesMaxSize;
 
-@property (strong, nonatomic) videoProcessingCallback videoProcessing;
+@property (copy, nonatomic) videoProcessingCallback videoProcessing;
+
+/**
+ *  @property streamPushUrlstr;
+ *  @abstract 音视频推流地址
+ */
+@property (strong, nonatomic) NSString* streamPushUrlstr;
+
 
 /*!
  @method server

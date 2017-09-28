@@ -1,6 +1,6 @@
 //
 //  UCDAgoraServiceKit.h
-//  UCloudMediaRecorderDemo
+//  UCDLiveDemo-V2
 //
 //  Created by Sidney on 6/13/17.
 //  Copyright © 2017 https://UCloud.cn. All rights reserved.
@@ -66,10 +66,20 @@
  */
 @property (nonatomic, readwrite) NSInteger rtcLayer;
 
+/*
+ @abstract 第二小窗口图层
+ */
+@property (nonatomic, readwrite) NSInteger rtcFansLayer;
+
 /**
  @abstract 小窗口图层的大小
  */
 @property (nonatomic, readwrite) CGRect winRect;
+
+/**
+ @abstract 第二小窗口图层的大小
+ */
+@property (nonatomic, readwrite) CGRect winFansRect;
 
 /*
  @abstract 自定义图层母类，可往里addview
