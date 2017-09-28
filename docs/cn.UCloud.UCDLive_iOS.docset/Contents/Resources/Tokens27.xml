@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageLuminanceRangeFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageLuminanceRangeFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImageLuminanceRangeFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageLuminanceRangeFilter/setRangeReductionFactor:</TokenIdentifier>
+			<Abstract type="html">The degree to reduce the luminance range, from 0.0 to 1.0. Default is 0.6.</Abstract>
+			<DeclaredIn>UCloudGPUImageLuminanceRangeFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat rangeReductionFactor</Declaration>
+			
+			
+			<Anchor>//api/name/rangeReductionFactor</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageLuminanceRangeFilter/rangeReductionFactor</TokenIdentifier>
+			<Abstract type="html">The degree to reduce the luminance range, from 0.0 to 1.0. Default is 0.6.</Abstract>
+			<DeclaredIn>UCloudGPUImageLuminanceRangeFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat rangeReductionFactor</Declaration>
+			
+			
+			<Anchor>//api/name/rangeReductionFactor</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageLuminanceRangeFilter/rangeReductionFactor</TokenIdentifier>
+			<Abstract type="html">The degree to reduce the luminance range, from 0.0 to 1.0. Default is 0.6.</Abstract>
+			<DeclaredIn>UCloudGPUImageLuminanceRangeFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat rangeReductionFactor</Declaration>
+			
+			
+			<Anchor>//api/name/rangeReductionFactor</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

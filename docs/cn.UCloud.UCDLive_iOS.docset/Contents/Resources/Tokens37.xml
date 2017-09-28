@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageRawDataInput.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageRawDataInput</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImageRawDataInput.h</DeclaredIn>
+            
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageRawDataInput/setPixelFormat:</TokenIdentifier>
+			<Abstract type="html">Input data pixel format</Abstract>
+			<DeclaredIn>UCloudGPUImageRawDataInput.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) UCloudGPUPixelFormat pixelFormat</Declaration>
+			
+			
+			<Anchor>//api/name/pixelFormat</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageRawDataInput/pixelFormat</TokenIdentifier>
+			<Abstract type="html">Input data pixel format</Abstract>
+			<DeclaredIn>UCloudGPUImageRawDataInput.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) UCloudGPUPixelFormat pixelFormat</Declaration>
+			
+			
+			<Anchor>//api/name/pixelFormat</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageRawDataInput/pixelFormat</TokenIdentifier>
+			<Abstract type="html">Input data pixel format</Abstract>
+			<DeclaredIn>UCloudGPUImageRawDataInput.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) UCloudGPUPixelFormat pixelFormat</Declaration>
+			
+			
+			<Anchor>//api/name/pixelFormat</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

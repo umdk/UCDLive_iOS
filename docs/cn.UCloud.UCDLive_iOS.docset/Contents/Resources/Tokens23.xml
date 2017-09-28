@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageHighlightShadowFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageHighlightShadowFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImageHighlightShadowFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHighlightShadowFilter/setShadows:</TokenIdentifier>
+			<Abstract type="html">0 - 1, increase to lighten shadows.
+@default 0</Abstract>
+			<DeclaredIn>UCloudGPUImageHighlightShadowFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat shadows</Declaration>
+			
+			
+			<Anchor>//api/name/shadows</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHighlightShadowFilter/shadows</TokenIdentifier>
+			<Abstract type="html">0 - 1, increase to lighten shadows.
+@default 0</Abstract>
+			<DeclaredIn>UCloudGPUImageHighlightShadowFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat shadows</Declaration>
+			
+			
+			<Anchor>//api/name/shadows</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageHighlightShadowFilter/shadows</TokenIdentifier>
+			<Abstract type="html">0 - 1, increase to lighten shadows.
+@default 0</Abstract>
+			<DeclaredIn>UCloudGPUImageHighlightShadowFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat shadows</Declaration>
+			
+			
+			<Anchor>//api/name/shadows</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHighlightShadowFilter/setHighlights:</TokenIdentifier>
+			<Abstract type="html">0 - 1, decrease to darken highlights.
+@default 1</Abstract>
+			<DeclaredIn>UCloudGPUImageHighlightShadowFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat highlights</Declaration>
+			
+			
+			<Anchor>//api/name/highlights</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHighlightShadowFilter/highlights</TokenIdentifier>
+			<Abstract type="html">0 - 1, decrease to darken highlights.
+@default 1</Abstract>
+			<DeclaredIn>UCloudGPUImageHighlightShadowFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat highlights</Declaration>
+			
+			
+			<Anchor>//api/name/highlights</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageHighlightShadowFilter/highlights</TokenIdentifier>
+			<Abstract type="html">0 - 1, decrease to darken highlights.
+@default 1</Abstract>
+			<DeclaredIn>UCloudGPUImageHighlightShadowFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat highlights</Declaration>
+			
+			
+			<Anchor>//api/name/highlights</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

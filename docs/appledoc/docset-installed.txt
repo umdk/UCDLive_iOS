@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
-Path: /Users/Sidney/Library/Developer/Shared/Documentation/DocSets/cn.UCloud.UCloudMediaRecorder.docset
-Time: 2017-03-29 06:19:32 +0000
+Path: /Users/Sidney/Library/Developer/Shared/Documentation/DocSets/cn.UCloud.UCDLive_iOS.docset
+Time: 2017-09-28 07:24:00 +0000

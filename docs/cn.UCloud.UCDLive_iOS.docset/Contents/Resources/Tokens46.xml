@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageStretchDistortionFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageStretchDistortionFilter</TokenIdentifier>
+			<Abstract type="html">Creates a stretch distortion of the image</Abstract>
+			<DeclaredIn>UCloudGPUImageStretchDistortionFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="46"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageStretchDistortionFilter/setCenter:</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImageStretchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageStretchDistortionFilter/center</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImageStretchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageStretchDistortionFilter/center</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImageStretchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

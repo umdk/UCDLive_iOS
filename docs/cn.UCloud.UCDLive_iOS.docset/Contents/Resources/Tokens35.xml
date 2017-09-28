@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImagePinchDistortionFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImagePinchDistortionFilter</TokenIdentifier>
+			<Abstract type="html">Creates a pinch distortion of the image</Abstract>
+			<DeclaredIn>UCloudGPUImagePinchDistortionFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImagePinchDistortionFilter/setCenter:</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImagePinchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImagePinchDistortionFilter/center</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImagePinchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImagePinchDistortionFilter/center</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImagePinchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImagePinchDistortionFilter/setRadius:</TokenIdentifier>
+			<Abstract type="html">The radius of the distortion, ranging from 0.0 to 2.0, with a default of 1.0</Abstract>
+			<DeclaredIn>UCloudGPUImagePinchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImagePinchDistortionFilter/radius</TokenIdentifier>
+			<Abstract type="html">The radius of the distortion, ranging from 0.0 to 2.0, with a default of 1.0</Abstract>
+			<DeclaredIn>UCloudGPUImagePinchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImagePinchDistortionFilter/radius</TokenIdentifier>
+			<Abstract type="html">The radius of the distortion, ranging from 0.0 to 2.0, with a default of 1.0</Abstract>
+			<DeclaredIn>UCloudGPUImagePinchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImagePinchDistortionFilter/setScale:</TokenIdentifier>
+			<Abstract type="html">The amount of distortion to apply, from -2.0 to 2.0, with a default of 0.5</Abstract>
+			<DeclaredIn>UCloudGPUImagePinchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat scale</Declaration>
+			
+			
+			<Anchor>//api/name/scale</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImagePinchDistortionFilter/scale</TokenIdentifier>
+			<Abstract type="html">The amount of distortion to apply, from -2.0 to 2.0, with a default of 0.5</Abstract>
+			<DeclaredIn>UCloudGPUImagePinchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat scale</Declaration>
+			
+			
+			<Anchor>//api/name/scale</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImagePinchDistortionFilter/scale</TokenIdentifier>
+			<Abstract type="html">The amount of distortion to apply, from -2.0 to 2.0, with a default of 0.5</Abstract>
+			<DeclaredIn>UCloudGPUImagePinchDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat scale</Declaration>
+			
+			
+			<Anchor>//api/name/scale</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

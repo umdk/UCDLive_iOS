@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">UCloudMediaRecorder </a>
+				<a href="../index.html">UCDLive_iOS </a>
 			</h1>
 
 			<p id="developer-home">
@@ -56,7 +56,13 @@
 	
 	<optgroup label="Properties">
 		
+		<option value="//api/name/audioBitrate">audioBitrate</option>
+		
 		<option value="//api/name/audioPlayStr">audioPlayStr</option>
+		
+		<option value="//api/name/audioSamplerate">audioSamplerate</option>
+		
+		<option value="//api/name/audiochannels">audiochannels</option>
 		
 		<option value="//api/name/backgroudMusicOn">backgroudMusicOn</option>
 		
@@ -82,6 +88,8 @@
 		
 		<option value="//api/name/logFilesMaxSize">logFilesMaxSize</option>
 		
+		<option value="//api/name/logLevel">logLevel</option>
+		
 		<option value="//api/name/logsDirectory">logsDirectory</option>
 		
 		<option value="//api/name/muted">muted</option>
@@ -93,6 +101,8 @@
 		<option value="//api/name/secretKey">secretKey</option>
 		
 		<option value="//api/name/streamMirrorFrontFacing">streamMirrorFrontFacing</option>
+		
+		<option value="//api/name/streamPushUrlstr">streamPushUrlstr</option>
 		
 		<option value="//api/name/supportFilter">supportFilter</option>
 		
@@ -120,7 +130,11 @@
 		
 		<option value="//api/name/cameraRestart">- cameraRestart</option>
 		
+		<option value="//api/name/cameraResumePublish">- cameraResumePublish</option>
+		
 		<option value="//api/name/cameraStart">- cameraStart</option>
+		
+		<option value="//api/name/cameraStopPublish">- cameraStopPublish</option>
 		
 		<option value="//api/name/changeCamera">- changeCamera</option>
 		
@@ -149,6 +163,10 @@
 		<option value="//api/name/setWatermarkView:Block:">- setWatermarkView:Block:</option>
 		
 		<option value="//api/name/shutdown:">- shutdown:</option>
+		
+		<option value="//api/name/startAudioModule">- startAudioModule</option>
+		
+		<option value="//api/name/stopAudioModule">- stopAudioModule</option>
 		
 	</optgroup>
 	
@@ -360,6 +378,129 @@
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>默认UCloudVideoBitrateMedium，可自行设置，该属性的单位为kbps(kilo bits per seccond)</p><p>视频码率高则画面较清晰，低则画面较模糊，同时数据亦是如此，码率高数据大，码率低数据小</p>
 			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/audiochannels" title="audiochannels"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audiochannels">&nbsp;&nbsp;audiochannels</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>音频采集通道数 默认是1</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) int audiochannels</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/audioSamplerate" title="audioSamplerate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioSamplerate">&nbsp;&nbsp;audioSamplerate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>音频采样率(48000,44100 32000,22050,22050,11025默认44100）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) int audioSamplerate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/audioBitrate" title="audioBitrate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioBitrate">&nbsp;&nbsp;audioBitrate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>音频比特率(32kps,64kps,96kps,128kps默认128kps,采样率小于441100时，比特率应不大于64kps)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) int audioBitrate</code></div>
+
+		    
+			
+
+			
+
+			
+
 			
 
 			
@@ -893,6 +1034,47 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/logLevel" title="logLevel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logLevel">&nbsp;&nbsp;logLevel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>日志输出等级设置，默认UCDLiveLogLevelInfo</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) UCDLiveLogLevel logLevel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/logFiles" title="logFiles"></a>
 	<h3 class="method-title"><code><a href="#//api/name/logFiles">&nbsp;&nbsp;logFiles</a></code>
 </h3>
@@ -945,12 +1127,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>日志文件路径，</p>
+				<p>日志文件路径，默认Documents/Logs/UCloud/ULive</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) NSString *logsDirectory</code></div>
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *logsDirectory</code></div>
 
 		    
 			
@@ -1115,6 +1297,47 @@
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) NSInteger logFilesMaxSize</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/streamPushUrlstr" title="streamPushUrlstr"></a>
+	<h3 class="method-title"><code><a href="#//api/name/streamPushUrlstr">&nbsp;&nbsp;streamPushUrlstr</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>音视频推流地址</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *streamPushUrlstr</code></div>
 
 		    
 			
@@ -1416,6 +1639,88 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/cameraStopPublish" title="cameraStopPublish"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraStopPublish">&ndash;&nbsp;cameraStopPublish</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停止推流上传</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cameraStopPublish</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraResumePublish" title="cameraResumePublish"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraResumePublish">&ndash;&nbsp;cameraResumePublish</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>恢复推流上传</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cameraResumePublish</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/cameraRestart" title="cameraRestart"></a>
 	<h3 class="method-title"><code><a href="#//api/name/cameraRestart">&ndash;&nbsp;cameraRestart</a></code>
 </h3>
@@ -1468,7 +1773,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>关闭录像停止推流</p>
+				<p>关闭视频采集并停止推流</p>
 			</div>
 			
 		    
@@ -1488,6 +1793,88 @@
 				
 				</table>
 			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopAudioModule" title="stopAudioModule"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopAudioModule">&ndash;&nbsp;stopAudioModule</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>关闭模块内部声音采集</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopAudioModule</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CameraServer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startAudioModule" title="startAudioModule"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startAudioModule">&ndash;&nbsp;startAudioModule</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>开启模块内部声音采集</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startAudioModule</code></div>
+
+		    
 			
 
 			
@@ -2087,7 +2474,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 UCloud. All rights reserved. Updated: 2017-04-24</p>
+						<p class="copyright">Copyright &copy; 2017 UCloud. All rights reserved. Updated: 2017-09-28</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

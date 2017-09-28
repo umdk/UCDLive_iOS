@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageStillCamera.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageStillCamera</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImageStillCamera.h</DeclaredIn>
+            
+			
+			<NodeRef refid="45"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageStillCamera/setJpegCompressionQuality:</TokenIdentifier>
+			<Abstract type="html">The JPEG compression quality to use when capturing a photo as a JPEG.</Abstract>
+			<DeclaredIn>UCloudGPUImageStillCamera.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat jpegCompressionQuality</Declaration>
+			
+			
+			<Anchor>//api/name/jpegCompressionQuality</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageStillCamera/jpegCompressionQuality</TokenIdentifier>
+			<Abstract type="html">The JPEG compression quality to use when capturing a photo as a JPEG.</Abstract>
+			<DeclaredIn>UCloudGPUImageStillCamera.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat jpegCompressionQuality</Declaration>
+			
+			
+			<Anchor>//api/name/jpegCompressionQuality</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageStillCamera/jpegCompressionQuality</TokenIdentifier>
+			<Abstract type="html">The JPEG compression quality to use when capturing a photo as a JPEG.</Abstract>
+			<DeclaredIn>UCloudGPUImageStillCamera.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat jpegCompressionQuality</Declaration>
+			
+			
+			<Anchor>//api/name/jpegCompressionQuality</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

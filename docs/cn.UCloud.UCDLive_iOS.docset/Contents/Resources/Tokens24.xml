@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageKuwaharaFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageKuwaharaFilter</TokenIdentifier>
+			<Abstract type="html">Kuwahara image abstraction, drawn from the work of Kyprianidis, et. al. in their publication &quot;Anisotropic Kuwahara Filtering on the GPU&quot; within the GPU Pro collection. This produces an oil-painting-like image, but it is extremely computationally expensive, so it can take seconds to render a frame on an iPad 2. This might be best used for still images.</Abstract>
+			<DeclaredIn>UCloudGPUImageKuwaharaFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageKuwaharaFilter/setRadius:</TokenIdentifier>
+			<Abstract type="html">The radius to sample from when creating the brush-stroke effect, with a default of 3. The larger the radius, the slower the filter.</Abstract>
+			<DeclaredIn>UCloudGPUImageKuwaharaFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) NSUInteger radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageKuwaharaFilter/radius</TokenIdentifier>
+			<Abstract type="html">The radius to sample from when creating the brush-stroke effect, with a default of 3. The larger the radius, the slower the filter.</Abstract>
+			<DeclaredIn>UCloudGPUImageKuwaharaFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) NSUInteger radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageKuwaharaFilter/radius</TokenIdentifier>
+			<Abstract type="html">The radius to sample from when creating the brush-stroke effect, with a default of 3. The larger the radius, the slower the filter.</Abstract>
+			<DeclaredIn>UCloudGPUImageKuwaharaFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) NSUInteger radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

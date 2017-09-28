@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageHSBFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageHSBFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImageHSBFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHSBFilter/reset</TokenIdentifier>
+			<Abstract type="html">Reset the filter to have no transformations.</Abstract>
+			<DeclaredIn>UCloudGPUImageHSBFilter.h</DeclaredIn>
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHSBFilter/rotateHue:</TokenIdentifier>
+			<Abstract type="html">Add a hue rotation to the filter.
+The hue rotation is in the range [-360, 360] with 0 being no-change.
+Note that this adjustment is additive, so use the reset method if you need to.</Abstract>
+			<DeclaredIn>UCloudGPUImageHSBFilter.h</DeclaredIn>
+			
+			<Declaration>- (void)rotateHue:(float)h</Declaration>
+			
+			
+			<Anchor>//api/name/rotateHue:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHSBFilter/adjustSaturation:</TokenIdentifier>
+			<Abstract type="html">Add a saturation adjustment to the filter.
+The saturation adjustment is in the range [0.0, 2.0] with 1.0 being no-change.
+Note that this adjustment is additive, so use the reset method if you need to.</Abstract>
+			<DeclaredIn>UCloudGPUImageHSBFilter.h</DeclaredIn>
+			
+			<Declaration>- (void)adjustSaturation:(float)s</Declaration>
+			
+			
+			<Anchor>//api/name/adjustSaturation:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHSBFilter/adjustBrightness:</TokenIdentifier>
+			<Abstract type="html">Add a brightness adjustment to the filter.
+The brightness adjustment is in the range [0.0, 2.0] with 1.0 being no-change.
+Note that this adjustment is additive, so use the reset method if you need to.</Abstract>
+			<DeclaredIn>UCloudGPUImageHSBFilter.h</DeclaredIn>
+			
+			<Declaration>- (void)adjustBrightness:(float)b</Declaration>
+			
+			
+			<Anchor>//api/name/adjustBrightness:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

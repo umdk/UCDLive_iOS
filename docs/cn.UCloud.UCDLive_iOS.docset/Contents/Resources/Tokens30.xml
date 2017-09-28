@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageMotionBlurFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageMotionBlurFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImageMotionBlurFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMotionBlurFilter/setBlurSize:</TokenIdentifier>
+			<Abstract type="html">A multiplier for the blur size, ranging from 0.0 on up, with a default of 1.0</Abstract>
+			<DeclaredIn>UCloudGPUImageMotionBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurSize</Declaration>
+			
+			
+			<Anchor>//api/name/blurSize</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMotionBlurFilter/blurSize</TokenIdentifier>
+			<Abstract type="html">A multiplier for the blur size, ranging from 0.0 on up, with a default of 1.0</Abstract>
+			<DeclaredIn>UCloudGPUImageMotionBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurSize</Declaration>
+			
+			
+			<Anchor>//api/name/blurSize</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageMotionBlurFilter/blurSize</TokenIdentifier>
+			<Abstract type="html">A multiplier for the blur size, ranging from 0.0 on up, with a default of 1.0</Abstract>
+			<DeclaredIn>UCloudGPUImageMotionBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurSize</Declaration>
+			
+			
+			<Anchor>//api/name/blurSize</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMotionBlurFilter/setBlurAngle:</TokenIdentifier>
+			<Abstract type="html">The angular direction of the blur, in degrees. 0 degrees by default</Abstract>
+			<DeclaredIn>UCloudGPUImageMotionBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurAngle</Declaration>
+			
+			
+			<Anchor>//api/name/blurAngle</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageMotionBlurFilter/blurAngle</TokenIdentifier>
+			<Abstract type="html">The angular direction of the blur, in degrees. 0 degrees by default</Abstract>
+			<DeclaredIn>UCloudGPUImageMotionBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurAngle</Declaration>
+			
+			
+			<Anchor>//api/name/blurAngle</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageMotionBlurFilter/blurAngle</TokenIdentifier>
+			<Abstract type="html">The angular direction of the blur, in degrees. 0 degrees by default</Abstract>
+			<DeclaredIn>UCloudGPUImageMotionBlurFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurAngle</Declaration>
+			
+			
+			<Anchor>//api/name/blurAngle</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

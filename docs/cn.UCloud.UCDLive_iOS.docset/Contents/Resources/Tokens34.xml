@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImagePicture.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImagePicture</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImagePicture.h</DeclaredIn>
+            
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImagePicture/processImageWithCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Process image with all targets and filters asynchronously
+The completion handler is called after processing finished in the
+GPU&apos;s dispatch queue - and only if this method did not return NO.</Abstract>
+			<DeclaredIn>UCloudGPUImagePicture.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)processImageWithCompletionHandler:(void ( ^ ) ( void ))completion</Declaration>
+			
+			<ReturnValue><Abstract type="html">NO if resource is blocked and processing is discarded, YES otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/processImageWithCompletionHandler:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

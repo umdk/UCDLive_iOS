@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageBulgeDistortionFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageBulgeDistortionFilter</TokenIdentifier>
+			<Abstract type="html">Creates a bulge distortion on the image</Abstract>
+			<DeclaredIn>UCloudGPUImageBulgeDistortionFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBulgeDistortionFilter/setCenter:</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImageBulgeDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBulgeDistortionFilter/center</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImageBulgeDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageBulgeDistortionFilter/center</TokenIdentifier>
+			<Abstract type="html">The center about which to apply the distortion, with a default of (0.5, 0.5)</Abstract>
+			<DeclaredIn>UCloudGPUImageBulgeDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGPoint center</Declaration>
+			
+			
+			<Anchor>//api/name/center</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBulgeDistortionFilter/setRadius:</TokenIdentifier>
+			<Abstract type="html">The radius of the distortion, ranging from 0.0 to 1.0, with a default of 0.25</Abstract>
+			<DeclaredIn>UCloudGPUImageBulgeDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBulgeDistortionFilter/radius</TokenIdentifier>
+			<Abstract type="html">The radius of the distortion, ranging from 0.0 to 1.0, with a default of 0.25</Abstract>
+			<DeclaredIn>UCloudGPUImageBulgeDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageBulgeDistortionFilter/radius</TokenIdentifier>
+			<Abstract type="html">The radius of the distortion, ranging from 0.0 to 1.0, with a default of 0.25</Abstract>
+			<DeclaredIn>UCloudGPUImageBulgeDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBulgeDistortionFilter/setScale:</TokenIdentifier>
+			<Abstract type="html">The amount of distortion to apply, from -1.0 to 1.0, with a default of 0.5</Abstract>
+			<DeclaredIn>UCloudGPUImageBulgeDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat scale</Declaration>
+			
+			
+			<Anchor>//api/name/scale</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageBulgeDistortionFilter/scale</TokenIdentifier>
+			<Abstract type="html">The amount of distortion to apply, from -1.0 to 1.0, with a default of 0.5</Abstract>
+			<DeclaredIn>UCloudGPUImageBulgeDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat scale</Declaration>
+			
+			
+			<Anchor>//api/name/scale</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageBulgeDistortionFilter/scale</TokenIdentifier>
+			<Abstract type="html">The amount of distortion to apply, from -1.0 to 1.0, with a default of 0.5</Abstract>
+			<DeclaredIn>UCloudGPUImageBulgeDistortionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat scale</Declaration>
+			
+			
+			<Anchor>//api/name/scale</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

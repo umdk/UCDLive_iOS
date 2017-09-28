@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageThresholdEdgeDetectionFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageThresholdEdgeDetectionFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImageThresholdEdgeDetectionFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="48"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageThresholdEdgeDetectionFilter/setThreshold:</TokenIdentifier>
+			<Abstract type="html">Any edge above this threshold will be black, and anything below white. Ranges from 0.0 to 1.0, with 0.8 as the default</Abstract>
+			<DeclaredIn>UCloudGPUImageThresholdEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat threshold</Declaration>
+			
+			
+			<Anchor>//api/name/threshold</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageThresholdEdgeDetectionFilter/threshold</TokenIdentifier>
+			<Abstract type="html">Any edge above this threshold will be black, and anything below white. Ranges from 0.0 to 1.0, with 0.8 as the default</Abstract>
+			<DeclaredIn>UCloudGPUImageThresholdEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat threshold</Declaration>
+			
+			
+			<Anchor>//api/name/threshold</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageThresholdEdgeDetectionFilter/threshold</TokenIdentifier>
+			<Abstract type="html">Any edge above this threshold will be black, and anything below white. Ranges from 0.0 to 1.0, with 0.8 as the default</Abstract>
+			<DeclaredIn>UCloudGPUImageThresholdEdgeDetectionFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat threshold</Declaration>
+			
+			
+			<Anchor>//api/name/threshold</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageAdaptiveThresholdFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageAdaptiveThresholdFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UCloudGPUImageAdaptiveThresholdFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageAdaptiveThresholdFilter/setBlurRadiusInPixels:</TokenIdentifier>
+			<Abstract type="html">A multiplier for the background averaging blur radius in pixels, with a default of 4</Abstract>
+			<DeclaredIn>UCloudGPUImageAdaptiveThresholdFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageAdaptiveThresholdFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">A multiplier for the background averaging blur radius in pixels, with a default of 4</Abstract>
+			<DeclaredIn>UCloudGPUImageAdaptiveThresholdFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageAdaptiveThresholdFilter/blurRadiusInPixels</TokenIdentifier>
+			<Abstract type="html">A multiplier for the background averaging blur radius in pixels, with a default of 4</Abstract>
+			<DeclaredIn>UCloudGPUImageAdaptiveThresholdFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat blurRadiusInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadiusInPixels</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

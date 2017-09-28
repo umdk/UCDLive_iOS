@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageHazeFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageHazeFilter</TokenIdentifier>
+			<Abstract type="html">The haze filter can be used to add or remove haze</Abstract>
+			<DeclaredIn>UCloudGPUImageHazeFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHazeFilter/setDistance:</TokenIdentifier>
+			<Abstract type="html">Strength of the color applied. Default 0. Values between -.3 and .3 are best</Abstract>
+			<DeclaredIn>UCloudGPUImageHazeFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat distance</Declaration>
+			
+			
+			<Anchor>//api/name/distance</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHazeFilter/distance</TokenIdentifier>
+			<Abstract type="html">Strength of the color applied. Default 0. Values between -.3 and .3 are best</Abstract>
+			<DeclaredIn>UCloudGPUImageHazeFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat distance</Declaration>
+			
+			
+			<Anchor>//api/name/distance</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageHazeFilter/distance</TokenIdentifier>
+			<Abstract type="html">Strength of the color applied. Default 0. Values between -.3 and .3 are best</Abstract>
+			<DeclaredIn>UCloudGPUImageHazeFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat distance</Declaration>
+			
+			
+			<Anchor>//api/name/distance</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHazeFilter/setSlope:</TokenIdentifier>
+			<Abstract type="html">Amount of color change. Default 0. Values between -.3 and .3 are best</Abstract>
+			<DeclaredIn>UCloudGPUImageHazeFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat slope</Declaration>
+			
+			
+			<Anchor>//api/name/slope</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageHazeFilter/slope</TokenIdentifier>
+			<Abstract type="html">Amount of color change. Default 0. Values between -.3 and .3 are best</Abstract>
+			<DeclaredIn>UCloudGPUImageHazeFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat slope</Declaration>
+			
+			
+			<Anchor>//api/name/slope</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageHazeFilter/slope</TokenIdentifier>
+			<Abstract type="html">Amount of color change. Default 0. Values between -.3 and .3 are best</Abstract>
+			<DeclaredIn>UCloudGPUImageHazeFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat slope</Declaration>
+			
+			
+			<Anchor>//api/name/slope</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

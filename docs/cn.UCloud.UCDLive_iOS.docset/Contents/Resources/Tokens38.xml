@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageSaturationFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageSaturationFilter</TokenIdentifier>
+			<Abstract type="html">Adjusts the saturation of an image</Abstract>
+			<DeclaredIn>UCloudGPUImageSaturationFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="38"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageSaturationFilter/setSaturation:</TokenIdentifier>
+			<Abstract type="html">Saturation ranges from 0.0 (fully desaturated) to 2.0 (max saturation), with 1.0 as the normal level</Abstract>
+			<DeclaredIn>UCloudGPUImageSaturationFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageSaturationFilter/saturation</TokenIdentifier>
+			<Abstract type="html">Saturation ranges from 0.0 (fully desaturated) to 2.0 (max saturation), with 1.0 as the normal level</Abstract>
+			<DeclaredIn>UCloudGPUImageSaturationFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UCloudGPUImageSaturationFilter/saturation</TokenIdentifier>
+			<Abstract type="html">Saturation ranges from 0.0 (fully desaturated) to 2.0 (max saturation), with 1.0 as the normal level</Abstract>
+			<DeclaredIn>UCloudGPUImageSaturationFilter.h</DeclaredIn>
+			
+			<Declaration>@property (readwrite, nonatomic) CGFloat saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

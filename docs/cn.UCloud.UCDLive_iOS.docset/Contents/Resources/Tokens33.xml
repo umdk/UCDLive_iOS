@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UCloudGPUImageOutput.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UCloudGPUImageOutput</TokenIdentifier>
+			<Abstract type="html">GPUImage&apos;s base source object</Abstract>
+			<DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+            
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageOutput/targets</TokenIdentifier>
+			<Abstract type="html">Returns an array of the current targets.</Abstract>
+			<DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)targets</Declaration>
+			
+			
+			<Anchor>//api/name/targets</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageOutput/addTarget:</TokenIdentifier>
+			<Abstract type="html">Adds a target to receive notifications when new frames are available.</Abstract>
+			<DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+			
+			<Declaration>- (void)addTarget:(id&lt;UCloudGPUImageInput&gt;)newTarget</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newTarget</Name>
+					<Abstract type="html">Target to be added</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTarget:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageOutput/addTarget:atTextureLocation:</TokenIdentifier>
+			<Abstract type="html">Adds a target to receive notifications when new frames are available.</Abstract>
+			<DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+			
+			<Declaration>- (void)addTarget:(id&lt;UCloudGPUImageInput&gt;)newTarget atTextureLocation:(NSInteger)textureLocation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newTarget</Name>
+					<Abstract type="html">Target to be added</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTarget:atTextureLocation:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageOutput/removeTarget:</TokenIdentifier>
+			<Abstract type="html">Removes a target. The target will no longer receive notifications when new frames are available.</Abstract>
+			<DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+			
+			<Declaration>- (void)removeTarget:(id&lt;UCloudGPUImageInput&gt;)targetToRemove</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>targetToRemove</Name>
+					<Abstract type="html">Target to be removed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeTarget:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UCloudGPUImageOutput/removeAllTargets</TokenIdentifier>
+			<Abstract type="html">Removes all targets.</Abstract>
+			<DeclaredIn>UCloudGPUImageOutput.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllTargets</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllTargets</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
