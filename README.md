@@ -3,7 +3,8 @@
 UCDLive SDK 是由 UCloud 提供的低延时、高并发的直播云服务。
 
 ![首页](screenshot/publish1.jpg)  
-![连麦](screenshot/publish2.jpg)
+![连麦](screenshot/publish3.jpg)
+![连麦](screenshot/publish4.jpg)
 
 - 1 [功能特性](#1)
 - 2 [集成介绍](#2)
@@ -12,10 +13,11 @@ UCDLive SDK 是由 UCloud 提供的低延时、高并发的直播云服务。
     - 2.3 [基础集成](#2.3)
 - 3 [推流库集成](#3)
 - 4 [连麦解决方案](#4)
-- 5 [播放器接入](#5)
-- 6 [常见问题](#6)
-- 7 [反馈和建议](#7)
-- 8 [SDK升级历史信息文档变更](#8)
+- 5 [faceunity集成方案](#5)
+- 6 [播放器接入](#6)
+- 7 [常见问题](#7)
+- 8 [反馈和建议](#8)
+- 9 [SDK升级历史信息文档变更](#9)
 
 <a name="1"></a>
 ## 一. 功能特性
@@ -34,7 +36,7 @@ UCDLive SDK 是由 UCloud 提供的低延时、高并发的直播云服务。
 - [x] 自动对焦
 - [x] 支持静音操作
 - [x] 截帧操作
-- [x] 动态贴纸(Faceu等)
+- [x] 动态贴纸(faceunity等)
 - [x] 混音效果
 - [x] 前后置摄像头动态切换
 - [x] 在线API文档支持，提供 HeaderDoc 文档
@@ -148,22 +150,27 @@ lib文件夹下的Recorder库中的Filters文件夹已更换为include文件夹�
 详细请参考 [连麦配置](https://github.com/umdk/UCDLive_iOS/wiki/4_Guide#4.3)。
 
 <a name="5"></a>
-## 五 播放器接入
 
-详细请参考 [UCDMediaPlayer项目](https://github.com/umdk/UCDLive_iOS/wiki/4_Guide#4.4)。
+## 五 faceunity集成方案
+详细请参考 [faceunity集成](https://github.com/umdk/UCDLive_iOS/wiki/4_Guide#4.4)。
+
+<a name="5"></a>
+## 六 播放器接入
+
+详细请参考 [UCDMediaPlayer项目](https://github.com/umdk/UCDLive_iOS/wiki/4_Guide#4.5)。
 
 <a name="6"></a>
-## 六 常见问题
+## 七 常见问题
 
 详细请见 [UCDLive_IOS 常见问题](https://github.com/umdk/UCDLive_iOS/wiki/6_FAQ#6#6)
 
 <a name="7"></a>
-## 七 反馈和建议
+## 八 反馈和建议
   - 主 页：<https://www.ucloud.cn/>
   - issue：[查看已有的 issues 和提交 Bug[推荐]](https://github.com/umdk/UCDLive_iOS/issues)
   - 邮 箱：[sdk_spt@ucloud.cn](mailto:sdk_spt@ucloud.cn)
 
-<a name="7.1"></a>
+<a name="8.1"></a>
 ### 问题反馈参考模板  
 
 | 名称    | 描述                                   |
@@ -181,6 +188,7 @@ lib文件夹下的Recorder库中的Filters文件夹已更换为include文件夹�
 
 | 版本号   | 发布日期       | 说明                                       |
 | ----- | ---------- | ---------------------------------------- |
+| 1.8.0 | 2017.10.17 |1、集成 faceunity|
 | 1.8.0 | 2017.09.28 |1、升级底层连麦SDK至最新版本<br/>2、支持多人连麦<br/>3、推流可先开启预览后再设置推流地址|
 | 1.7.0 | 2017.08.22 |1、增加连麦解决方案和美颜场景特效<br/>2、增加推流暂停与恢复的API<br/>3、修复输出音频电流声问题|
 | 1.6.4 | 2017.06.23 |1、优化推流端滤镜，功耗更低，发热小<br/>2、开放ip推流<br/>3、更新1.5.2版本播放器|

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B218B8721F7E5634008B23FC /* FUAPIDemoBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B218B8711F7E5634008B23FC /* FUAPIDemoBar.framework */; };
 		B218B8931F7E5651008B23FC /* libnama.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B218B8791F7E5651008B23FC /* libnama.a */; };
 		B218B8941F7E5651008B23FC /* release_note.txt in Resources */ = {isa = PBXBuildFile; fileRef = B218B87A1F7E5651008B23FC /* release_note.txt */; };
 		B218B8951F7E5651008B23FC /* face_beautification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B218B87C1F7E5651008B23FC /* face_beautification.bundle */; };
@@ -32,9 +31,9 @@
 		B218B8A81F7E5651008B23FC /* PrincessCrown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B218B8901F7E5651008B23FC /* PrincessCrown.bundle */; };
 		B218B8A91F7E5651008B23FC /* tiara.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B218B8911F7E5651008B23FC /* tiara.bundle */; };
 		B218B8AA1F7E5651008B23FC /* YellowEar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B218B8921F7E5651008B23FC /* YellowEar.bundle */; };
-		B218B8AB1F7E57B2008B23FC /* FUAPIDemoBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B218B8711F7E5634008B23FC /* FUAPIDemoBar.framework */; };
-		B218B8AC1F7E57B2008B23FC /* FUAPIDemoBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B218B8711F7E5634008B23FC /* FUAPIDemoBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B218B8AF1F7E585E008B23FC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B218B8AE1F7E585E008B23FC /* Accelerate.framework */; };
+		B26B83731F961F35003EFD43 /* FUAPIDemoBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26B83721F961F35003EFD43 /* FUAPIDemoBar.framework */; };
+		B26B83741F961F51003EFD43 /* FUAPIDemoBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B26B83721F961F35003EFD43 /* FUAPIDemoBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E9059A251EB86A4800381E56 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9059A241EB86A4800381E56 /* AboutViewController.m */; };
 		E9059A281EB8A32100381E56 /* UITabBarController+shouldAutorotate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9059A271EB8A32100381E56 /* UITabBarController+shouldAutorotate.m */; };
 		E9059A331EB988E100381E56 /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9059A2E1EB988E100381E56 /* PopoverAction.m */; };
@@ -160,7 +159,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B218B8AC1F7E57B2008B23FC /* FUAPIDemoBar.framework in Embed Frameworks */,
+				B26B83741F961F51003EFD43 /* FUAPIDemoBar.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,7 +167,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B218B8711F7E5634008B23FC /* FUAPIDemoBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FUAPIDemoBar.framework; sourceTree = "<group>"; };
 		B218B8741F7E5651008B23FC /* authpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = authpack.h; sourceTree = "<group>"; };
 		B218B8771F7E5651008B23FC /* funama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = funama.h; sourceTree = "<group>"; };
 		B218B8781F7E5651008B23FC /* FURenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FURenderer.h; sourceTree = "<group>"; };
@@ -198,6 +196,7 @@
 		B218B8921F7E5651008B23FC /* YellowEar.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = YellowEar.bundle; sourceTree = "<group>"; };
 		B218B8AE1F7E585E008B23FC /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		B2630C321F7F3FCA00CC6A7D /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		B26B83721F961F35003EFD43 /* FUAPIDemoBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FUAPIDemoBar.framework; sourceTree = "<group>"; };
 		E9059A231EB86A4800381E56 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		E9059A241EB86A4800381E56 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		E9059A261EB8A32100381E56 /* UITabBarController+shouldAutorotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+shouldAutorotate.h"; sourceTree = "<group>"; };
@@ -551,11 +550,10 @@
 				E9748CD61F73C22400B0DC14 /* libyuv.a in Frameworks */,
 				E92F73591EB9DFC1001FD1E3 /* CoreTelephony.framework in Frameworks */,
 				E9748CD41F73C22400B0DC14 /* AgoraRtcEngineKit.framework in Frameworks */,
-				B218B8721F7E5634008B23FC /* FUAPIDemoBar.framework in Frameworks */,
 				E9AA00151ED303400072E2E3 /* CoreMotion.framework in Frameworks */,
+				B26B83731F961F35003EFD43 /* FUAPIDemoBar.framework in Frameworks */,
 				E92F735B1EB9DFC8001FD1E3 /* libsqlite3.tbd in Frameworks */,
 				E9A439371EAEEDEB00896E50 /* QuartzCore.framework in Frameworks */,
-				B218B8AB1F7E57B2008B23FC /* FUAPIDemoBar.framework in Frameworks */,
 				E9A3C3B11EA9B6360014A8C6 /* CoreGraphics.framework in Frameworks */,
 				E9C9B0551EA71B650050AC0A /* AVFoundation.framework in Frameworks */,
 				E9C9B0531EA71B3C0050AC0A /* CoreMedia.framework in Frameworks */,
@@ -592,6 +590,7 @@
 		B218B8731F7E5651008B23FC /* Faceunity */ = {
 			isa = PBXGroup;
 			children = (
+				B26B83721F961F35003EFD43 /* FUAPIDemoBar.framework */,
 				B218B8741F7E5651008B23FC /* authpack.h */,
 				B218B8751F7E5651008B23FC /* FaceUnity-SDK-iOS */,
 				B218B87E1F7E5651008B23FC /* items */,
@@ -998,7 +997,6 @@
 			isa = PBXGroup;
 			children = (
 				B218B8731F7E5651008B23FC /* Faceunity */,
-				B218B8711F7E5634008B23FC /* FUAPIDemoBar.framework */,
 				E9748B721F73C22300B0DC14 /* Agora */,
 				E9748B751F73C22300B0DC14 /* libyuv */,
 				E9748B8A1F73C22300B0DC14 /* libyuv.a */,
@@ -1622,6 +1620,7 @@
 					"$(PROJECT_DIR)/UCDLiveDemo-V2/Vender",
 					"$(PROJECT_DIR)/../lib/Agora",
 					"$(PROJECT_DIR)/../lib",
+					"$(PROJECT_DIR)/../lib/Faceunity",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UCDLiveDemo-V2/UCDLiveDemo-V2-prefix.pch";
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
@@ -1667,6 +1666,7 @@
 					"$(PROJECT_DIR)/UCDLiveDemo-V2/Vender",
 					"$(PROJECT_DIR)/../lib/Agora",
 					"$(PROJECT_DIR)/../lib",
+					"$(PROJECT_DIR)/../lib/Faceunity",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UCDLiveDemo-V2/UCDLiveDemo-V2-prefix.pch";
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
