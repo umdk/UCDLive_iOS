@@ -1,0 +1,174 @@
+
+/* Class = "UIButton"; normalTitle = "主播（推流）"; ObjectID = "0dD-8X-yaD"; */
+"0dD-8X-yaD.normalTitle" = "主播（推流）";
+
+/* Class = "UILabel"; text = "0.0 KB/s"; ObjectID = "1Nz-uB-jer"; */
+"1Nz-uB-jer.text" = "0.0 KB/s";
+
+/* Class = "UIButton"; normalTitle = "镜像"; ObjectID = "26o-Cf-IWH"; */
+"26o-Cf-IWH.normalTitle" = "镜像";
+
+/* Class = "UIButton"; normalTitle = "4000188113"; ObjectID = "3I0-li-dwl"; */
+"3I0-li-dwl.normalTitle" = "4000188113";
+
+/* Class = "UIButton"; normalTitle = ">>>"; ObjectID = "4Yu-4K-xxk"; */
+"4Yu-4K-xxk.normalTitle" = ">>>";
+
+/* Class = "UIButton"; selectedTitle = "<<<"; ObjectID = "4Yu-4K-xxk"; */
+"4Yu-4K-xxk.selectedTitle" = "<<<";
+
+/* Class = "UILabel"; text = "线路"; ObjectID = "6nl-6X-dh7"; */
+"6nl-6X-dh7.text" = "线路";
+
+/* Class = "UILabel"; text = "PlayerSDK版本：1.0.0"; ObjectID = "868-hy-7bP"; */
+"868-hy-7bP.text" = "PlayerSDK版本：1.0.0";
+
+/* Class = "UIButton"; normalTitle = "进入房间"; ObjectID = "8fT-uI-CMO"; */
+"8fT-uI-CMO.normalTitle" = "进入房间";
+
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "8vy-EX-2JI"; */
+"8vy-EX-2JI.normalTitle" = "Stop";
+
+/* Class = "UIButton"; normalTitle = "闪光灯"; ObjectID = "95G-Ny-1tn"; */
+"95G-Ny-1tn.normalTitle" = "闪光灯";
+
+/* Class = "UIButton"; normalTitle = "摄像头"; ObjectID = "9Jh-xN-ubZ"; */
+"9Jh-xN-ubZ.normalTitle" = "摄像头";
+
+/* Class = "UILabel"; text = "LIVESDK版本：1.0.0"; ObjectID = "9aQ-PI-f5p"; */
+"9aQ-PI-f5p.text" = "LIVESDK版本：1.0.0";
+
+/* Class = "UILabel"; text = "码率"; ObjectID = "9cV-Gn-zeC"; */
+"9cV-Gn-zeC.text" = "码率";
+
+/* Class = "UILabel"; text = "0.0 KB/s"; ObjectID = "ARd-ip-eBY"; */
+"ARd-ip-eBY.text" = "0.0 KB/s";
+
+/* Class = "UITabBarItem"; title = "RTCLive"; ObjectID = "BR5-U1-1tf"; */
+"BR5-U1-1tf.title" = "RTCLive";
+
+/* Class = "UIButton"; normalTitle = "日志"; ObjectID = "DpM-Zb-Q6f"; */
+"DpM-Zb-Q6f.normalTitle" = "日志";
+
+/* Class = "UILabel"; text = "类型"; ObjectID = "E4u-vT-SEJ"; */
+"E4u-vT-SEJ.text" = "类型";
+
+/* Class = "UIButton"; normalTitle = "关闭"; ObjectID = "IkK-KQ-vwN"; */
+"IkK-KQ-vwN.normalTitle" = "关闭";
+
+/* Class = "UIButton"; normalTitle = "进入"; ObjectID = "IlN-Zt-Dlf"; */
+"IlN-Zt-Dlf.normalTitle" = "进入";
+
+/* Class = "UIButton"; normalTitle = "开始"; ObjectID = "J60-XZ-fFy"; */
+"J60-XZ-fFy.normalTitle" = "开始";
+
+/* Class = "UIButton"; selectedTitle = "暂停"; ObjectID = "J60-XZ-fFy"; */
+"J60-XZ-fFy.selectedTitle" = "暂停";
+
+/* Class = "UILabel"; text = "方向"; ObjectID = "JFy-Cv-AnB"; */
+"JFy-Cv-AnB.text" = "方向";
+
+/* Class = "UIButton"; normalTitle = "副主播（推流）"; ObjectID = "K12-Wq-zK7"; */
+"K12-Wq-zK7.normalTitle" = "副主播（推流）";
+
+/* Class = "UIButton"; normalTitle = "萌脸"; ObjectID = "KG5-ml-1mt"; */
+"KG5-ml-1mt.normalTitle" = "萌脸";
+
+/* Class = "UIButton"; normalTitle = "滤镜配置"; ObjectID = "N25-oF-N7R"; */
+"N25-oF-N7R.normalTitle" = "滤镜配置";
+
+/* Class = "UIButton"; normalTitle = "退出"; ObjectID = "PJY-nc-5Ft"; */
+"PJY-nc-5Ft.normalTitle" = "退出";
+
+/* Class = "UINavigationItem"; title = "UCDLiveDemo"; ObjectID = "SaE-B2-b6K"; */
+"SaE-B2-b6K.title" = "UCDLiveDemo";
+
+/* Class = "UIButton"; normalTitle = "镜像"; ObjectID = "SbV-Nt-7Rt"; */
+"SbV-Nt-7Rt.normalTitle" = "镜像";
+
+/* Class = "UIButton"; normalTitle = "滤镜"; ObjectID = "SpE-3r-tIi"; */
+"SpE-3r-tIi.normalTitle" = "滤镜";
+
+/* Class = "UIButton"; normalTitle = "连麦"; ObjectID = "ZLg-LC-AEW"; */
+"ZLg-LC-AEW.normalTitle" = "连麦";
+
+/* Class = "UIButton"; normalTitle = "滤镜"; ObjectID = "aco-XM-EAc"; */
+"aco-XM-EAc.normalTitle" = "滤镜";
+
+/* Class = "UITabBarItem"; title = "关于"; ObjectID = "axr-SW-9KO"; */
+"axr-SW-9KO.title" = "关于";
+
+/* Class = "UIButton"; normalTitle = "关闭"; ObjectID = "bt4-pY-pc4"; */
+"bt4-pY-pc4.normalTitle" = "关闭";
+
+/* Class = "UIButton"; normalTitle = "混音"; ObjectID = "cjT-Ku-l0W"; */
+"cjT-Ku-l0W.normalTitle" = "混音";
+
+/* Class = "UILabel"; text = "0.0 KB/s"; ObjectID = "cxj-JO-Rnq"; */
+"cxj-JO-Rnq.text" = "0.0 KB/s";
+
+/* Class = "UIButton"; normalTitle = "静音"; ObjectID = "ehu-u1-xZ3"; */
+"ehu-u1-xZ3.normalTitle" = "静音";
+
+/* Class = "UIButton"; normalTitle = "开始"; ObjectID = "f4d-J0-auG"; */
+"f4d-J0-auG.normalTitle" = "开始";
+
+/* Class = "UIButton"; selectedTitle = "暂停"; ObjectID = "f4d-J0-auG"; */
+"f4d-J0-auG.selectedTitle" = "暂停";
+
+/* Class = "UITextField"; placeholder = "房间号"; ObjectID = "gul-PN-ech"; */
+"gul-PN-ech.placeholder" = "房间号";
+
+/* Class = "UINavigationItem"; title = "UCDLiveDemo"; ObjectID = "hlq-2m-EiG"; */
+"hlq-2m-EiG.title" = "UCDLiveDemo";
+
+/* Class = "UIButton"; normalTitle = "静音"; ObjectID = "huy-FK-A1s"; */
+"huy-FK-A1s.normalTitle" = "静音";
+
+/* Class = "UIButton"; normalTitle = "摄像头"; ObjectID = "k1B-kQ-Bmy"; */
+"k1B-kQ-Bmy.normalTitle" = "摄像头";
+
+/* Class = "UILabel"; text = "App版本：1.0.0"; ObjectID = "kL0-30-zlF"; */
+"kL0-30-zlF.text" = "App版本：1.0.0";
+
+/* Class = "UIButton"; normalTitle = "混音"; ObjectID = "mJL-hh-qyp"; */
+"mJL-hh-qyp.normalTitle" = "混音";
+
+/* Class = "UIButton"; normalTitle = "https://github.com/umdk/UCDLive_iOS"; ObjectID = "myD-jq-GSi"; */
+"myD-jq-GSi.normalTitle" = "https://github.com/umdk/UCDLive_iOS";
+
+/* Class = "UILabel"; text = "0.0 KB/s"; ObjectID = "n32-fA-nUi"; */
+"n32-fA-nUi.text" = "0.0 KB/s";
+
+/* Class = "UIButton"; normalTitle = "观众（播放）"; ObjectID = "neO-X3-I3v"; */
+"neO-X3-I3v.normalTitle" = "观众（播放）";
+
+/* Class = "UITextField"; text = "20"; ObjectID = "oZb-EA-NhC"; */
+"oZb-EA-NhC.text" = "20";
+
+/* Class = "UILabel"; text = "房间号"; ObjectID = "oq1-CX-HIG"; */
+"oq1-CX-HIG.text" = "房间号";
+
+/* Class = "UIButton"; normalTitle = ">>>"; ObjectID = "qu2-Tx-nDp"; */
+"qu2-Tx-nDp.normalTitle" = ">>>";
+
+/* Class = "UIButton"; selectedTitle = "<<<"; ObjectID = "qu2-Tx-nDp"; */
+"qu2-Tx-nDp.selectedTitle" = "<<<";
+
+/* Class = "UIButton"; normalTitle = "闪光灯"; ObjectID = "r0H-DL-8rH"; */
+"r0H-DL-8rH.normalTitle" = "闪光灯";
+
+/* Class = "UIButton"; normalTitle = "https://www.ucloud.cn"; ObjectID = "rWR-dG-04B"; */
+"rWR-dG-04B.normalTitle" = "https://www.ucloud.cn";
+
+/* Class = "UIButton"; normalTitle = "滤镜配置"; ObjectID = "sKG-Kx-jzj"; */
+"sKG-Kx-jzj.normalTitle" = "滤镜配置";
+
+/* Class = "UITabBarItem"; title = "首页"; ObjectID = "saK-ks-uxg"; */
+"saK-ks-uxg.title" = "首页";
+
+/* Class = "UIButton"; normalTitle = "日志"; ObjectID = "vRO-7O-6UD"; */
+"vRO-7O-6UD.normalTitle" = "日志";
+
+/* Class = "UILabel"; text = "帧率"; ObjectID = "xW7-4I-fFw"; */
+"xW7-4I-fFw.text" = "帧率";
