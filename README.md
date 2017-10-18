@@ -13,7 +13,7 @@ UCDLive SDK 是由 UCloud 提供的低延时、高并发的直播云服务。
     - 2.3 [基础集成](#2.3)
 - 3 [推流库集成](#3)
 - 4 [连麦解决方案](#4)
-- 5 [faceunity集成方案](#5)
+- 5 [faceunity集成](#5)
 - 6 [播放器接入](#6)
 - 7 [常见问题](#7)
 - 8 [反馈和建议](#8)
@@ -55,7 +55,7 @@ UCDLive SDK 是由 UCloud 提供的低延时、高并发的直播云服务。
 <a name="2.2"></a>
 ### 2.2 下载集成
 ```
-git clone https://github.com/umdk/UCDLive_iOS.git --depth 1
+git clone  -b FaceUnity_Demo https://github.com/umdk/UCDLive_iOS.git
 ```
 因项目包含多个SDK库，因此项目工程相对较庞大，建议使用`Download Zip`下载
 
