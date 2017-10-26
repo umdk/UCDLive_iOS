@@ -4,6 +4,7 @@ UCDLive SDK 是由 UCloud 提供的低延时、高并发的直播云服务。
 
 ![首页](screenshot/publish1.jpg)  
 ![连麦](screenshot/publish2.jpg)
+![连麦2](screenshot/publish4.jpg)
 
 - 1 [功能特性](#1)
 - 2 [集成介绍](#2)
@@ -12,10 +13,11 @@ UCDLive SDK 是由 UCloud 提供的低延时、高并发的直播云服务。
     - 2.3 [基础集成](#2.3)
 - 3 [推流库集成](#3)
 - 4 [连麦解决方案](#4)
-- 5 [播放器接入](#5)
-- 6 [常见问题](#6)
-- 7 [反馈和建议](#7)
-- 8 [SDK升级历史信息文档变更](#8)
+- 5 [萌脸贴图](#5)
+- 6 [播放器接入](#6)
+- 7 [常见问题](#7)
+- 8 [反馈和建议](#8)
+- 9 [SDK升级历史信息文档变更](#9)
 
 <a name="1"></a>
 ## 一. 功能特性
@@ -147,23 +149,29 @@ lib文件夹下的Recorder库中的Filters文件夹已更换为include文件夹�
 
 详细请参考 [连麦配置](https://github.com/umdk/UCDLive_iOS/wiki/4_Guide#4.3)。
 
+
 <a name="5"></a>
-## 五 播放器接入
+## 五 萌脸贴图
+![faceUnity](https://github.com/umdk/UCDLive_iOS/tree/FaceUnity_Demo)
+![kiwi](https://github.com/umdk/UCDLive_iOS/tree/KiWi_ULiveDemo)
+
+<a name="6"></a>
+## 六 播放器接入
 
 详细请参考 [UCDMediaPlayer项目](https://github.com/umdk/UCDLive_iOS/wiki/4_Guide#4.4)。
 
-<a name="6"></a>
-## 六 常见问题
+<a name="7"></a>
+## 七 常见问题
 
 详细请见 [UCDLive_IOS 常见问题](https://github.com/umdk/UCDLive_iOS/wiki/6_FAQ#6#6)
 
-<a name="7"></a>
-## 七 反馈和建议
+<a name="8"></a>
+## 八 反馈和建议
   - 主 页：<https://www.ucloud.cn/>
   - issue：[查看已有的 issues 和提交 Bug[推荐]](https://github.com/umdk/UCDLive_iOS/issues)
   - 邮 箱：[sdk_spt@ucloud.cn](mailto:sdk_spt@ucloud.cn)
 
-<a name="7.1"></a>
+<a name="8.1"></a>
 ### 问题反馈参考模板  
 
 | 名称    | 描述                                   |
@@ -176,8 +184,8 @@ lib文件夹下的Recorder库中的Filters文件夹已更换为include文件夹�
 | 附 件   | 文本形式控制台log、crash报告、其他辅助信息（推流界面截屏或其他） |
 
 
-<a name="8"></a>
-## 八 SDK升级历史信息文档变更
+<a name="9"></a>
+## 九 SDK升级历史信息文档变更
 
 | 版本号   | 发布日期       | 说明                                       |
 | ----- | ---------- | ---------------------------------------- |
