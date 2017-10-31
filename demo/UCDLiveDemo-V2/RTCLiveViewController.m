@@ -139,10 +139,13 @@
     
     //bengin camera capture
     [self startLive];
+    
     __block BOOL bInitFrontFlag = NO;
     typeof(self) __weak weakself = self;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
          [weakself initFaceunity];
+        [_ucdLiveEngine closeFilter];
+        [_kit setupRtcFilter:nil];;
     });
 
     _ucdLiveEngine.videoProcessing = ^(CVPixelBufferRef pixelBuffer, CMTime timeInfo)
@@ -269,7 +272,7 @@
 {
     _demoBar = demoBar;
     _demoBar.itemsDataSource = @[@"noitem", @"tiara", @"item0208", @"YellowEar", @"PrincessCrown", @"Mood" , @"Deer" , @"BeagleDog", @"item0501", @"item0210",  @"HappyRabbi", @"item0204", @"hartshorn", @"ColorCrown"];
-    _demoBar.selectedItem = _demoBar.itemsDataSource[1];
+    _demoBar.selectedItem = @"noitem";//_demoBar.itemsDataSource[1];
     
     _demoBar.filtersDataSource = @[@"nature", @"delta", @"electric", @"slowlived", @"tokyo", @"warm"];
     _demoBar.selectedFilter = _demoBar.filtersDataSource[0];
@@ -470,6 +473,8 @@
         //如果不需要裸流，不建议在这里执行操作，将增加额外的功耗
         return nil;
     }];
+    
+    
 }
 
 - (void)handlerMessageCallBackWithCode:(UCloudCameraCode)code arg1:(NSInteger)arg1 arg2:(NSInteger)arg2 data:(id)data weakSelf:(RTCLiveViewController *)weakSelf
