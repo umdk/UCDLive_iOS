@@ -52,6 +52,8 @@ typedef NS_ENUM(NSUInteger, LiveType) {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    
+    
     //随机一个推流ID
     srand((unsigned)time(NULL));
     NSInteger num = rand()%10000;
