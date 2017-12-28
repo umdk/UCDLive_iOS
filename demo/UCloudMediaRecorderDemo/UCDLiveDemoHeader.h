@@ -10,8 +10,9 @@
 #define UCDLiveDemoHeader_h
 
 
-//demo中的推流地址仅供demo测试使用，如果更换推流域名地址，请发邮件至spt_sdk@ucloud.cn或联系客服、客户经理索取对应的AccessKey
+// demo中的推流地址仅供demo测试使用，如果更换推流域名地址，请发邮件至spt_sdk@ucloud.cn或联系客服、客户经理索取对应的AccessKey
 #define AccessKey @"publish3-key"
+// 此ID仅供demo连麦测试使用，需要发邮件至spt_sdk@ucloud.cn或联系客服、客户经理对接相关ID值
 #define RTCAPPid @"f6da0ba61b7d409280d3623320c425ba"
 
 /**
@@ -20,11 +21,11 @@
  */
 
 //****************测试线路1****************
-#define RecordDomainOne @"rtmp://publish3.cdn.ucloud.com.cn/ucloud/%@";
+#define RecordDomainOne @"rtmp://demo.push.ucloud.com.cn/live/%@";
 //【推荐】使用http-flv作为直播播放必须设置urltype为UrlTypeLive，详见PlayerManager.m
-#define PlayDomainOne @"http://vlive3.rtmp.cdn.ucloud.com.cn/ucloud/%@.flv";
-//#define PlayDomainOne @"rtmp://vlive3.rtmp.cdn.ucloud.com.cn/ucloud/%@";
-//#define PlayDomainOne @"http://vlive3.hls.cdn.ucloud.com.cn/ucloud/%@/playlist.m3u8";
+#define PlayDomainOne @"http://demo.pull.ucloud.com.cn/live/%@.flv";
+//#define PlayDomainOne @"rtmp://demo.pull.ucloud.com.cn/live/%@";
+//#define PlayDomainOne @"http://demo.hls.ucloud.com.cn/live/%@/playlist.m3u8";
 
 
 //****************测试线路2****************
@@ -49,3 +50,4 @@
 #define DarkMidnightBlue UIColorFromRGB(0x04376C)
 
 #endif /* UCDLiveDemoHeader_h */
+

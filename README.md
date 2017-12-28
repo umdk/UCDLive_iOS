@@ -26,6 +26,7 @@ UCDLive SDK 是由 UCloud 提供的低延时、高并发的直播云服务。
 - [x] RMTP协议直播推流
 - [x] 提供基于GPUImage的美颜滤镜，并支持调节磨皮，美白，红润度
 - [x] 支持自定义滤镜
+- [x] 动态贴纸(faceunity/kiwi等)
 - [x] 支持多分辨率设置
 - [x] 自由码率设置
 - [x] 自适应网络带宽码率调整
@@ -36,7 +37,6 @@ UCDLive SDK 是由 UCloud 提供的低延时、高并发的直播云服务。
 - [x] 自动对焦
 - [x] 支持静音操作
 - [x] 截帧操作
-- [x] 动态贴纸(Faceu等)
 - [x] 混音效果
 - [x] 前后置摄像头动态切换
 - [x] 在线API文档支持，提供 HeaderDoc 文档
@@ -138,6 +138,46 @@ git clone https://github.com/umdk/UCDLive_iOS.git --depth 1
 lib文件夹下的Recorder库中的Filters文件夹已更换为include文件夹，需替换  
 连麦需要添加库链接：`libresolv.tbd`
 
+### 2.4 CocoaPods安装
+
+[CocoaPods](https://cocoapods.org/) 是针对 Objective-C 的依赖管理工具，它能够将使用类似 UCDLive SDK 的第三方库的安装过程变得非常简单和自动化，你能够用下面的终端命令来安装它：
+
+```bash
+$ sudo gem install cocoapods
+```
+
+#### Podfile
+
+为了使用 CoacoaPods 集成 UCDLive_iOS 到你的 Xcode 工程当中，你需要编写你的 `Podfile`文件
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+inhibit_all_warnings!
+
+target 'UCloudMediaRecorderDemo' do
+  pod 'UCDLive_iOS',    :path => '../lib'
+  project  'UCloudMediaRecorderDemo.project'
+  
+  post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    puts "!!!! #{target.name}"
+  end
+  end
+end`
+```
+
+然后，运行如下的命令：
+
+```bash
+$ pod install
+```
+
+或者使用CocoaPods APP执行`Podfile`
+
+项目运行`UCloudMediaRecorderDemo.xcworkspace`
+
 
 <a name="3"></a>
 ## 三 推流库集成
@@ -152,8 +192,8 @@ lib文件夹下的Recorder库中的Filters文件夹已更换为include文件夹�
 
 <a name="5"></a>
 ## 五 萌脸贴图
-![faceUnity](https://github.com/umdk/UCDLive_iOS/tree/FaceUnity_Demo)
-![kiwi](https://github.com/umdk/UCDLive_iOS/tree/KiWi_ULiveDemo)
+[faceUnity](https://github.com/umdk/UCDLive_iOS/tree/FaceUnity_Demo)分支项目  
+[kiwi](https://github.com/umdk/UCDLive_iOS/tree/KiWi_ULiveDemo)分支项目
 
 <a name="6"></a>
 ## 六 播放器接入
@@ -189,6 +229,7 @@ lib文件夹下的Recorder库中的Filters文件夹已更换为include文件夹�
 
 | 版本号   | 发布日期       | 说明                                       |
 | ----- | ---------- | ---------------------------------------- |
+| 1.8.1 | 2017.12.28 |1、增加音频降噪功能<br/>2、修复音频双通道推流失败问题<br/>3、修复推流中断后声音消失的问题<br/>4、更新播放器至1.5.4，支持播放器音量调节|
 | 1.8.0 | 2017.09.28 |1、升级底层连麦SDK至最新版本<br/>2、支持多人连麦<br/>3、推流可先开启预览后再设置推流地址|
 | 1.7.0 | 2017.08.22 |1、增加连麦解决方案和美颜场景特效<br/>2、增加推流暂停与恢复的API<br/>3、修复输出音频电流声问题|
 | 1.6.4 | 2017.06.23 |1、优化推流端滤镜，功耗更低，发热小<br/>2、开放ip推流<br/>3、更新1.5.2版本播放器|

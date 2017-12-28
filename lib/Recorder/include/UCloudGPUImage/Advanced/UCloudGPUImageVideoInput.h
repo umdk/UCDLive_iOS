@@ -23,13 +23,25 @@
     GLuint luminanceTexture, chrominanceTexture;
 }
 
+@property(nonatomic, assign)AVCaptureDevicePosition      devCurrentPos;
 @property(nonatomic, assign)UCloudGPUImageRotationMode outputRotation;
 @property(nonatomic, assign)UCloudGPUImageRotationMode internalRotation;
+@property(nonatomic, assign)UIInterfaceOrientation      outputImageOrientation;
+@property(nonatomic, assign)BOOL          horizontallyMirrorFrontFacingCamera;
 
 /*!
  *  Initialization
  */
 - (id)init;
+
+
+
+/** sitting video Formate
+ 
+ @param isCaptureAsYUV YES:YUV NO RGBA
+ @param iSFullYUVRange if YUV YES:NV12 NO I420 if isCaptureAsYUV is NO iSFullYUVRange is no need
+ */
+- (id)initWithYUVVideo:(BOOL)isCaptureAsYUV  iSFullYUVRange:(BOOL)bFullYUVRange;
 
 /**
  @abstract 输入图像数据

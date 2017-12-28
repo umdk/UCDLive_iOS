@@ -11,50 +11,50 @@
 
 typedef NS_ENUM(NSInteger, UCloudCameraCode)
 {
-    UCloudCamera_COMPLETED =0,
-    UCloudCamera_FILE_SIZE = 1,
-    UCloudCamera_FILE_DURATION = 2,
-    UCloudCamera_CUR_POS = 3,
-    UCloudCamera_CUR_TIME = 4,
-    UCloudCamera_URL_ERROR = 5,
-    UCloudCamera_OUT_FAIL = 6,
+    UCloudCamera_COMPLETED       = 0,
+    UCloudCamera_FILE_SIZE       = 1,
+    UCloudCamera_FILE_DURATION   = 2,
+    UCloudCamera_CUR_POS         = 3,
+    UCloudCamera_CUR_TIME        = 4,
+    UCloudCamera_URL_ERROR       = 5,
+    UCloudCamera_OUT_FAIL        = 6,
     /// 推流开始
-    UCloudCamera_STARTED = 7,
-    UCloudCamera_READ_AUD_ERROR = 8,
-    UCloudCamera_READ_VID_ERROR = 9,
+    UCloudCamera_STARTED         = 7,
+    UCloudCamera_READ_AUD_ERROR  = 8,
+    UCloudCamera_READ_VID_ERROR  = 9,
     /// 推流错误
-    UCloudCamera_OUTPUT_ERROR = 10,
+    UCloudCamera_OUTPUT_ERROR    = 10,
     /// 推流停止
-    UCloudCamera_STOPPED = 11,
-    UCloudCamera_READ_AUD_EOS = 12,
-    UCloudCamera_READ_VID_EOS = 13,
+    UCloudCamera_STOPPED         = 11,
+    UCloudCamera_READ_AUD_EOS    = 12,
+    UCloudCamera_READ_VID_EOS    = 13,
     /// 推流上行带宽不足
     UCloudCamera_BUFFER_OVERFLOW = 14,
     /// SDK 密钥为空
-    UCloudCamera_SecretkeyNil = 15,
+    UCloudCamera_SecretkeyNil    = 15,
     /// 推流域名为空
-    UCloudCamera_DomainNil = 16,
+    UCloudCamera_DomainNil       = 16,
     /// SDK 鉴权失败
-    UCloudCamera_AuthFail = 17,
+    UCloudCamera_AuthFail        = 17,
     /// SDK 鉴权返回IP列表为空
-    UCloudCamera_ServerIpError = 18,
+    UCloudCamera_ServerIpError   = 18,
     /// 预览视图准备好
-    UCloudCamera_PreviewOK = 19,
+    UCloudCamera_PreviewOK       = 19,
     /// 底层推流配置完毕
-    UCloudCamera_PublishOk = 20,
-    UCloudCamera_StartPublish = 21,
+    UCloudCamera_PublishOk       = 20,
+    UCloudCamera_StartPublish    = 21,
     /// SDK dig错误
-    UCloudCamera_DigError = 22,
+    UCloudCamera_DigError        = 22,
     /// 推流ID已被占用
-    UCloudCamera_AlreadyPublish = 23,
+    UCloudCamera_AlreadyPublish  = 23,
     /// 推流url对应的服务器连接失败
-    UCloudCamera_CannotConnect = 24,
+    UCloudCamera_CannotConnect   = 24,
     /// 服务器连接异常断开
-    UCloudCamera_DisConnected = 25,
+    UCloudCamera_DisConnected    = 25,
     /// 摄像头权限
-    UCloudCamera_Permission = 998,
+    UCloudCamera_Permission      = 998,
     /// 麦克风权限
-    UCloudCamera_Micphone = 999,
+    UCloudCamera_Micphone        = 999,
 };
 
 typedef NS_ENUM(NSInteger, UCloudCameraState)
@@ -73,8 +73,8 @@ typedef NS_ENUM(NSInteger, UCloudCameraState)
 typedef NS_ENUM(NSInteger, UCloudVideoOrientation) {
     UCloudVideoOrientationPortrait           = UIInterfaceOrientationPortrait,
     UCloudVideoOrientationPortraitUpsideDown = UIInterfaceOrientationPortraitUpsideDown,
-    UCloudVideoOrientationLandscapeRight      = UIInterfaceOrientationLandscapeRight,
-    UCloudVideoOrientationLandscapeLeft     = UIInterfaceOrientationLandscapeLeft
+    UCloudVideoOrientationLandscapeRight     = UIInterfaceOrientationLandscapeRight,
+    UCloudVideoOrientationLandscapeLeft      = UIInterfaceOrientationLandscapeLeft
 };
 
 /*!
@@ -106,6 +106,18 @@ typedef NS_OPTIONS(NSUInteger, UCDLiveLogLevel){
     UCDLiveLogLevelDebug     = (UCDLiveLogLevelInfo | 1<<3),
     // Error, warning, info, debug and verbose logs
     UCDLiveLogLevelVerbose   = (UCDLiveLogLevelDebug | 1<<4),
+};
+
+/*!
+ @enum UCloudAudioNoiseSuppress
+ @abstract 降噪等级
+ */
+typedef NS_ENUM(NSInteger, UCloudAudioNoiseSuppress) {
+    UCloudAudioNoiseSuppressOff      = -1,
+    UCloudAudioNoiseSuppressLow      = 0,
+    UCloudAudioNoiseSuppressMedium   = 1,
+    UCloudAudioNoiseSuppressHigh     = 2,
+    UCloudAudioNoiseSuppressVeryHigh = 3,
 };
 
 #pragma mark Notifications

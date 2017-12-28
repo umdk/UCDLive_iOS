@@ -69,6 +69,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *secondViewLeading;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *btnStopWidth;
 
+@property (weak, nonatomic) IBOutlet UIButton *btnMirror;
+
 - (IBAction)btnStopTouchUpInside:(id)sender;
 - (IBAction)btnStartLiveTouchUpInside:(id)sender;
 - (IBAction)btnMuteTouchUpInside:(id)sender;
@@ -106,7 +108,7 @@
     //initial UCDLiveEngine cameraServer
     _ucdLiveEngine = [CameraServer server];
     _ucdLiveEngine.videoOrientation = UCloudVideoOrientationPortrait;
-    
+    _btnMirror.selected = _ucdLiveEngine.streamMirrorFrontFacing;
     _kit = [[UCDAgoraServiceKit alloc] initWithDefaultConfig];
     _rtcBtnViewBottomConstraint.constant = -_rtcBtnViewHeightConstraint.constant - _buttomView.frame.size.height;
     
@@ -211,8 +213,8 @@
     
     _ucdLiveEngine.secretKey = AccessKey;
     _ucdLiveEngine.bitrate = UCloudVideoBitrateMedium;
+    _ucdLiveEngine.nosieSuppressLevel = _noiseSuppress;
     
-    _ucdLiveEngine.logLevel = (UCDLiveLogLevelInfo);
     __weak RTCLiveViewController *weakSelf = self;
     [_ucdLiveEngine configureCameraWithOutputUrl:_publishUrl filter:liveFilters messageCallBack:^(UCloudCameraCode code, NSInteger arg1, NSInteger arg2, id data) {
         
@@ -280,13 +282,14 @@
 - (void)setAgoraServiceKitConfiguration
 {
     _kit.selfInFront = NO;
-    _kit.agoraKit.videoProfile = AgoraRtc_VideoProfile_DEFAULT;
+    _kit.agoraKit.videoProfile = AgoraRtc_VideoProfile_240P;
     //设置第一小窗口属性，双人连麦
-    _kit.winRect = CGRectMake(0.6f, 0.6f, 0.3f, 0.3f);//设置小窗口属性
+//    _kit.winRect = CGRectMake(0.6f, 0.7f, 0.3f, 0.75 * 0.3f);//设置小窗口属性
+    _kit.winRect = CGRectMake(0.5f, 0.2f, 0.5f, 0.75 * 0.5f);
     _kit.rtcLayer = 1;//设置小窗口图层，设置为1
     
     //设置第二小窗口的属性，适用于三人连麦，四人连麦依次可在kit中添加属性和设置
-    _kit.winFansRect = CGRectMake(0.1, 0.6, 0.3, 0.3);
+    _kit.winFansRect = CGRectMake(0.1f, 0.7f, 0.3f, 0.75 * 0.3f);
     _kit.rtcFansLayer = 2;
     
     //为第一小窗口增加圆角
@@ -341,6 +344,7 @@
 -(void)onLeaveChannelBtn
 {
     [_kit leaveChannel];
+    _kit = nil;
 }
 
 - (void) onQuit{
@@ -421,6 +425,9 @@
 
 - (IBAction)btnMirrorTouchUpInside:(id)sender {
     
+    if (_ucdLiveEngine.captureDevicePos == AVCaptureDevicePositionBack) {
+        return;
+    }
     UIButton *btnMirror = (UIButton *)sender;
     if (btnMirror.selected) {
         btnMirror.selected = NO;

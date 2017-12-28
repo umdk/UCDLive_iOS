@@ -19,7 +19,6 @@
 		E902438E1F4ACB9400450ADA /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E902431E1F4ACB9400450ADA /* PopoverViewCell.m */; };
 		E902438F1F4ACB9400450ADA /* UINavigationController+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243211F4ACB9400450ADA /* UINavigationController+Rotation.m */; };
 		E90243901F4ACB9400450ADA /* UITabBarController+shouldAutorotate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243231F4ACB9400450ADA /* UITabBarController+shouldAutorotate.m */; };
-		E90243911F4ACB9400450ADA /* CAAnimation+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243271F4ACB9400450ADA /* CAAnimation+Extensions.m */; };
 		E90243921F4ACB9400450ADA /* JGProgressHUD Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E90243291F4ACB9400450ADA /* JGProgressHUD Resources.bundle */; };
 		E90243931F4ACB9400450ADA /* JGProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E902432C1F4ACB9400450ADA /* JGProgressHUD.m */; };
 		E90243941F4ACB9400450ADA /* JGProgressHUDAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E902432E1F4ACB9400450ADA /* JGProgressHUDAnimation.m */; };
@@ -32,11 +31,6 @@
 		E902439B1F4ACB9400450ADA /* JGProgressHUDPieIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = E902433C1F4ACB9400450ADA /* JGProgressHUDPieIndicatorView.m */; };
 		E902439C1F4ACB9400450ADA /* JGProgressHUDRingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = E902433E1F4ACB9400450ADA /* JGProgressHUDRingIndicatorView.m */; };
 		E902439D1F4ACB9400450ADA /* JGProgressHUDSuccessIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243401F4ACB9400450ADA /* JGProgressHUDSuccessIndicatorView.m */; };
-		E902439E1F4ACB9400450ADA /* LUNGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243431F4ACB9400450ADA /* LUNGradientView.m */; };
-		E902439F1F4ACB9400450ADA /* LUNSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243451F4ACB9400450ADA /* LUNSegmentedControl.m */; };
-		E90243A01F4ACB9400450ADA /* UIView+LUNRemoveConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243471F4ACB9400450ADA /* UIView+LUNRemoveConstraints.m */; };
-		E90243A11F4ACB9400450ADA /* RadioBox.m in Sources */ = {isa = PBXBuildFile; fileRef = E902434A1F4ACB9400450ADA /* RadioBox.m */; };
-		E90243A21F4ACB9400450ADA /* RadioGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E902434C1F4ACB9400450ADA /* RadioGroup.m */; };
 		E90243A31F4ACB9400450ADA /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E902434E1F4ACB9400450ADA /* UMMobClick.framework */; };
 		E90243A41F4ACB9400450ADA /* GetLogFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243511F4ACB9400450ADA /* GetLogFile.m */; };
 		E90243A51F4ACB9400450ADA /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243531F4ACB9400450ADA /* InfoView.m */; };
@@ -56,16 +50,11 @@
 		E90244111F4AD9E600450ADA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90244061F4AD9E600450ADA /* ViewController.m */; };
 		E9271D411C3CC735000DBADF /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9271D401C3CC735000DBADF /* CoreVideo.framework */; };
 		E94670D51BD78B9B00374D7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E94670D41BD78B9B00374D7A /* main.m */; };
-		E958BBAE1F7CE2A100C79AFD /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E958BBAD1F7CE2A000C79AFD /* libresolv.tbd */; };
-		E96627761BE75E4000FA5B03 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96627751BE75E4000FA5B03 /* AudioToolbox.framework */; };
-		E96627781BE75E4900FA5B03 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96627771BE75E4900FA5B03 /* VideoToolbox.framework */; };
+		E953F26A1FF3C38700C39416 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E953F2691FF3C38700C39416 /* HMSegmentedControl.m */; };
+		E953F27A1FF498C200C39416 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9271D441C3CC752000DBADF /* QuartzCore.framework */; };
 		E966277A1BE75E5000FA5B03 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96627791BE75E5000FA5B03 /* AVFoundation.framework */; };
-		E966277C1BE75E5D00FA5B03 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E966277B1BE75E5D00FA5B03 /* CoreMedia.framework */; };
 		E96F3D8A1C17FE410099718A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E96F3D891C17FE410099718A /* Default-568h@2x.png */; };
 		E979E3B01F4C24CB0030EF4C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E92E18E81E9F50F000CD6F1C /* libsqlite3.tbd */; };
-		E979E3B11F4C24D70030EF4C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E909B3561E825863002ABC4F /* CoreTelephony.framework */; };
-		E9ED2EDF1C0C551100BA59A6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9ED2EDE1C0C551100BA59A6 /* libc++.tbd */; };
-		E9ED2EE11C0C551900BA59A6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9ED2EE01C0C551900BA59A6 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -106,8 +95,6 @@
 		E90243211F4ACB9400450ADA /* UINavigationController+Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Rotation.m"; sourceTree = "<group>"; };
 		E90243221F4ACB9400450ADA /* UITabBarController+shouldAutorotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+shouldAutorotate.h"; sourceTree = "<group>"; };
 		E90243231F4ACB9400450ADA /* UITabBarController+shouldAutorotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+shouldAutorotate.m"; sourceTree = "<group>"; };
-		E90243261F4ACB9400450ADA /* CAAnimation+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+Extensions.h"; sourceTree = "<group>"; };
-		E90243271F4ACB9400450ADA /* CAAnimation+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+Extensions.m"; sourceTree = "<group>"; };
 		E90243291F4ACB9400450ADA /* JGProgressHUD Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "JGProgressHUD Resources.bundle"; sourceTree = "<group>"; };
 		E902432A1F4ACB9400450ADA /* JGProgressHUD-Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JGProgressHUD-Defines.h"; sourceTree = "<group>"; };
 		E902432B1F4ACB9400450ADA /* JGProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGProgressHUD.h; sourceTree = "<group>"; };
@@ -132,16 +119,6 @@
 		E902433E1F4ACB9400450ADA /* JGProgressHUDRingIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGProgressHUDRingIndicatorView.m; sourceTree = "<group>"; };
 		E902433F1F4ACB9400450ADA /* JGProgressHUDSuccessIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGProgressHUDSuccessIndicatorView.h; sourceTree = "<group>"; };
 		E90243401F4ACB9400450ADA /* JGProgressHUDSuccessIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGProgressHUDSuccessIndicatorView.m; sourceTree = "<group>"; };
-		E90243421F4ACB9400450ADA /* LUNGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUNGradientView.h; sourceTree = "<group>"; };
-		E90243431F4ACB9400450ADA /* LUNGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LUNGradientView.m; sourceTree = "<group>"; };
-		E90243441F4ACB9400450ADA /* LUNSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUNSegmentedControl.h; sourceTree = "<group>"; };
-		E90243451F4ACB9400450ADA /* LUNSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LUNSegmentedControl.m; sourceTree = "<group>"; };
-		E90243461F4ACB9400450ADA /* UIView+LUNRemoveConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LUNRemoveConstraints.h"; sourceTree = "<group>"; };
-		E90243471F4ACB9400450ADA /* UIView+LUNRemoveConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LUNRemoveConstraints.m"; sourceTree = "<group>"; };
-		E90243491F4ACB9400450ADA /* RadioBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioBox.h; sourceTree = "<group>"; };
-		E902434A1F4ACB9400450ADA /* RadioBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioBox.m; sourceTree = "<group>"; };
-		E902434B1F4ACB9400450ADA /* RadioGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioGroup.h; sourceTree = "<group>"; };
-		E902434C1F4ACB9400450ADA /* RadioGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioGroup.m; sourceTree = "<group>"; };
 		E902434E1F4ACB9400450ADA /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		E90243501F4ACB9400450ADA /* GetLogFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLogFile.h; sourceTree = "<group>"; };
 		E90243511F4ACB9400450ADA /* GetLogFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLogFile.m; sourceTree = "<group>"; };
@@ -189,6 +166,8 @@
 		E94670D41BD78B9B00374D7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E94670ED1BD78B9B00374D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E94670EE1BD78B9B00374D7A /* UCloudMediaRecorderDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCloudMediaRecorderDemoTests.m; sourceTree = "<group>"; };
+		E953F2681FF3C38700C39416 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		E953F2691FF3C38700C39416 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		E958BBAD1F7CE2A000C79AFD /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		E96627751BE75E4000FA5B03 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E96627771BE75E4900FA5B03 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
@@ -204,17 +183,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E958BBAE1F7CE2A100C79AFD /* libresolv.tbd in Frameworks */,
-				E979E3B11F4C24D70030EF4C /* CoreTelephony.framework in Frameworks */,
+				E953F27A1FF498C200C39416 /* QuartzCore.framework in Frameworks */,
 				E979E3B01F4C24CB0030EF4C /* libsqlite3.tbd in Frameworks */,
 				E9271D411C3CC735000DBADF /* CoreVideo.framework in Frameworks */,
-				E9ED2EE11C0C551900BA59A6 /* libz.tbd in Frameworks */,
-				E9ED2EDF1C0C551100BA59A6 /* libc++.tbd in Frameworks */,
-				E966277C1BE75E5D00FA5B03 /* CoreMedia.framework in Frameworks */,
 				E966277A1BE75E5000FA5B03 /* AVFoundation.framework in Frameworks */,
 				E90243A31F4ACB9400450ADA /* UMMobClick.framework in Frameworks */,
-				E96627781BE75E4900FA5B03 /* VideoToolbox.framework in Frameworks */,
-				E96627761BE75E4000FA5B03 /* AudioToolbox.framework in Frameworks */,
 				A609C91E6FB2613CEF9D818C /* libPods-UCloudMediaRecorderDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +221,6 @@
 				E90243141F4ACB9400450ADA /* NetworkInfo.h */,
 				E90243151F4ACB9400450ADA /* NetworkInfo.m */,
 				E90243161F4ACB9400450ADA /* PopoverView */,
-				E902431F1F4ACB9400450ADA /* UCDLiveDemoHeader.h */,
 				E90243201F4ACB9400450ADA /* UINavigationController+Rotation.h */,
 				E90243211F4ACB9400450ADA /* UINavigationController+Rotation.m */,
 				E90243221F4ACB9400450ADA /* UITabBarController+shouldAutorotate.h */,
@@ -275,24 +247,12 @@
 		E90243241F4ACB9400450ADA /* Vender */ = {
 			isa = PBXGroup;
 			children = (
-				E90243251F4ACB9400450ADA /* BEMCheckBox */,
-				E90243261F4ACB9400450ADA /* CAAnimation+Extensions.h */,
-				E90243271F4ACB9400450ADA /* CAAnimation+Extensions.m */,
+				E953F2671FF3C38700C39416 /* HMSegmentedControl */,
 				E90243281F4ACB9400450ADA /* JGProgressHUD */,
-				E90243411F4ACB9400450ADA /* LUNSegmentedControl */,
-				E90243481F4ACB9400450ADA /* RadioControl */,
-				E902434D1F4ACB9400450ADA /* UIradioBox */,
 				E902434E1F4ACB9400450ADA /* UMMobClick.framework */,
 				E902434F1F4ACB9400450ADA /* ZJDebugView */,
 			);
 			path = Vender;
-			sourceTree = "<group>";
-		};
-		E90243251F4ACB9400450ADA /* BEMCheckBox */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BEMCheckBox;
 			sourceTree = "<group>";
 		};
 		E90243281F4ACB9400450ADA /* JGProgressHUD */ = {
@@ -324,37 +284,6 @@
 				E90243401F4ACB9400450ADA /* JGProgressHUDSuccessIndicatorView.m */,
 			);
 			path = JGProgressHUD;
-			sourceTree = "<group>";
-		};
-		E90243411F4ACB9400450ADA /* LUNSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				E90243421F4ACB9400450ADA /* LUNGradientView.h */,
-				E90243431F4ACB9400450ADA /* LUNGradientView.m */,
-				E90243441F4ACB9400450ADA /* LUNSegmentedControl.h */,
-				E90243451F4ACB9400450ADA /* LUNSegmentedControl.m */,
-				E90243461F4ACB9400450ADA /* UIView+LUNRemoveConstraints.h */,
-				E90243471F4ACB9400450ADA /* UIView+LUNRemoveConstraints.m */,
-			);
-			path = LUNSegmentedControl;
-			sourceTree = "<group>";
-		};
-		E90243481F4ACB9400450ADA /* RadioControl */ = {
-			isa = PBXGroup;
-			children = (
-				E90243491F4ACB9400450ADA /* RadioBox.h */,
-				E902434A1F4ACB9400450ADA /* RadioBox.m */,
-				E902434B1F4ACB9400450ADA /* RadioGroup.h */,
-				E902434C1F4ACB9400450ADA /* RadioGroup.m */,
-			);
-			path = RadioControl;
-			sourceTree = "<group>";
-		};
-		E902434D1F4ACB9400450ADA /* UIradioBox */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIradioBox;
 			sourceTree = "<group>";
 		};
 		E902434F1F4ACB9400450ADA /* ZJDebugView */ = {
@@ -475,6 +404,15 @@
 				E94670ED1BD78B9B00374D7A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E953F2671FF3C38700C39416 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				E953F2681FF3C38700C39416 /* HMSegmentedControl.h */,
+				E953F2691FF3C38700C39416 /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
 			sourceTree = "<group>";
 		};
 		E979E3AF1F4BE2F60030EF4C /* Resources */ = {
@@ -630,7 +568,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -646,7 +584,6 @@
 				E902439C1F4ACB9400450ADA /* JGProgressHUDRingIndicatorView.m in Sources */,
 				E902440E1F4AD9E600450ADA /* PublishViewController.m in Sources */,
 				E902439A1F4ACB9400450ADA /* JGProgressHUDIndicatorView.m in Sources */,
-				E90243A11F4ACB9400450ADA /* RadioBox.m in Sources */,
 				E902438E1F4ACB9400450ADA /* PopoverViewCell.m in Sources */,
 				E90243991F4ACB9400450ADA /* JGProgressHUDIndeterminateIndicatorView.m in Sources */,
 				E902438C1F4ACB9400450ADA /* PopoverAction.m in Sources */,
@@ -655,9 +592,7 @@
 				E902440F1F4AD9E600450ADA /* RTCLiveViewController.m in Sources */,
 				E90243A51F4ACB9400450ADA /* InfoView.m in Sources */,
 				E90243A91F4ACB9400450ADA /* ZJLogTextView.m in Sources */,
-				E902439E1F4ACB9400450ADA /* LUNGradientView.m in Sources */,
 				E90243A41F4ACB9400450ADA /* GetLogFile.m in Sources */,
-				E90243A01F4ACB9400450ADA /* UIView+LUNRemoveConstraints.m in Sources */,
 				E902440D1F4AD9E600450ADA /* PlayViewController.m in Sources */,
 				E90243901F4ACB9400450ADA /* UITabBarController+shouldAutorotate.m in Sources */,
 				E90243981F4ACB9400450ADA /* JGProgressHUDImageIndicatorView.m in Sources */,
@@ -666,18 +601,16 @@
 				E90243A71F4ACB9400450ADA /* XTPopView.m in Sources */,
 				E90243941F4ACB9400450ADA /* JGProgressHUDAnimation.m in Sources */,
 				E902438D1F4ACB9400450ADA /* PopoverView.m in Sources */,
-				E902439F1F4ACB9400450ADA /* LUNSegmentedControl.m in Sources */,
 				E90243A81F4ACB9400450ADA /* ZJLogManger.m in Sources */,
 				E90244071F4AD9E600450ADA /* AboutViewController.m in Sources */,
+				E953F26A1FF3C38700C39416 /* HMSegmentedControl.m in Sources */,
 				E90243891F4ACB9400450ADA /* UCDAgoraServiceKit.m in Sources */,
 				E90244101F4AD9E600450ADA /* RTCMenuViewController.m in Sources */,
 				E90243951F4ACB9400450ADA /* JGProgressHUDErrorIndicatorView.m in Sources */,
 				E902439D1F4ACB9400450ADA /* JGProgressHUDSuccessIndicatorView.m in Sources */,
 				E90244111F4AD9E600450ADA /* ViewController.m in Sources */,
 				E902438B1F4ACB9400450ADA /* FilterPopoverViewCell.m in Sources */,
-				E90243911F4ACB9400450ADA /* CAAnimation+Extensions.m in Sources */,
 				E94670D51BD78B9B00374D7A /* main.m in Sources */,
-				E90243A21F4ACB9400450ADA /* RadioGroup.m in Sources */,
 				E90244081F4AD9E600450ADA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -814,7 +747,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.ucloud.UCloudLiveDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "64961819-84f5-4423-8a6e-b5728bc851b1";
@@ -848,7 +781,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.ucloud.UCloudLiveDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "64961819-84f5-4423-8a6e-b5728bc851b1";

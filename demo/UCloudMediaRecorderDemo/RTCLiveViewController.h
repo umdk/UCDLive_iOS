@@ -27,6 +27,7 @@ typedef NS_ENUM(NSInteger, UCDRtcRole) {
 @property (strong, nonatomic) NSString *route;
 @property (assign, nonatomic) UCloudVideoOrientation direction;
 @property (assign, nonatomic) UCloudVideoBitrate bitrate;
+@property (assign, nonatomic) UCloudAudioNoiseSuppress noiseSuppress;
 @property (strong, nonatomic) NSString *publishUrl;
 @property (strong, nonatomic) NSString *roomId;
 @property (assign, nonatomic) BOOL isPortrait;

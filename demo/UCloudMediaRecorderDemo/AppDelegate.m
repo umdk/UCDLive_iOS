@@ -18,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 此为友盟统计SDK，只用于demo使用
     UMConfigInstance.appKey = @"564d9842e0f55a4d5d000614";
     [MobClick startWithConfigure:UMConfigInstance];
     return YES;

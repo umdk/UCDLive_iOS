@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "LUNSegmentedControl.h"
+#import "HMSegmentedControl.h"
 #import "RTCLiveViewController.h"
 #import "PlayViewController.h"
 
@@ -19,15 +19,13 @@ typedef NS_ENUM(NSUInteger, LiveType) {
 };
 
 
-@interface ViewController ()<LUNSegmentedControlDelegate, LUNSegmentedControlDataSource>
-{
-    NSArray *routeTitles, *directionTitles, *bitrateTitles, *liveTypes;
-}
+@interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet LUNSegmentedControl *segmentedControlRoute;
-@property (weak, nonatomic) IBOutlet LUNSegmentedControl *segmentedControlDirection;
-@property (weak, nonatomic) IBOutlet LUNSegmentedControl *segmentedControlBitrate;
-@property (weak, nonatomic) IBOutlet LUNSegmentedControl *segmentedControlLiveType;
+@property (weak, nonatomic) IBOutlet HMSegmentedControl *segmentedControlRoute;
+@property (weak, nonatomic) IBOutlet HMSegmentedControl *segmentedControlDirection;
+@property (weak, nonatomic) IBOutlet HMSegmentedControl *segmentedControlBitrate;
+@property (weak, nonatomic) IBOutlet HMSegmentedControl *segmentedControlLiveType;
+@property (weak, nonatomic) IBOutlet HMSegmentedControl *segmentedControlNoiseLevel;
 
 @property (weak, nonatomic) IBOutlet UITextField *textFieldFPS;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPublishID;
@@ -37,9 +35,11 @@ typedef NS_ENUM(NSUInteger, LiveType) {
 @property (weak, nonatomic) IBOutlet UIButton *btnDeputy;
 
 @property (strong, nonatomic) NSString *route;
+@property (strong, nonatomic) NSString *playRoute;
 @property (assign, nonatomic) UCloudVideoOrientation direction;
 @property (assign, nonatomic) UCloudVideoBitrate bitrate;
 @property (assign, nonatomic) LiveType liveType;
+@property (assign, nonatomic) UCloudAudioNoiseSuppress noiseSuppress;
 
 @property (assign, nonatomic) BOOL isPortrait;
 
@@ -59,21 +59,44 @@ typedef NS_ENUM(NSUInteger, LiveType) {
     //初始化
     _bitrate = _bitrate?_bitrate:UCloudVideoBitrateMedium;
     _route = _route?_route:RecordDomainOne;
+    _playRoute = _playRoute?_playRoute:PlayDomainOne;
     _direction = _direction?_direction:UCloudVideoOrientationPortrait;
     _liveType = LiveTypeRtmp;
     self.btnDeputy.hidden = YES;
     
-    routeTitles = @[@"Line1", @"Line2"];
-    directionTitles = @[@"vertical", @"horizontal"];
-    bitrateTitles = @[@"Low", @"Normal", @"Medium", @"High"];
-    liveTypes = @[@"直播", @"连麦"];
-    self.segmentedControlRoute.dataSource = self;
-    self.segmentedControlDirection.dataSource = self;
-    self.segmentedControlBitrate.dataSource = self;
-    self.segmentedControlLiveType.dataSource = self;
+    _segmentedControlRoute.sectionTitles = @[@"Line1", @"Line2"];
+    _segmentedControlBitrate.sectionTitles = @[@"Low", @"Normal", @"Medium", @"High"];
+    _segmentedControlLiveType.sectionTitles = @[@"直播", @"连麦"];
+    _segmentedControlDirection.sectionTitles = @[@"Vertical", @"Horizontal"];
+    _segmentedControlNoiseLevel.sectionTitles = @[@"Off", @"Low", @"Medium", @"High", @"Very High"];
+    
+    [self setSegmentedControl:_segmentedControlRoute];
+    [self setSegmentedControl:_segmentedControlBitrate];
+    [self setSegmentedControl:_segmentedControlLiveType];
+    [self setSegmentedControl:_segmentedControlDirection];
+    [self setSegmentedControl:_segmentedControlNoiseLevel];
+    
+    _segmentedControlBitrate.selectedSegmentIndex = 2;
+    _segmentedControlNoiseLevel.selectedSegmentIndex = 2;
     
     [_btnPublish setBackgroundImage:[self imageWithColor:DarkMidnightBlue] forState:UIControlStateHighlighted];
     [_btnPlay setBackgroundImage:[self imageWithColor:DarkMidnightBlue] forState:UIControlStateHighlighted];
+}
+
+- (void)setSegmentedControl:(HMSegmentedControl*)segmentedControl
+{
+    segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
+    segmentedControl.segmentEdgeInset = UIEdgeInsetsMake(0, 10, 0, 10);
+    segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleFullWidthStripe;
+    segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+    segmentedControl.verticalDividerEnabled = YES;
+    segmentedControl.verticalDividerColor = [UIColor blackColor];
+    segmentedControl.verticalDividerWidth = 1.0f;
+    [segmentedControl setTitleFormatter:^NSAttributedString *(HMSegmentedControl *segmentedControl, NSString *title, NSUInteger index, BOOL selected) {
+        NSAttributedString *attString = [[NSAttributedString alloc] initWithString:title attributes:@{NSForegroundColorAttributeName : CelestialBlue}];
+        return attString;
+    }];
+    [segmentedControl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
 }
 
 - (UIImage *)imageWithColor:(UIColor *)color {
@@ -97,33 +120,7 @@ typedef NS_ENUM(NSUInteger, LiveType) {
     // 设置导航条的色调 理解为"混合色"
 //    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.303 green:0.617 blue:0.999 alpha:1.000];
     self.navigationController.navigationBar.barTintColor = CelestialBlue;
-    
-    _segmentedControlRoute.currentState = 1;
-    _segmentedControlLiveType.currentState = 1;;
-    _segmentedControlDirection.currentState = 1;
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    switch (_bitrate) {
-        case UCloudVideoBitrateLow:
-            _segmentedControlBitrate.currentState = 0;
-            break;
-        case UCloudVideoBitrateNormal:
-            _segmentedControlBitrate.currentState = 1;
-            break;
-        case UCloudVideoBitrateMedium:
-            _segmentedControlBitrate.currentState = 2;
-            break;
-        case UCloudVideoBitrateHigh:
-            _segmentedControlBitrate.currentState = 3;
-            break;
-        default:
-            break;
     }
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -141,6 +138,7 @@ typedef NS_ENUM(NSUInteger, LiveType) {
         rtcLiveVC.route = _route;
         rtcLiveVC.direction = _direction;
         rtcLiveVC.bitrate = _bitrate;
+        rtcLiveVC.noiseSuppress = _noiseSuppress;
         rtcLiveVC.isPortrait = _isPortrait;
         rtcLiveVC.roomId = _textFieldPublishID.text;
         rtcLiveVC.publishUrl = [NSString stringWithFormat:_route, _textFieldPublishID.text];
@@ -157,7 +155,7 @@ typedef NS_ENUM(NSUInteger, LiveType) {
     if ([segue.destinationViewController isKindOfClass:[PlayViewController class]]) {
         PlayViewController *playerVC = segue.destinationViewController;
         playerVC.isPortrait = _isPortrait;
-        playerVC.playUrl = [NSString stringWithFormat:_route, _textFieldPublishID.text];
+        playerVC.playUrl = [NSString stringWithFormat:_playRoute, _textFieldPublishID.text];
     }
 
 }
@@ -167,75 +165,21 @@ typedef NS_ENUM(NSUInteger, LiveType) {
     [self.view endEditing:YES];
 }
 
-#pragma mark - LUNSegmentedControlDataSource
-
-- (NSArray<UIColor *> *)segmentedControl:(LUNSegmentedControl *)segmentedControl gradientColorsForStateAtIndex:(NSInteger)index {
-    switch (index) {
-        case 0:
-            return @[BlueGray];
-            
-            break;
-            
-        case 1:
-            return @[CelestialBlue];
-            break;
-            
-        case 2:
-            return @[ToryBlue];
-            break;
-            
-        default:
-            return @[DarkMidnightBlue];
-            break;
-    }
-    return nil;
+- (IBAction)btnPlayTouchUpInside:(id)sender {
 }
 
-- (NSInteger)numberOfStatesInSegmentedControl:(LUNSegmentedControl *)segmentedControl {
-    if (segmentedControl.tag == 3) {
-        return 4;
-    }
+- (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
+    NSLog(@"Selected index %ld (via UIControlEventValueChanged)", (long)segmentedControl.selectedSegmentIndex);
 
-    return 2;
-}
+    NSInteger toIndex = segmentedControl.selectedSegmentIndex;
 
-- (NSString *)segmentedControl:(LUNSegmentedControl *)segmentedControl titleForStateAtIndex:(NSInteger)index
-{
-    NSString *titlePrefix = @"";
-    if (segmentedControl.tag == 1) {
-        titlePrefix = routeTitles[index];
-    } else if (segmentedControl.tag == 2) {
-        titlePrefix = directionTitles[index];
-    } else if (segmentedControl.tag == 3)  {
-        titlePrefix = bitrateTitles[index];
-    } else  {
-        titlePrefix = liveTypes[index];
-    }
-    return titlePrefix;
-}
-
-- (NSString *)segmentedControl:(LUNSegmentedControl *)segmentedControl titleForSelectedStateAtIndex:(NSInteger)index
-{
-    NSString *titlePrefix = @"";
-    if (segmentedControl.tag == 1) {
-        titlePrefix = routeTitles[index];
-    } else if (segmentedControl.tag == 2) {
-        titlePrefix = directionTitles[index];
-    } else if (segmentedControl.tag == 3) {
-        titlePrefix = bitrateTitles[index];
-    } else {
-        titlePrefix = liveTypes[index];
-    }
-    return titlePrefix;
-}
-
-- (void)segmentedControl:(LUNSegmentedControl *)segmentedControl didChangeStateFromStateAtIndex:(NSInteger)fromIndex toStateAtIndex:(NSInteger)toIndex
-{
     if (segmentedControl.tag == 1) {
         if (toIndex == 0) {
             self.route = RecordDomainOne;
+            self.playRoute = PlayDomainOne;
         } else {
             self.route = RecordDomainTwo;
+            self.playRoute = PlayDomainTwo;
         }
     } else if (segmentedControl.tag == 2) {
         if (toIndex == 0) {
@@ -251,7 +195,7 @@ typedef NS_ENUM(NSUInteger, LiveType) {
             self.liveType = LiveTypeRTC;
             self.btnDeputy.hidden = NO;
         }
-    } else {
+    } else if (segmentedControl.tag == 3) {
         switch (toIndex) {
             case 0:
                 self.bitrate = UCloudVideoBitrateLow;
@@ -269,11 +213,26 @@ typedef NS_ENUM(NSUInteger, LiveType) {
                 self.bitrate = UCloudVideoBitrateMedium;
                 break;
         }
+    } else {
+        switch (toIndex) {
+            case 0:
+                self.noiseSuppress = UCloudAudioNoiseSuppressOff;
+                break;
+            case 1:
+                self.noiseSuppress = UCloudAudioNoiseSuppressLow;
+                break;
+            case 2:
+                self.noiseSuppress = UCloudAudioNoiseSuppressMedium;
+                break;
+            case 3:
+                self.noiseSuppress = UCloudAudioNoiseSuppressHigh;
+                break;
+            default:
+                self.noiseSuppress = UCloudAudioNoiseSuppressMedium;
+                break;
     }
-
 }
 
-- (IBAction)btnPlayTouchUpInside:(id)sender {
 }
 
 #pragma mark - Orientation

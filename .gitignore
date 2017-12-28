@@ -8,3 +8,5 @@
 *.pbxuser
 *.xcuserdata
 xcuserdata
+demo/Pods
+Podfile.lock

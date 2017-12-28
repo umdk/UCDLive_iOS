@@ -33,6 +33,7 @@ typedef void(^WatermarkBlock)(void);
  */
 @interface CameraServer : NSObject
 
+#pragma mark - Video
 /*!
  @property width
  @abstract 视频宽，默认360
@@ -64,6 +65,43 @@ typedef void(^WatermarkBlock)(void);
  */
 @property (assign, nonatomic) int bitrate;
 
+/*!
+ @property supportFilter
+ @abstract 是否支持滤镜
+ 
+ @discussion iphpne5以上才能支持使用滤镜，5以下此值为NO
+ */
+@property (assign, nonatomic) BOOL supportFilter;
+
+/*!
+ @property captureDevicePos
+ @abstract 摄像头位置，默认打开前置摄像头
+ */
+@property (assign, nonatomic) AVCaptureDevicePosition captureDevicePos;
+
+/*!
+ @property videoOrientation
+ @abstract 视频推流方向
+ 
+ @discussion 只在采集初始化时设置有效，默认UIDeviceOrientationPortrait
+ */
+@property (nonatomic, assign) UCloudVideoOrientation videoOrientation;
+
+/*!
+ @property streamMirrorFrontFacing
+ @abstract 推流镜像，只对前置有效
+ */
+@property (nonatomic, assign) BOOL streamMirrorFrontFacing;
+
+/*!
+ @property isCaptureYUV
+ @abstract 摄像头采集数据为YUV还是RGB
+ 
+ @discussion 默认为YES，即采集数据为YUV，NO为采集数据为RGB
+ */
+@property (assign, nonatomic) BOOL isCaptureYUV;
+
+#pragma mark - Audio
 
 /*!
  @property audiochannels
@@ -83,6 +121,12 @@ typedef void(^WatermarkBlock)(void);
  @abstract 音频比特率(32kps,64kps,96kps,128kps默认128kps,采样率小于441100时，比特率应不大于64kps)
 */
 @property (assign, nonatomic) int audioBitrate;
+
+/*!
+ @property nosieSuppressLevel
+ @abstract 噪声抑制（降噪）等级设置,推流开始前设置有效，默认UCloudAudioNoiseSuppressMedium;
+ */
+@property (assign, nonatomic) UCloudAudioNoiseSuppress nosieSuppressLevel;
  
 /*!
  @property secretKey
@@ -99,19 +143,6 @@ typedef void(^WatermarkBlock)(void);
 
 @property (nonatomic,   copy) NSString *audioPlayStr;
 
-/*!
- @property supportFilter
- @abstract 是否支持滤镜
- 
- @discussion iphpne5以上才能支持使用滤镜，5以下此值为NO
- */
-@property (assign, nonatomic) BOOL supportFilter;
-
-/*!
- @property captureDevicePos
- @abstract 摄像头位置，默认打开前置摄像头
- */
-@property (assign, nonatomic) AVCaptureDevicePosition captureDevicePos;
 
 /*!
  @property muted
@@ -125,41 +156,7 @@ typedef void(^WatermarkBlock)(void);
  */
 @property (nonatomic, assign) BOOL backgroudMusicOn;
 
-/*!
- @property videoOrientation
- @abstract 视频推流方向
- 
- @discussion 只在采集初始化时设置有效，默认UIDeviceOrientationPortrait
- */
-@property (nonatomic, assign) UCloudVideoOrientation videoOrientation;
-
-/*!
- @property streamMirrorFrontFacing
- @abstract 推流镜像，只对前置有效
- */
-@property (nonatomic, assign) BOOL streamMirrorFrontFacing;
-
-/*!
- @property reconnectInterval
- @abstract 重推流间隔,默认3秒
- */
-@property (nonatomic, assign) NSTimeInterval reconnectInterval;
-
-/*!
- @property reconnectCount
- @abstract 重推流次数，默认5次
- 
- @discussion 如果需要不做重推操作，可将此参数设置为0
- */
-@property (nonatomic, assign) NSInteger reconnectCount;
-
-/*!
- @property isCaptureYUV
- @abstract 摄像头采集数据为YUV还是RGB
- 
- @discussion 默认为YES，即采集数据为YUV，NO为采集数据为RGB
- */
-@property (assign, nonatomic) BOOL isCaptureYUV;
+#pragma mark - Log
 
 /**
  @property enableLogFile
@@ -209,6 +206,8 @@ typedef void(^WatermarkBlock)(void);
  */
 @property (assign, nonatomic) NSInteger logFilesMaxSize;
 
+#pragma mark - Handler
+
 @property (copy, nonatomic) videoProcessingCallback videoProcessing;
 
 /**
@@ -216,6 +215,21 @@ typedef void(^WatermarkBlock)(void);
  *  @abstract 音视频推流地址
  */
 @property (strong, nonatomic) NSString* streamPushUrlstr;
+
+/*!
+ @property reconnectInterval
+ @abstract 重推流间隔,默认3秒
+ */
+@property (nonatomic, assign) NSTimeInterval reconnectInterval;
+
+/*!
+ @property reconnectCount
+ @abstract 重推流次数，默认5次
+ 
+ @discussion 如果需要不做重推操作，可将此参数设置为0
+ */
+@property (nonatomic, assign) NSInteger reconnectCount;
+
 
 
 /*!
@@ -235,15 +249,6 @@ typedef void(^WatermarkBlock)(void);
  * captureDevicePos  = AVCaptureDevicePositionFront;
  */
 + (CameraServer*) server;
-
-/*!
- @method setWatermarkView:Block:
- 
- @abstract 设置水印
- 
- @param watermarkView 设置水印视图
- */
-- (void)setWatermarkView:(UIView *)watermarkView Block:(WatermarkBlock)block;
 
 /*!
  @method configureCameraWithOutputUrl:filter:messageCallBack:deviceBlock:cameraData:
@@ -300,16 +305,25 @@ typedef void(^WatermarkBlock)(void);
 - (void)shutdown:(void(^)(void))completion;
 
 /*!
+ *method startAudioModule
+ @abstract 开启模块内部声音采集
+ */
+- (void)startAudioModule;
+
+/*!
  *method stopAudioModule
  @abstract 关闭模块内部声音采集
  */
 - (void)stopAudioModule;
 
-/*!
- *method startAudioModule
- @abstract 开启模块内部声音采集
+/*！
+ @ method    mixerAudioDataInBus:AudioData:
+ @ abstract 多路音频数据合流
+ @param busIndex  NSInteger 音频通道
+ @param audiodata NSData*   该音频通道的音频数据
  */
-- (void)startAudioModule;
+
+-(void)mixerAudioDataInBus:(NSInteger)busIndex AudioData:(NSData*)audiodata;
 
 
 - (void)pushPixelBuffer:(CVPixelBufferRef)pixelBuffer completion:(void(^)(void))completion;
@@ -356,6 +370,14 @@ typedef void(^WatermarkBlock)(void);
  */
 - (BOOL)setTorchState:(UCloudCameraState)state;
 
+/*!
+ @method setWatermarkView:Block:
+ 
+ @abstract 设置水印
+ 
+ @param watermarkView 设置水印视图
+ */
+- (void)setWatermarkView:(UIView *)watermarkView Block:(WatermarkBlock)block;
 
 /*!
  @method getStreamShot
@@ -399,16 +421,6 @@ typedef void(^WatermarkBlock)(void);
  @abstract 关闭美颜功能
  */
 - (void)closeFilter;
-
-/*！
- @ method    mixerAudioDataInBus:AudioData:
- @ abstract 多路音频数据合流
- @param busIndex  NSInteger 音频通道
- @param audiodata NSData*   该音频通道的音频数据
- */
-
--(void)mixerAudioDataInBus:(NSInteger)busIndex AudioData:(NSData*)audiodata;
-
 
 /**
  * 获取SDK version
