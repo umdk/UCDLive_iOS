@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic) NSString *playUrl;
 @property (assign, nonatomic) BOOL isPortrait;
+@property (strong, nonatomic) UIImageView* imgView;
 
 - (IBAction)btnStopTouchUpInside:(id)sender;
 
