@@ -11,8 +11,10 @@
 #import "UCloudMediaPlayer.h"
 #import "UCDLiveDemoHeader.h"
 
+
 @interface PlayViewController ()
 
+@property (assign, nonatomic) UIBackgroundTaskIdentifier bgTask;
 @property (strong, nonatomic) UCloudMediaPlayer *mediaPlayer;
 @property (strong, nonatomic) JGProgressHUD *jgHud;
 @property (nonatomic, assign) NSInteger retryConnectNumber;
@@ -65,14 +67,14 @@
 - (void)buildMediaPlayer:(NSString *)path
 {
     self.mediaPlayer = [UCloudMediaPlayer ucloudMediaPlayer];
-    
+    self.mediaPlayer.videoToolboxEnabled = NO;
     if ([_playUrl.pathExtension hasSuffix:@"m3u8"]) {
         //HLS如果对累积延时没要求，建议把setCachedDuration设置为0(即关闭消除累积延时功能)，这样播放过程中卡顿率会更低
         _mediaPlayer.cachedDuration = 0;
         _mediaPlayer.bufferDuration = 3000;
     } else {
-        _mediaPlayer.cachedDuration = 3000;
-        _mediaPlayer.bufferDuration = 3000;
+        _mediaPlayer.cachedDuration = 0;
+        _mediaPlayer.bufferDuration = 0;
     }
     
     [self.mediaPlayer showMediaPlayer:_playUrl
@@ -119,6 +121,21 @@
     [NotificationCenter addObserver:self selector:@selector(onDeviceOrientationChange) name:UIDeviceOrientationDidChangeNotification object:nil];
     
     [NotificationCenter addObserver:self selector:@selector(onStatusBarOrientationChange) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+    
+    
+    [NotificationCenter addObserver:self
+                           selector:@selector(applicationDidEnterBackground)
+                               name:UIApplicationDidEnterBackgroundNotification
+                             object:nil];
+    
+    
+    [NotificationCenter addObserver:self
+                           selector:@selector(applicationWillEnterForeground)
+                               name:UIApplicationWillEnterForegroundNotification
+                             object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeLastVideoFrame) name:UCloudPlayerFirstVideoFrameRenderedNotification object:nil];
+    
+
 }
 
 - (void)removeNotification
@@ -130,6 +147,10 @@
     [NotificationCenter removeObserver:self name:UCloudPlayerPlaybackDidFinishNotification object:nil];
     [NotificationCenter removeObserver:self name:UCloudPlayerBufferingUpdateNotification object:nil];
     [NotificationCenter removeObserver:self name:UCloudPlayerVideoChangeRotationNotification object:nil];
+    [NotificationCenter removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [NotificationCenter removeObserver:self name:UIApplicationWillEnterForegroundNotification object:nil];
+    [NotificationCenter removeObserver:self name:UCloudPlayerFirstVideoFrameRenderedNotification object:nil];
+
 }
 
 - (void)dealloc
@@ -139,6 +160,72 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
 }
+
+-(void) applicationDidEnterBackground
+{
+    UIApplication*  app =    [UIApplication sharedApplication];
+    _bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
+       
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            if (_bgTask != UIBackgroundTaskInvalid) {
+                [[UIApplication sharedApplication] endBackgroundTask:_bgTask];
+                _bgTask = UIBackgroundTaskInvalid;;
+            }
+        });
+    }];
+    
+    if (_bgTask == UIBackgroundTaskInvalid) {
+        NSLog(@"failed to start background task!");
+    }
+    
+    [self showLastVideoFrame];
+    [self.mediaPlayer.player.view removeFromSuperview];
+    [self.mediaPlayer.player shutdown];
+    self.mediaPlayer = nil;
+    
+}
+
+-(void) applicationWillEnterForeground
+{
+    if (_bgTask!=UIBackgroundTaskInvalid) {
+        [[UIApplication sharedApplication] endBackgroundTask:_bgTask];
+        _bgTask = UIBackgroundTaskInvalid;
+    }
+    
+    NSLog(@"******back to Forground");
+    [self buildMediaPlayer:_playUrl];
+    _retryConnectNumber = 3;
+    
+}
+
+- (void)showLastVideoFrame
+{
+    if (self.imgView && self.imgView.superview) {
+        [self.imgView removeFromSuperview];
+    }
+    
+    self.imgView = [[UIImageView alloc] initWithFrame:self.view.frame];
+    self.imgView.image =  [self.mediaPlayer.player thumbnailImageAtCurrentTime];
+    
+    if (self.imgView) {
+        
+        [UIView animateWithDuration:0.3 animations:^{
+            
+            [self.view addSubview:self.imgView];;
+        }];
+        
+    }
+    
+}
+
+-(void) removeLastVideoFrame
+{
+    if (self.imgView && self.imgView.superview) {
+        [self.imgView removeFromSuperview];
+    }
+}
+
 
 #pragma mark - NSNotification
 - (void)livePrepare:(NSNotification *)notification
@@ -167,6 +254,7 @@
         [self.mediaPlayer.player play];
     }
     if (self.mediaPlayer.player.playbackState == 2) {
+        NSLog(@"playbackState:pause");
         [self hideLoadingView];
     }
 }
