@@ -2,8 +2,16 @@
 
 UCDLive SDK 是由 UCloud 提供的低延时、高并发的直播云服务。
 
+![首页](screenshot/publish3.jpg)  
+
+[AgoraRTCLive](https://github.com/umdk/UCDLive_iOS/tree/AgoraRTCLive)分支项目  
+
 ![首页](screenshot/publish1.jpg)  
 ![连麦](screenshot/publish2.jpg)
+
+
+[faceUnity](https://github.com/umdk/UCDLive_iOS/tree/FaceUnity_Demo)分支项目  
+
 ![连麦2](screenshot/publish4.jpg)
 
 - 1 [功能特性](#1)
@@ -187,6 +195,7 @@ $ pod install
 <a name="4"></a>
 ## 四 连麦解决方案
 
+[AgoraRTCLive](https://github.com/umdk/UCDLive_iOS/tree/AgoraRTCLive)分支项目  
 详细请参考 [连麦配置](https://github.com/umdk/UCDLive_iOS/wiki/4_Guide#4.3)。
 
 
@@ -216,9 +225,9 @@ $ pod install
 
 | 名称    | 描述                                   |
 | ----- | ------------------------------------ |
-| 设备型号  | iphone7                              |
-| 系统版本  | iOS 10                               |
-| SDK版本 | v1.5.0                               |
+| 设备型号  | iphoneXS MAX                              |
+| 系统版本  | iOS 12                               |
+| SDK版本 | v1.8.0                               |
 | 问题描述  | 描述问题现象                               |
 | 操作路径  | 经过了什么样的操作出现所述的问题                     |
 | 附 件   | 文本形式控制台log、crash报告、其他辅助信息（推流界面截屏或其他） |
@@ -229,6 +238,7 @@ $ pod install
 
 | 版本号   | 发布日期       | 说明                                       |
 | ----- | ---------- | ---------------------------------------- |
+| 1.8.2 | 2018.10.09 |1、更新底层推流库<br/>2、更新播放器至1.5.5，支持播放器设置headers|
 | 1.8.1 | 2017.12.28 |1、增加音频降噪功能<br/>2、修复音频双通道推流失败问题<br/>3、修复推流中断后声音消失的问题<br/>4、更新播放器至1.5.4，支持播放器音量调节|
 | 1.8.0 | 2017.09.28 |1、升级底层连麦SDK至最新版本<br/>2、支持多人连麦<br/>3、推流可先开启预览后再设置推流地址|
 | 1.7.0 | 2017.08.22 |1、增加连麦解决方案和美颜场景特效<br/>2、增加推流暂停与恢复的API<br/>3、修复输出音频电流声问题|

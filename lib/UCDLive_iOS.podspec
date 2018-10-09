@@ -28,18 +28,9 @@ Pod::Spec.new do |s|
                    }
 
   s.requires_arc = true
-  s.ios.library = 'z', 'iconv', 'stdc++.6','c++', 'resolv'
+  s.ios.library = 'z', 'iconv','c++', 'resolv'
   s.frameworks = 'CoreTelephony','CoreMedia','AVFoundation','VideoToolbox','AudioToolbox','CoreMotion','SystemConfiguration'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC -all_load' }
-
-  s.subspec 'Agora' do |sub|
-    sub.vendored_frameworks = 'Agora/*.framework'
-  end
-
-  s.subspec 'libyuv' do |sub|
-    sub.source_files = '*.h','libyuv/*.h'
-    sub.vendored_library = 'libyuv.a'
-  end
   
    s.subspec 'Player' do |sub|
     sub.source_files = 'Player/*.h'

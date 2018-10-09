@@ -12,9 +12,6 @@
 #import "PopoverView.h"
 #import "NetworkInfo.h"
 
-#import "UCDAgoraClient.h"
-#import "UCDAgoraServiceKit.h"
-
 /*!
  rtmp直播支持横竖屏，直播连麦暂支持竖屏
  */
@@ -62,7 +59,6 @@
 @property (strong, nonatomic) UIAlertView *alert;
 @property (strong, nonatomic) UIAlertController *alertController;
 
-@property UCDAgoraServiceKit * kit;
 @property (nonatomic, assign) BOOL bExitFlag;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewWidth;
@@ -109,18 +105,10 @@
     _ucdLiveEngine = [CameraServer server];
     _ucdLiveEngine.videoOrientation = UCloudVideoOrientationPortrait;
     _btnMirror.selected = _ucdLiveEngine.streamMirrorFrontFacing;
-    _kit = [[UCDAgoraServiceKit alloc] initWithDefaultConfig];
     _rtcBtnViewBottomConstraint.constant = -_rtcBtnViewHeightConstraint.constant - _buttomView.frame.size.height;
     
     self.filterManager = [[FilterManager alloc] init];
     liveFilters = [self.filterManager filters];
-    _kit.curfilter = liveFilters[0];
-    //设置rtc参数
-    [self setAgoraServiceKitConfiguration];
-    if (_kit) {
-        // init with default filter
-        _kit.curfilter = liveFilters[0];
-    }
     
     //bengin camera capture
     [self startLive];
@@ -130,19 +118,6 @@
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
     tapGestureRecognizer.numberOfTapsRequired = 2;
     
-    CGRect rect;
-    rect.origin.x = _kit.winRect.origin.x * self.view.frame.size.width;
-    rect.origin.y = _kit.winRect.origin.y * self.view.frame.size.height;
-    rect.size.height =_kit.winRect.size.height * self.view.frame.size.height;
-    rect.size.width =_kit.winRect.size.width * self.view.frame.size.width;
-    
-    UIView *_winRtcView =  [[UIView alloc] initWithFrame:rect];
-    _winRtcView.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:_winRtcView];
-    [self.view bringSubviewToFront:_winRtcView];
-    [_winRtcView addGestureRecognizer:panGestureRecognizer];
-    [_winRtcView addGestureRecognizer:tapGestureRecognizer];
-    
     if([_ucdLiveEngine currentCapturePosition] == AVCaptureDevicePositionBack){
         self.btnTorch.enabled = YES;
     } else {
@@ -150,15 +125,6 @@
         if (self.btnTorch.selected) {
             self.btnTorch.selected = NO;
         }
-    }
-    
-    if (self.rtcRole == Role_VICE_Anchor) {
-
-        self.btnStartPublish.enabled = NO;
-    }
-    else
-    {
-        self.btnStartPublish.enabled = YES;
     }
 }
 
@@ -209,7 +175,7 @@
     [UIApplication sharedApplication].idleTimerDisabled = YES;
     _ucdLiveEngine.width = 640;
     _ucdLiveEngine.height = 360;
-    _ucdLiveEngine.fps = 15;
+    _ucdLiveEngine.fps = _fps;
     
     _ucdLiveEngine.secretKey = AccessKey;
     _ucdLiveEngine.bitrate = UCloudVideoBitrateMedium;
@@ -278,85 +244,6 @@
     self.videoView = cameraView;
 }
 
-#pragma mark - 连麦配置
-- (void)setAgoraServiceKitConfiguration
-{
-    _kit.selfInFront = NO;
-    _kit.agoraKit.videoProfile = AgoraRtc_VideoProfile_240P;
-    //设置第一小窗口属性，双人连麦
-//    _kit.winRect = CGRectMake(0.6f, 0.7f, 0.3f, 0.75 * 0.3f);//设置小窗口属性
-    _kit.winRect = CGRectMake(0.5f, 0.2f, 0.5f, 0.75 * 0.5f);
-    _kit.rtcLayer = 1;//设置小窗口图层，设置为1
-    
-    //设置第二小窗口的属性，适用于三人连麦，四人连麦依次可在kit中添加属性和设置
-    _kit.winFansRect = CGRectMake(0.1f, 0.7f, 0.3f, 0.75 * 0.3f);
-    _kit.rtcFansLayer = 2;
-    
-    //为第一小窗口增加圆角
-    _kit.maskPicture = [[UCloudGPUImagePicture alloc] initWithImage:[UIImage imageNamed:@"rtcMask.png"]];
-    
-    __weak RTCLiveViewController *weak_demo = self;
-    //kit回调，（option）
-    _kit.onCallStart =^(int status){
-        if(status == 200)
-        {
-            if([UIApplication sharedApplication].applicationState !=UIApplicationStateBackground)
-            {
-                NSLog(@"建立连接");
-                [weak_demo status:@"rtcSt:与他人建立连麦"];
-            }
-        }
-        NSLog(@"oncallstart:%d",status);
-    };
-    _kit.onCallStop = ^(int status){
-        if(status == 200)
-        {
-            if([UIApplication sharedApplication].applicationState !=UIApplicationStateBackground)
-            {
-                NSLog(@"断开连接");
-                [weak_demo status:@"rtcSt:离开房间成功"];
-            }
-        }
-        [weak_demo cancelMonitorPublishState];
-        NSLog(@"oncallstop:%d",status);
-    };
-    _kit.onChannelJoin = ^(int status){
-        if(status == 200)
-        {
-            if([UIApplication sharedApplication].applicationState !=UIApplicationStateBackground)
-            {
-                NSLog(@"成功加入");
-                [weak_demo status:@"rtcSt:进入房间成功"];
-            }
-        }
-        NSLog(@"onChannelJoin:%d",status);
-        
-        [weak_demo monitorPublishState];
-    };
-}
-
--(void)onJoinChannelBtn
-{
-    [_kit joinChannel:_roomId];
-    
-}
-
--(void)onLeaveChannelBtn
-{
-    [_kit leaveChannel];
-    _kit = nil;
-}
-
-- (void) onQuit{
-    
-    _kit.bFiltering = NO;
-    _kit.bExitFlag = YES;
-    [_kit leaveChannel];
-    _kit = nil;
-    [_ucdLiveEngine shutdown:nil];
-    
-}
-
 #pragma mark - UIButton Event
 
 - (IBAction)btnStopTouchUpInside:(id)sender
@@ -374,7 +261,6 @@
         
     }];
     
-    [self onQuit];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -436,7 +322,6 @@
         btnMirror.selected = YES;
     }
     _ucdLiveEngine.streamMirrorFrontFacing = !_ucdLiveEngine.streamMirrorFrontFacing;
-    _kit.bMirror = _ucdLiveEngine.streamMirrorFrontFacing;
 }
 
 - (IBAction)btnChangeCaptureTouchUpInside:(id)sender {
@@ -451,8 +336,6 @@
             self.btnTorch.selected = NO;
         }
     }
-    _kit.bFiltering = NO;
-    [_kit setupRtcFilter:_kit.curfilter];
 }
 
 - (IBAction)btnTorchTouchUpInside:(id)sender {
@@ -470,18 +353,15 @@
 
 - (IBAction)btnFilterTouchUpInside:(id)sender {
     
-    _kit.bFiltering = YES;
     UIButton *btnFilter = (UIButton *)sender;
     if (btnFilter.selected) {
         btnFilter.selected = NO;
         [_ucdLiveEngine closeFilter];
-        [_kit setupRtcFilter:nil];
     }
     else {
         btnFilter.selected = YES;
         liveFilters = [self.filterManager filters];
         [_ucdLiveEngine openFilter];
-        [_kit setupRtcFilter:liveFilters[0]];
     }
 }
 
@@ -629,8 +509,6 @@
     
 - (IBAction)btnJoinnalRoomTouchUpInside:(id)sender {
    
-    _kit.bFiltering = NO;
-    [self onJoinChannelBtn];
     [self adjustLayout];
     _btnjoinRoom.enabled = NO;
     _btnleaveRoom.enabled = YES;
@@ -638,8 +516,6 @@
 
 - (IBAction)btnLeaveRoomTouchUpInside:(id)sender {
     
-    _kit.bFiltering = NO;
-    [self onLeaveChannelBtn];
     [self adjustLayout];
     _btnjoinRoom.enabled = YES;
     _btnleaveRoom.enabled = NO;
@@ -661,9 +537,6 @@
     CGRect newWinRect;
     newWinRect.origin.x = (panGestureRecognizer.view.center.x - panGestureRecognizer.view.frame.size.width/2)/self.view.frame.size.width;
     newWinRect.origin.y = (panGestureRecognizer.view.center.y - panGestureRecognizer.view.frame.size.height/2)/self.view.frame.size.height;
-    newWinRect.size.height = _kit.winRect.size.height;
-    newWinRect.size.width = _kit.winRect.size.width;
-    _kit.winRect = newWinRect;
     [panGestureRecognizer setTranslation:CGPointMake(0, 0) inView:self.view];
 }
 
@@ -673,15 +546,6 @@
     CGPoint location;
     location.x = origin.x/self.view.frame.size.width;
     location.y = origin.y/self.view.frame.size.height;
-    
-    CGRect winrect = _kit.winRect;
-    
-    //点击小窗口进行切换窗口
-    if((location.x > winrect.origin.x && location.x <winrect.origin.x +winrect.size.width) &&
-       (location.y > winrect.origin.y && location.y <winrect.origin.y +winrect.size.height))
-    {
-        _kit.selfInFront = !_kit.selfInFront;
-    }
 }
 
 

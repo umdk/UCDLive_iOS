@@ -142,14 +142,6 @@ typedef NS_ENUM(NSUInteger, LiveType) {
         rtcLiveVC.isPortrait = _isPortrait;
         rtcLiveVC.roomId = _textFieldPublishID.text;
         rtcLiveVC.publishUrl = [NSString stringWithFormat:_route, _textFieldPublishID.text];
-        if ([segue.identifier isEqualToString:@"VAnchor"]) {
-            
-            rtcLiveVC.rtcRole = Role_VICE_Anchor;
-        }
-        else
-        {
-            rtcLiveVC.rtcRole = Role_Anchor;
-        }
     }
 
     if ([segue.destinationViewController isKindOfClass:[PlayViewController class]]) {

@@ -11,16 +11,6 @@
 #import "NSString+UCloudCameraCode.h"
 #import "FilterManager.h"
 
-/*!
- *  连麦中的角色
- */
-typedef NS_ENUM(NSInteger, UCDRtcRole) {
-    Role_Anchor, //主播
-    Role_VICE_Anchor //副主播
-};
-
-
-
 @interface RTCLiveViewController : UIViewController
 
 @property (assign, nonatomic) int fps;
@@ -31,7 +21,6 @@ typedef NS_ENUM(NSInteger, UCDRtcRole) {
 @property (strong, nonatomic) NSString *publishUrl;
 @property (strong, nonatomic) NSString *roomId;
 @property (assign, nonatomic) BOOL isPortrait;
-@property (assign, nonatomic) UCDRtcRole rtcRole;
 
 
 @end

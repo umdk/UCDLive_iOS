@@ -10,8 +10,6 @@
 		A609C91E6FB2613CEF9D818C /* libPods-UCloudMediaRecorderDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1503CDB86213C731232B15BB /* libPods-UCloudMediaRecorderDemo.a */; };
 		C1D11FC01DEEE0CB00569A5D /* ucloud_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C1D11FBE1DEEE0CB00569A5D /* ucloud_logo.png */; };
 		C1D11FC31DEEE8DE00569A5D /* audioMixTest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C1D11FC21DEEE8DE00569A5D /* audioMixTest.mp3 */; };
-		E90243881F4ACB9400450ADA /* UCDAgoraClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = E90243101F4ACB9400450ADA /* UCDAgoraClient.mm */; };
-		E90243891F4ACB9400450ADA /* UCDAgoraServiceKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243121F4ACB9400450ADA /* UCDAgoraServiceKit.m */; };
 		E902438A1F4ACB9400450ADA /* NetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243151F4ACB9400450ADA /* NetworkInfo.m */; };
 		E902438B1F4ACB9400450ADA /* FilterPopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E90243181F4ACB9400450ADA /* FilterPopoverViewCell.m */; };
 		E902438C1F4ACB9400450ADA /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E902431A1F4ACB9400450ADA /* PopoverAction.m */; };
@@ -76,10 +74,6 @@
 		C1D11FBE1DEEE0CB00569A5D /* ucloud_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ucloud_logo.png; path = ../ucloud_logo.png; sourceTree = "<group>"; };
 		C1D11FC21DEEE8DE00569A5D /* audioMixTest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = audioMixTest.mp3; path = ../audioMixTest.mp3; sourceTree = "<group>"; };
 		E3144B3E1F62A6D07A906E62 /* Pods-UCloudMediaRecorderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCloudMediaRecorderDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCloudMediaRecorderDemo/Pods-UCloudMediaRecorderDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		E902430F1F4ACB9400450ADA /* UCDAgoraClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCDAgoraClient.h; sourceTree = "<group>"; };
-		E90243101F4ACB9400450ADA /* UCDAgoraClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UCDAgoraClient.mm; sourceTree = "<group>"; };
-		E90243111F4ACB9400450ADA /* UCDAgoraServiceKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCDAgoraServiceKit.h; sourceTree = "<group>"; };
-		E90243121F4ACB9400450ADA /* UCDAgoraServiceKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCDAgoraServiceKit.m; sourceTree = "<group>"; };
 		E90243141F4ACB9400450ADA /* NetworkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInfo.h; sourceTree = "<group>"; };
 		E90243151F4ACB9400450ADA /* NetworkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInfo.m; sourceTree = "<group>"; };
 		E90243171F4ACB9400450ADA /* FilterPopoverViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterPopoverViewCell.h; sourceTree = "<group>"; };
@@ -154,7 +148,6 @@
 		E9271D421C3CC749000DBADF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		E9271D441C3CC752000DBADF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E92E18E81E9F50F000CD6F1C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		E93208761F4AE08400FDEC3F /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		E93208781F4AE08C00FDEC3F /* libpthread.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpthread.tbd; path = usr/lib/libpthread.tbd; sourceTree = SDKROOT; };
 		E932087A1F4AE0A400FDEC3F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		E932087C1F4AE0AE00FDEC3F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -201,17 +194,6 @@
 				15DC108CA576EBCC27F13835 /* Pods-UCloudMediaRecorderDemo.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		E902430E1F4ACB9400450ADA /* RTCSource */ = {
-			isa = PBXGroup;
-			children = (
-				E902430F1F4ACB9400450ADA /* UCDAgoraClient.h */,
-				E90243101F4ACB9400450ADA /* UCDAgoraClient.mm */,
-				E90243111F4ACB9400450ADA /* UCDAgoraServiceKit.h */,
-				E90243121F4ACB9400450ADA /* UCDAgoraServiceKit.m */,
-			);
-			path = RTCSource;
 			sourceTree = "<group>";
 		};
 		E90243131F4ACB9400450ADA /* Tools */ = {
@@ -312,7 +294,6 @@
 				E932087C1F4AE0AE00FDEC3F /* GLKit.framework */,
 				E932087A1F4AE0A400FDEC3F /* libicucore.tbd */,
 				E93208781F4AE08C00FDEC3F /* libpthread.tbd */,
-				E93208761F4AE08400FDEC3F /* libstdc++.6.tbd */,
 				E92E18E81E9F50F000CD6F1C /* libsqlite3.tbd */,
 				E909B3561E825863002ABC4F /* CoreTelephony.framework */,
 				E9271D441C3CC752000DBADF /* QuartzCore.framework */,
@@ -351,7 +332,6 @@
 		E94670D11BD78B9B00374D7A /* UCloudMediaRecorderDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E902430E1F4ACB9400450ADA /* RTCSource */,
 				E90243131F4ACB9400450ADA /* Tools */,
 				E979E3AF1F4BE2F60030EF4C /* Resources */,
 				E90243241F4ACB9400450ADA /* Vender */,
@@ -460,7 +440,7 @@
 					E94670CE1BD78B9B00374D7A = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = CFP9KY4MGC;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -545,7 +525,25 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/1_health.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/2_sweety.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/3_sepia.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/4_blue.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/5_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/6_fairy_tale.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/origin_lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_10.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_11.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_12.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_2.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_3.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_4.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_5.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_6.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_8.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/s_9.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -577,7 +575,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E90243881F4ACB9400450ADA /* UCDAgoraClient.mm in Sources */,
 				E90243961F4ACB9400450ADA /* JGProgressHUDFadeAnimation.m in Sources */,
 				E902438A1F4ACB9400450ADA /* NetworkInfo.m in Sources */,
 				E902439C1F4ACB9400450ADA /* JGProgressHUDRingIndicatorView.m in Sources */,
@@ -603,7 +600,6 @@
 				E90243A81F4ACB9400450ADA /* ZJLogManger.m in Sources */,
 				E90244071F4AD9E600450ADA /* AboutViewController.m in Sources */,
 				E953F26A1FF3C38700C39416 /* HMSegmentedControl.m in Sources */,
-				E90243891F4ACB9400450ADA /* UCDAgoraServiceKit.m in Sources */,
 				E90244101F4AD9E600450ADA /* RTCMenuViewController.m in Sources */,
 				E90243951F4ACB9400450ADA /* JGProgressHUDErrorIndicatorView.m in Sources */,
 				E902439D1F4ACB9400450ADA /* JGProgressHUDSuccessIndicatorView.m in Sources */,
