@@ -1,6 +1,6 @@
-# [UCloud Live iOS SDK]() 
+# [Live iOS SDK]() 
 
-UCDLive SDK 是由 UCloud 提供的低延时、高并发的直播云服务。
+UCDLive SDK 提供的低延时、高并发的直播云服务。
 
 ![首页](screenshot/publish3.jpg)  
 
@@ -216,9 +216,10 @@ $ pod install
 
 <a name="8"></a>
 ## 八 反馈和建议
-  - 主 页：<https://www.ucloud.cn/>
-  - issue：[查看已有的 issues 和提交 Bug[推荐]](https://github.com/umdk/UCDLive_iOS/issues)
-  - 邮 箱：[sdk_spt@ucloud.cn](mailto:sdk_spt@ucloud.cn)
+如有问题反馈或者交流
+请到https://github.com/umdk/UCDLive_iOS/issues上提交issue
+
+
 
 <a name="8.1"></a>
 ### 问题反馈参考模板  
