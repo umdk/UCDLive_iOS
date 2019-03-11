@@ -10,28 +10,26 @@
 #define UCDLiveDemoHeader_h
 
 
-// demo中的推流地址仅供demo测试使用，如果更换推流域名地址，请发邮件至spt_sdk@ucloud.cn或联系客服、客户经理索取对应的AccessKey
-#define AccessKey @"publish3-key"
-
 /**
  *  注意 关于推流路径和播放路径设置
  *  要修改textField中的推流ID同时保证推流端和播放端的ID是一样的，不能多个手机使用一个推流路径，可以多个手机播放一个路径
  */
 
+/**
+ *可以找云厂商（优刻得、阿里云,腾讯云等）创建直播服务
+ **/
 //****************测试线路1****************
-#define RecordDomainOne @"rtmp://demo.push.ucloud.com.cn/live/%@";
+#define RecordDomainOne @"";
 //【推荐】使用http-flv作为直播播放必须设置urltype为UrlTypeLive，详见PlayerManager.m
-#define PlayDomainOne @"http://demo.pull.ucloud.com.cn/live/%@.flv";
-//#define PlayDomainOne @"rtmp://demo.pull.ucloud.com.cn/live/%@";
-//#define PlayDomainOne @"http://demo.hls.ucloud.com.cn/live/%@/playlist.m3u8";
+#define PlayDomainOne @"";
+
 
 
 //****************测试线路2****************
-#define RecordDomainTwo @"rtmp://publish3.usmtd.ucloud.com.cn/live/%@";
+#define RecordDomainTwo @"";
 //【推荐】使用http-flv作为直播播放必须设置urltype为UrlTypeLive，详见PlayerManager.m
-#define PlayDomainTwo @"http://rtmp3.usmtd.ucloud.com.cn/live/%@.flv";
-//#define PlayDomainTwo @"rtmp://rtmp3.usmtd.ucloud.com.cn/live/%@";
-//#define PlayDomainTwo @"http://hls3.usmtd.ucloud.com.cn/live/%@/playlist.m3u8";
+#define PlayDomainTwo @"";
+
 
 //主要单例
 #define UserDefaults [NSUserDefaults standardUserDefaults]

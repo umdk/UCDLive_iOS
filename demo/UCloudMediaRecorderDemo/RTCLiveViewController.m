@@ -177,7 +177,6 @@
     _ucdLiveEngine.height = 360;
     _ucdLiveEngine.fps = _fps;
     
-    _ucdLiveEngine.secretKey = AccessKey;
     _ucdLiveEngine.bitrate = UCloudVideoBitrateMedium;
     _ucdLiveEngine.nosieSuppressLevel = _noiseSuppress;
     

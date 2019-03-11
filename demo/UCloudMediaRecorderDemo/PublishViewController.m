@@ -157,7 +157,6 @@
     
     //如果需要设置显示图像的frame，iOS8以下请在此先设置，直接使用getCameraView方法获取view进行设置是无作用的，iOS8以上两者都可设置frame
 //    [_ucdLiveEngine initializeCameraViewFrame:CGRectMake(10, 10, 240, 230)];
-    _ucdLiveEngine.secretKey = AccessKey;
     _ucdLiveEngine.bitrate = UCloudVideoBitrateMedium;
     
     
