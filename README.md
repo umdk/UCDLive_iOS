@@ -1,5 +1,8 @@
 # [Live iOS SDK]() 
 
+## 关于维护
+此项目已于2019年3月停止维护，请慎重使用。
+
 UCDLive SDK 提供的低延时、高并发的直播云服务。
 
 ![首页](screenshot/publish3.jpg)  
